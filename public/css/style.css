@@ -408,7 +408,7 @@ nav .start-contact, a:nth-child(6):focus~.animation {
     transition: transform 0.3s;
 }
 
-.btn-primary {
+.btn-select-calendar {
     display: inline-block;
     margin: 0 0 15px 0;
     width: 30px;

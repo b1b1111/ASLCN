@@ -31,8 +31,8 @@ $events = $events->getEventsBetweenByDay($start, $end);
     <?php endif; ?>
 
   <div>
-    <a href="<?= $_POST['URL_PATH'] ?>calendrier/?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-primary">&lt;</a>
-    <a href="<?= $_POST['URL_PATH'] ?>calendrier/?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-primary">&gt;</a>
+    <a href="<?= $_POST['URL_PATH'] ?>calendrier/?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-select-calendar">&lt;</a>
+    <a href="<?= $_POST['URL_PATH'] ?>calendrier/?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-select-calendar">&gt;</a>
   </div>
 </div>
 
