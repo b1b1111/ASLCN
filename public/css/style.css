@@ -409,7 +409,7 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 }
 
 .btn-select-calendar {
-    display: inline-block;
+    display: block;
     margin: 0 0 15px 0;
     width: 30px;
     text-align: center;
