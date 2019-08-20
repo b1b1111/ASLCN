@@ -53,7 +53,7 @@ $events = $events->getEventsBetweenByDay($start, $end);
                 <div class="calendar__day"><?= $date->format('d'); ?></div>
                   <?php foreach($eventsForDay as $event): ?>
                     <div class="calendar__event">
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?php $_POST['URL_PATH'] ?><?= $event['id']; ?>"><?= htmlentities($event['name']); ?></a>
+                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?php $_POST['URL_PATH'] ?>calendrier/<?= $event['id']; ?>"><?= htmlentities($event['name']); ?></a>
                     </div>
                   <?php endforeach; ?>
               </td>

@@ -24,16 +24,16 @@ class postController {
         require('view/frontend/calendrier.php');
     }
 
-     // Afficher un evenement.
-     public function showCalendar($id) {
+    // Afficher un evenement.
+    public function showCalendar($id) {
         $post = $this->postManager->getPost($id);
         require 'view/frontend/event.php'; 
     }
 
     // formulaire de création d'un evenement.
-    public function postEvent($name, $date, $description, $start, $end) {     
-        $post = $this->postManager->addPost($name, $date, $description, $start, $end);
-        require 'view/frontend/addEvent.php';
+    public function postEvent($name, $description, $start, $end) {     
+        $post = $this->postManager->addPost($name, $description, $start, $end);
+        header('Location: '. $_POST['URL_PATH'] . 'administration');
     }
 
    //Envoie de mail

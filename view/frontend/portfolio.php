@@ -119,11 +119,11 @@ require('template.php');
   <h1>En avant les Glands</h1>
   <div class="portfolio-flex" id="js-portfolio-gland">
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <img src="public/images/glands/max.jpg" alt="glands_max" class="project__image">
+      <h2 class="project__name">Maxime Lethu</h2>
+      <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Maximus Glandus</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -140,11 +140,11 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <img src="public/images/glands/robin.jpg" alt="gland_max" class="project__image">
+      <h2 class="project__name">Robin Lehoux</h2>
+      <div class="project__description">Robin</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Robinous Glandous</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -161,11 +161,11 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
+      <h2 class="project__name">Fabien LeGuennec</h2>
+      <div class="project__description">Fab</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Co - Président et glandum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -337,9 +337,9 @@ require('template.php');
   <h1>Capillo</h1>
   <div class="portfolio-flex" id="js-portfolio-capillo">
     <div class="project js-item" tabindex="0">
-      <img src="public/images/toon.jpg" alt="" class="project__image">
+      <img src="public/images/capillo/toon.jpg" alt="" class="project__image">
       <h2 class="project__name">Anthony Kerebel</h2>
-      <div class="project__description">AKA : Toon</div>
+      <div class="project__description">Toon</div>
       <div class="project__body js-body">
         <h2>Capitoon des Capillo</h2>
         <p>

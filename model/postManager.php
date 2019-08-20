@@ -28,11 +28,11 @@ class postManager extends manager {
     }
 
     // Création d'un nouveau chapitre
-    public function addPost($name, $date, $description, $start, $end) {
+    public function addPost($name, $description, $start, $end) {
 
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('INSERT INTO events (name, date, description, start, end) VALUES (?, ?, ?, ?, ?)');
-        $request->execute(array($name, $date, $description, $start, $end));
+        $request = $db->prepare('INSERT INTO events (name, description, start, end) VALUES (?, ?, ?, ?)');
+        $request->execute(array($name, $description, $start, $end));
     }
 
     // Appouver un chapitre

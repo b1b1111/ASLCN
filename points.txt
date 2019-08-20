@@ -1,0 +1,11 @@
+	Assiduité :
+
+Proposition d’un bonus de point pour les 3 premières équipes en taux d’assiduité (sur la base de 4 joueurs) par tranches de 8 activités (bonus à la 8ème, 16ème, 24ème et 32ème activité).
+
+Les points de « bonification présences » sont validés ainsi : +10 points à la 1ère équipe, +7 points à la 2ème et +3 points à la 3ème.
+
+	Calcul binome :
+
+Proposition d’ajustement du calcul des points gagnés à une rencontre pour une équipe ayant 2 binômes présents : pondération d’un coefficient 2 pour le meilleur binôme et d’un coefficient 1 pour le 2ème binôme lorsqu’une équipe présente 4 joueurs à une rencontre.
+
+

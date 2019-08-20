@@ -22,4 +22,9 @@ class commentController {
         header('Location: '. $_POST['URL_PATH'] . 'chapitres'); 
     }
 
+    // Créer un event
+    public function createEvent($name, $description, $start, $end) {     
+        $post = $this->CommentManager->addEvent($name, $description, $start, $end);
+    }
+
 }

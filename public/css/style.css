@@ -525,7 +525,7 @@ textarea {
 }
 
 #btn_contact {
-    background: rgb(247, 126, 14);
+    background: #3498db;;
     text-align: center;
     position: relative;
     display: inline-flex;
@@ -534,15 +534,15 @@ textarea {
     font-family: 'Merriweather', 'Open Sans', Verdana;
     text-decoration: none;
     color: white;
-    box-shadow: inset -4px -4px 0px 0px rgb(189, 95, 7);
+    box-shadow: inset -4px -4px 0px 0px #207ab6;
     border-radius: 5px;
   }
 #btn_contact:hover, #btn_contact:focus {
-    background: rgb(241, 129, 23);
-    box-shadow: inset -6px -6px 0px 0px rgb(189, 95, 7);
+    background: #1a9cf3;
+    box-shadow: inset -6px -6px 0px 0px #2b95db;
   }
   #btn_contact:active {
-    box-shadow: inset 4px 4px 0px 0px rgb(189, 95, 7);
+    box-shadow: inset 4px 4px 0px 0px #2b95db;
   }
   #btn_contact:before, #btn_contact:after {
     content: '';

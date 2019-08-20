@@ -30,8 +30,12 @@ body {
 }
 
 .project__image {
-  width: 100%;
-  height: auto;
+  width: 180px;
+  height: 180px;
+}
+
+.project__description {
+  font-style: italic;
 }
 
 h2 {

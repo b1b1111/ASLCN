@@ -12,7 +12,7 @@ require('template.php');
     <?php endif; ?>
 
 <h1>Ajouter un évènement</h1>   
-  <form id="form_articles" method="post" action="create">
+  <form id="form_articles" method="post" action="calendrier/createEvent">
         <label for="name">Titre de la rencontre</label><br />
         <input type="text" class="title" name="title"/><br /><br />
         
@@ -28,7 +28,7 @@ require('template.php');
         <label for="date">Description</label>
         <textarea id="full-featured" name="description" contenteditable="true"></textarea><br />
         
-        <button class="btn_valid" onclick="ConfirmChapt()">Editer chapitre</button><br /><br />
+        <button class="btn_valid" onclick="ConfirmChapt()">Poster l'évènement</button><br /><br />
   </form>
 
 <script>
