@@ -31,9 +31,9 @@ class postController {
     }
 
     // formulaire de création d'un evenement.
-    public function postEvent($id) {     
-        $post = $this->postManager->getPost($id);
-        require 'view/frontend/add.php';
+    public function postEvent($name, $date, $description, $start, $end) {     
+        $post = $this->postManager->addPost($name, $date, $description, $start, $end);
+        require 'view/frontend/addEvent.php';
     }
 
    //Envoie de mail

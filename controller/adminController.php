@@ -16,6 +16,7 @@ class adminController {
     public function postAdmin($name, $date, $description, $start, $end) {    
         $post = $this->postManager->addPost($name, $date, $description, $start, $end);
         header('Location: '. $_POST['URL_PATH'] . 'calendrier');
+        require 'view/frontend/addEvent.php';
     }
         
     // Modifier un chapitre

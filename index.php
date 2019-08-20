@@ -28,27 +28,22 @@ else if($url[0] == 'calendrier') {
     if (empty($url[1])) {
         $postController->printCalendar();
     }
-
     else if(is_numeric($url[1])) { 
         $postController->showCalendar($url[1]);
     }
     
-    else if (($url[1] == 'alert')&&(is_numeric($url[2]))) {
-        // appele function alert comment
-        $commentController->alertComment($url[2]);
-    }  
-
-    else if ($url[1] == 'add') {
+    else if ($url[1] == 'addEvent') {
         if (!empty($url[2]) && $url[2] == 'createEvent') {
             
             $name = $_POST['name'];
             $description = $_POST['description'];
             $start = $_POST['start'];
             $end = $_POST['end'];
-            $commentController->createEvent($url[1], $name, $description, $start, $end);
+            $postController->postEvent($url[1], $name, $date, $description, $start, $end);
         } 
-        $postController->postEvent($url[1]);
+        
     }
+ 
 } 
 
 /*--------------------------------------CONTACT----------------------------------------*/
@@ -155,14 +150,7 @@ else if($url[0] == 'administration') {
     }
 
     /*-----------------Create chapter---------------------*/
-    else if ($url[1] == 'create') {
-        $name = $_POST['name'];
-        $date = $_POST['date'];
-        $description = $_POST['description'];
-        $start = $_POST['start'];
-        $end = $_POST['end'];
-        $adminController->postAdmin($name, $date, $description, $start, $end);
-    }  
+     
 } 
 
 else {

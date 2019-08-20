@@ -5,8 +5,6 @@ require('html.php');
 require('template.php');
 ?>
 
-<div class="container">
-
     <?php if (!empty($errors)): ?>
       <div class="alert alert-danger">
         Merci de corriger vos erreurs

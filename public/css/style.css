@@ -345,6 +345,11 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 /*----------------------------------------------------------------------------------------------------------*/
 .calendar_title {
     font-size: 2.5em;
+    margin-top: -10px;
+}
+
+#month {
+    margin: 0 0 5px 30px;
 }
 
 .calendar__table {
@@ -397,7 +402,7 @@ nav .start-contact, a:nth-child(6):focus~.animation {
     text-align: center;
     color: #FFF;
     font-size: 30px;
-    background-color: #007bff;
+    background-color: #1abc9c;
     border-radius: 50%;
 
     box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
@@ -409,14 +414,22 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 }
 
 .btn-select-calendar {
-    display: block;
-    margin: 0 0 15px 0;
-    width: 30px;
+  
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 112px);
+    margin: 0 0 8px 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     color: #fff;
-    background-color: #007bff;
-    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(247, 126, 14);
+    border-radius: 50px;
+
 }
+
 
 .calendar__button:hover {
     text-decoration: none;

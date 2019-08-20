@@ -20,7 +20,7 @@ class postManager extends manager {
     public function getPost($id) {
 
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('SELECT id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%i\') AS creation_date_fr FROM posts WHERE id = ?');
+        $request = $db->prepare('SELECT * FROM events WHERE id = ?');
 
         $request->execute(array($id));
         $post = $request->fetch();
@@ -31,7 +31,7 @@ class postManager extends manager {
     public function addPost($name, $date, $description, $start, $end) {
 
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('INSERT INTO events (name, date, description, start, end ) VALUES (?, ?, ?, ?, ?)');
+        $request = $db->prepare('INSERT INTO events (name, date, description, start, end) VALUES (?, ?, ?, ?, ?)');
         $request->execute(array($name, $date, $description, $start, $end));
     }
 

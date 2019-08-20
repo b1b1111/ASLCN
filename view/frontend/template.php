@@ -5,7 +5,7 @@
         <a href="http://localhost/aslcn%20ok/calendrier/">Calendrier</a>
         <a href="http://localhost/aslcn%20ok/contact">Contact</a>
         <a href="#">Classement</a>
-        <a href="http://localhost/aslcn%20ok/galerie">Galerie</a>
+        <a href="http://localhost/aslcn%20ok/galerie">Equipes</a>
         <a href="http://localhost/aslcn%20ok/profil">Connexion</a>
     
         <div class="animation start-home"></div>

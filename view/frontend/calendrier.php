@@ -19,8 +19,8 @@ $events = $events->getEventsBetweenByDay($start, $end);
         <a href="<?= $_POST['URL_PATH'] ?>calendrier" class="navbar-brand">Calendrier</a>
 </h3>
 
-<div class="d-flex flex-row align-items-center justify-content-between mx-sm-3">
-  <h1><?= $month->toString(); ?></h1>
+<div>
+  <h1 id="month"><?= $month->toString(); ?></h1>
 
     <?php if (isset($_GET['success'])): ?>
       <div class="container">
@@ -62,7 +62,7 @@ $events = $events->getEventsBetweenByDay($start, $end);
       <?php endfor; ?>
   </table>
 
-  <a href="<?= $_POST['URL_PATH'] ?>calendrier/add" class="calendar__button">+</a>
+  <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
 
 </body>
 </html>
