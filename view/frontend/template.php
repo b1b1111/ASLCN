@@ -1,8 +1,8 @@
 <header>
 
     <nav>
-        <a href="http://localhost/aslcn%20ok/index">Accueil</a>
-        <a href="http://localhost/aslcn%20ok/calendrier/">Calendrier</a>
+        <a class='target' href="http://localhost/aslcn%20ok/index">Accueil</a>
+        <a class='target' href="http://localhost/aslcn%20ok/calendrier/">Calendrier</a>
         <a href="http://localhost/aslcn%20ok/contact">Contact</a>
         <a href="#">Classement</a>
         <a href="http://localhost/aslcn%20ok/galerie">Equipes</a>

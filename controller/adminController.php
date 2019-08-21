@@ -12,7 +12,11 @@ class adminController {
       $this->postManager = new \Benjamin\Aslcn\Model\postManager();  
    }  
 
-  
+    // Créer un chapitre
+    public function postAdmin($name, $description, $start, $end) {    
+        $post = $this->postManager->addPost($name, $description, $start, $end);
+        header('Location: '. $_POST['URL_PATH'] . 'administration');
+    }
         
     // Modifier un chapitre
     public function editPostAdmin($id, $title, $content) {  

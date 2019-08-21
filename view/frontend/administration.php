@@ -18,7 +18,7 @@ require('template.php');
 <h1>Ajouter un évènement</h1>   
   <form id="form_articles" method="post" action="administration/create">
         <label for="name">Titre de la rencontre</label><br />
-        <input type="text" class="title" name="title"/><br /><br />
+        <input type="text" class="name" name="name"/><br /><br />
         
         <label for="date">Date</label>
         <input type="date" name="date"><br />
@@ -29,8 +29,8 @@ require('template.php');
         <label for="end">Fin de rencontre</label>
         <input type="time" name="end"><br />
 
-        <label for="date">Description</label>
-        <textarea id="full-featured" name="description" contenteditable="true"></textarea><br />
+        <label for="description">Description</label>
+        <textarea id="full-featured" name="description"></textarea><br />
         
         <button class="btn_valid" onclick="ConfirmChapt()">Poster l'évènement</button><br /><br />
   </form>

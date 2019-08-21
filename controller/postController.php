@@ -27,13 +27,14 @@ class postController {
     // Afficher un evenement.
     public function showCalendar($id) {
         $post = $this->postManager->getPost($id);
+        $posts = $this->postManager->getAllUser();
         require 'view/frontend/event.php'; 
     }
 
     // formulaire de création d'un evenement.
     public function postEvent($name, $description, $start, $end) {     
         $post = $this->postManager->addPost($name, $description, $start, $end);
-        header('Location: '. $_POST['URL_PATH'] . 'administration');
+        require 'view/frontend/addEvent.php';
     }
 
    //Envoie de mail

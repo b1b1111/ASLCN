@@ -158,8 +158,6 @@ class postManager extends manager {
         return $userinfo;
     }
 
-    //select all where code 
-
     public function editMembre() {
         $db = $this->newManager->dbConnect();
         $requser = $db->prepare("SELECT * FROM membres WHERE id = ?");

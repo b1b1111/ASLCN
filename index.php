@@ -164,7 +164,7 @@ else if($url[0] == 'administration') {
         $description = $_POST['description'];
         $start = $_POST['start'];
         $end = $_POST['end'];
-        $postController->postEvent($name, $description, $start, $end);
+        $adminController->postAdmin($name, $description, $start, $end);
         
     } 
 } 

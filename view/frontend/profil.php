@@ -38,6 +38,8 @@ else {
         if(isset($_SESSION['id']) == $_SESSION['id']) {
         ?>
         <br />
+
+     
         <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
         <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
 

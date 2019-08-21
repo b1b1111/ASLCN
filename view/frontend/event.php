@@ -5,7 +5,7 @@ require('html.php');
 require('template.php'); 
 ?>
 
-<h2 id="link_chapter" ><a href="<?= $_POST['URL_PATH'] ?>calendrier">Retour au calendrier</a></h2>
+<h2 id="link_chapter" ><a href="<?= $_POST['URL_PATH'] ?>calendrier/">Retour au calendrier</a></h2>
 
 <div class="news">
     <h3>
@@ -28,7 +28,7 @@ require('template.php');
         <p>
             <?php echo html_entity_decode($post['end']) ?>
         </p>
-    </div>  
+    </div>   
      
 </div>
 

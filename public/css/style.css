@@ -140,7 +140,6 @@ a:nth-child(1) {
 a:nth-child(2) {
     width: 110px;
 }
-
 a:nth-child(3) {
 	width: 110px;
 }
@@ -159,12 +158,9 @@ nav .start-home, a:nth-child(1):hover~.animation {
     background-color: #1abc9c;
 }
 
-nav .start-about, a:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 110px;
-	background-color: #ff4309;
+a:nth-child(2):hover {
+    background-color: #ff4309;
 }
-
 nav .start-blog, a:nth-child(3):hover~.animation {
 	width: 110px;
 	left: 220px;
@@ -408,7 +404,7 @@ nav .start-contact, a:nth-child(6):focus~.animation {
     box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
     position: absolute;
     bottom: 30px;
-    right: 30px;
+    right: 50px;
     text-decoration: none;
     transition: transform 0.3s;
 }
@@ -429,7 +425,6 @@ nav .start-contact, a:nth-child(6):focus~.animation {
     border-radius: 50px;
 
 }
-
 
 .calendar__button:hover {
     text-decoration: none;
@@ -525,7 +520,7 @@ textarea {
 }
 
 #btn_contact {
-    background: #3498db;;
+    background: #3498db;
     text-align: center;
     position: relative;
     display: inline-flex;
@@ -538,7 +533,7 @@ textarea {
     border-radius: 5px;
   }
 #btn_contact:hover, #btn_contact:focus {
-    background: #1a9cf3;
+    background: #218dd4;
     box-shadow: inset -6px -6px 0px 0px #2b95db;
   }
   #btn_contact:active {
