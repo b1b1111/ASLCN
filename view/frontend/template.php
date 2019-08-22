@@ -1,12 +1,12 @@
 <header>
 
     <nav>
-        <a class='target' href="http://localhost/aslcn%20ok/index">Accueil</a>
-        <a class='target' href="http://localhost/aslcn%20ok/calendrier/">Calendrier</a>
-        <a href="http://localhost/aslcn%20ok/contact">Contact</a>
-        <a href="#">Classement</a>
-        <a href="http://localhost/aslcn%20ok/galerie">Equipes</a>
-        <a href="http://localhost/aslcn%20ok/profil">Connexion</a>
+        <a ref="http://localhost/aslcn%20ok/index">Accueil</a>
+        <a id="linkNav1" href="http://localhost/aslcn%20ok/calendrier/">Calendrier</a>
+        <a id="linkNav2" href="http://localhost/aslcn%20ok/contact">Contact</a>
+        <a id="linkNav3" href="#">Classement</a>
+        <a id="linkNav4" href="http://localhost/aslcn%20ok/galerie">Equipes</a>
+        <a id="linkNav5" href="http://localhost/aslcn%20ok/profil">Connexion</a>
     
         <div class="animation start-home"></div>
     </nav>

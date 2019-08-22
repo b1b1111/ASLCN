@@ -85,3 +85,9 @@ function change_color(n)
 	}
 	return false;
 }
+
+const elt = document.getElementById('linkNav1');
+
+elt.addEventListener('click', function() {
+    elt.innerHTML = "background-color: #ff4309";
+});

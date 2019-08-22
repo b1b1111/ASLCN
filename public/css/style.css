@@ -157,9 +157,10 @@ nav .start-home, a:nth-child(1):hover~.animation {
 	left: 0;
     background-color: #1abc9c;
 }
-
-a:nth-child(2):hover {
-    background-color: #ff4309;
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 110px;
+	background-color: #ff4309;
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
 	width: 110px;
@@ -335,7 +336,6 @@ nav .start-contact, a:nth-child(6):focus~.animation {
     font-size: 1.6em;
     font-weight: 400;
 }
-
 
 /*--------------------------------------------CALENDRIER-----------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
