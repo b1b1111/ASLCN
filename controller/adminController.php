@@ -4,6 +4,7 @@ namespace Benjamin\Aslcn\Controller;
 
 require_once('model/CommentManager.php');
 require_once('model/postManager.php');
+require_once('model/classementManager.php');
 
 class adminController {
 

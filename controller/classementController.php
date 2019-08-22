@@ -2,32 +2,35 @@
 
 namespace Benjamin\Aslcn\Controller;
 
-require_once('model/CommentManager.php');
-class commentController {
-    private $_point;
-    private $id;
-    private $teamName;
-    private $teamPoint;
-    private $rank;
-  
-  
-    // Déclarations des constantes en rapport avec la force.
-    const POINT_INITIAL = 0;
-    const POINT_FIRST = 20;
-    const POINT_SECOND = 15;
-    const POINT_THIRD = 12;
-    const POINT_FOURTH = 10;
-    const POINT_FIFTH = 8;
-    const POINT_SIXTH = 6;
-    const POINT_SEVENTH = 5;
-    const POINT_EIGHTH = 4;
+require_once('model/classementManager.php');
 
-    function __construct(array $donnees) {
-        $this->hydrate($donnees);
-        $this->CommentManager = new \Benjamin\Aslcn\Model\CommentManager(); 
-    }
+class classementController {
 
-    public function editPoint(commentController $team) {
+  private $_point;
+  private $id;
+  private $teamName;
+  private $teamPoint;
+  private $rank;
+
+
+  // Déclarations des constantes en rapport avec la force.
+  const POINT_INITIAL = 0;
+  const POINT_FIRST = 20;
+  const POINT_SECOND = 15;
+  const POINT_THIRD = 12;
+  const POINT_FOURTH = 10;
+  const POINT_FIFTH = 8;
+  const POINT_SIXTH = 6;
+  const POINT_SEVENTH = 5;
+  const POINT_EIGHTH = 4;
+
+  public function __construct(array $donnees)
+  {
+    $this->hydrate($donnees);
+    $this->classementManager = new \Benjamin\Aslcn\Model\classementManager();  
+  }
+
+    public function editPoint(classementController $team) {
         return $team->recupPoint();
     }
 
@@ -141,23 +144,4 @@ class commentController {
             }
         }
     }
-
-    // Nouveau commentaire
-    public function addComment($post_id, $author, $content) {
-        $comments = $this->CommentManager->postComment($post_id, $author, $content);
-        
-    }
-
-    // Signaler un commentaire
-    public function alertComment($id) {
-        $alertedComment = $this->CommentManager->reportComment($id);  
-        $alert = $_POST['alert'];    
-        header('Location: '. $_POST['URL_PATH'] . 'chapitres'); 
-    }
-
-    // Créer un event
-    public function createEvent($name, $description, $start, $end) {     
-        $post = $this->CommentManager->addEvent($name, $description, $start, $end);
-    }
-
 }

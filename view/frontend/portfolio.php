@@ -225,8 +225,8 @@ require('template.php');
     </div>
   </div>
 
-  <h1>Team 51</h1>
-  <div class="portfolio-flex" id="js-portfolio-team">
+  <h1>Skipailh BZH</h1>
+  <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
       <h2 class="project__name">Lorem ipsum</h2>

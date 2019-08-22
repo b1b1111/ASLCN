@@ -130,6 +130,6 @@ new PortfolioFlex('#js-portfolio-gland')
 new PortfolioFlex('#js-portfolio-ema')
 new PortfolioFlex('#js-portfolio-ever')
 new PortfolioFlex('#js-portfolio-capillo')
-new PortfolioFlex('#js-portfolio-team')
+new PortfolioFlex('#js-portfolio-skip')
 new PortfolioFlex('#js-portfolio-wall')
 

@@ -137,8 +137,8 @@ else if($url[0] == 'administration') {
     }
 
     /*-----------------Approuve chapter---------------------*/
-    else if (($url[1] == 'confirmPost')&&(is_numeric($url[2]))) {  
-        $adminController->approuvePostAdmin($url[2]);
+    else if (($url[1] == 'confirmPoint')&&(is_numeric($url[2]))) {  
+        $commentController->editPoint($url[2]);
     }
 
     /*-----------------Modified chapter---------------------*/

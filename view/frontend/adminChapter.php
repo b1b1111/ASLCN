@@ -9,16 +9,23 @@
 
 <a href="<?= $_POST['URL_PATH'] ?>administration">Retour au sommaire de la page administration.</a>
 
-<ul id="list_post">
-        <h2 class="adminH2">Liste des chapitres</h2>
-        <p class="adminParagraphe"><em>Modifier ou supprimer les chapitres.</em></p>
+<fieldset>
+      <legend>Classement des équipes</legend>
+      <p>
+<?php
+$teams = $manager->getList($team->nom());
 
-        <?php while($a = $posts->fetch()) { ?>
+if (empty($teams))
+{
+  echo 'Vous n\'avez pas selectionné d\'équipe';
+}
 
-        <br /><li><?= $a['id'] ?> : <?= $a['title']?><br />
-        <a class="btn_suppr" onclick="SupprPost()"href="<?= $_POST['URL_PATH'] ?>administration/deletePost/<?= $a['id'] ?>">Supprimer</a>
-        &nbsp;&nbsp;
-        <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>administration/editPost/<?= $a['id'] ?>/prepare">Modification</a></li>
-        <?php } ?>
-  </ul>
+else
+{
+  foreach ($teams as $unteam)
+    echo '<a href="?setPoint=', $unteam->id(), '">', htmlspecialchars($unteam->teamName()), '</a> (teamPoint : ', $unteam->teamPoint(), ')<br />';
+}
+?>
+      </p>
+    </fieldset>
 
