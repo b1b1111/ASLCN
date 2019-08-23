@@ -1,0 +1,16 @@
+{
+    "name": "benja/aslcn",
+    "authors": [
+        {
+            "name": "b1b1111",
+            "email": "benjamin@webagency-lefebvre.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Calendar\\": "src/Calendar",
+            "App\\": "src/App"
+        }
+    },
+    "require": {}
+}

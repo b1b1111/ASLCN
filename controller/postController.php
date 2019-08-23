@@ -1,16 +1,14 @@
 <?php
 
-namespace Benjamin\Aslcn\Controller;
+namespace Controller;
 
 require_once('model/postManager.php');
 require_once('model/CommentManager.php');
-require_once('model/eventsManager.php');
 class postController {
 
     function __construct() {
-        $this->postManager = new \Benjamin\Aslcn\Model\postManager();  
-        $this->commentManager = new \Benjamin\Aslcn\Model\CommentManager();  
-        $this->eventsManager = new \Benjamin\Aslcn\Model\EventsManager(); 
+        $this->postManager = new \Model\postManager();  
+        $this->commentManager = new \Model\CommentManager();  
     }
 
     //Page accueil
@@ -29,12 +27,6 @@ class postController {
         $post = $this->postManager->getPost($id);
         $posts = $this->postManager->getAllUser();
         require 'view/frontend/event.php'; 
-    }
-
-    // formulaire de création d'un evenement.
-    public function postEvent($name, $description, $start, $end) {     
-        $post = $this->postManager->addPost($name, $description, $start, $end);
-        require 'view/frontend/addEvent.php';
     }
 
    //Envoie de mail

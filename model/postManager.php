@@ -1,12 +1,12 @@
 <?php
 
-namespace Benjamin\Aslcn\Model;
+namespace Model;
 
 require_once("model/manager.php");
 class postManager extends manager {
 
     function __construct() {
-        $this->newManager = new \Benjamin\Aslcn\Model\Manager();  
+        $this->newManager = new \Model\Manager();  
     }
 
     public function getPosts() {

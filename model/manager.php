@@ -1,6 +1,6 @@
 <?php
 
-namespace Benjamin\Aslcn\Model;
+namespace Model;
 
 class Manager
 {

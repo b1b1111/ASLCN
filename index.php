@@ -1,17 +1,17 @@
 <?php
 session_start();
 
-use Benjamin\Aslcn\Controller\adminController;
+use Controller\adminController;
 
-$_POST['URL_PATH'] = 'http://localhost/aslcn ok/';
+$_POST['URL_PATH'] = 'http://localhost/aslcn/';
 
 require_once('controller/postController.php');
 require_once('controller/commentController.php');
 require_once('controller/adminController.php');
 
-    $postController = new \Benjamin\Aslcn\Controller\postController();
-    $commentController = new \Benjamin\Aslcn\Controller\commentController();
-    $adminController = new \Benjamin\Aslcn\Controller\adminController(); 
+    $postController = new \Controller\postController();
+    $commentController = new \Controller\commentController();
+    $adminController = new \Controller\adminController(); 
     
 $url = '';
 if(isset($_GET['url'])) {
@@ -28,31 +28,6 @@ else if($url[0] == 'calendrier') {
     if (empty($url[1])) {
         $postController->printCalendar();
     }
-    else if(is_numeric($url[1])) { 
-        $postController->showCalendar($url[1]);
-    }
-
-    else if ($url[1] == 'addEvent') {
-        $name = $_POST['name'];
-        $date = $_POST['date'];
-        $description = $_POST['description'];
-        $start = $_POST['start'];
-        $end = $_POST['end'];
-        $postController->postEvent($name, $date, $description, $start, $end);
-        
-    } 
-
-    /*else if ($url[1] == 'addEvent') {
-        if (!empty($url[2]) && $url[2] == 'createEvent') {
-            
-            $name = $_POST['name'];
-            $description = $_POST['description'];
-            $start = $_POST['start'];
-            $end = $_POST['end'];
-            $commentController->createEvent($url[1], $name, $description, $start, $end);
-        } 
-        $postController->postEvent($name, $date, $description, $start, $end);
-    }*/
  
 } 
 
@@ -159,14 +134,15 @@ else if($url[0] == 'administration') {
         $adminController->deletePostAdmin($url[2]);
     }
 
-    else if ($url[1] == 'create') {
+    /*else if ($url[1] == 'create') {
         $name = $_POST['name'];
         $description = $_POST['description'];
         $start = $_POST['start'];
         $end = $_POST['end'];
         $adminController->postAdmin($name, $description, $start, $end);
         
-    } 
+    } */
+
 } 
 
 else {

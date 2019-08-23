@@ -1,19 +1,47 @@
 <?php
 
-namespace Benjamin\Aslcn\Model;
+namespace Model;
 
 require_once("model/manager.php");
 class CommentManager extends manager {
 
     function __construct() {
-        $this->newManager = new \Benjamin\Aslcn\Model\Manager();      
+        $this->newManager = new \Model\Manager();      
     }
 
     // Création d'un nouvel event
     public function addEvent($name, $description, $start, $end) {
         $db = $this->newManager->dbConnect();
-        $req = $db->prepare("INSERT INTO events(`name`, `description`, `start`, `end`) VALUES ('?', '?', '?', '?')");
+        $req = $db->prepare("INSERT INTO events(`Eventname`, `description`, `start`, `end`) VALUES ('?', '?', '?', '?')");
         $req->execute(array($name, $description, $start, $end));
+    }
+
+    public function getEventsBetween (\DateTimeInterface $start, \DateTimeInterface $end): array {
+        $db = $this->newManager->dbConnect();
+        $statement = $db->query("SELECT * FROM events WHERE start BETWEEN '{$start->format('Y-m-d 00:00:00')}' AND '{$end->format('Y-m-d 23:59:59')}' ORDER BY start ASC");
+        $statement->setFetchMode(\PDO::FETCH_CLASS, Event::class);
+        $results = $statement->fetchAll();
+        return $results;
+    }
+
+    /**
+     * Récupère les évènements commençant entre 2 dates indexé par jour
+     * @param \DateTimeInterface $start
+     * @param \DateTimeInterface $end
+     * @return array
+     */
+    public function getEventsBetweenByDay ($start, $end): array {
+        $events = $this->getEventsBetween($start, $end);
+        $days = [];
+        foreach($events as $event) {
+            $date = explode(' ', $event['start'])[0];
+            if (!isset($days[$date])) {
+                $days[$date] = [$event];
+            } else {
+                $days[$date][] = $event;
+            }
+        }
+        return $days;
     }
 
     //Retourne tous les commentaires

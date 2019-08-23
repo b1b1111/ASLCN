@@ -1,6 +1,6 @@
 <?php
 
-namespace Benjamin\Aslcn\Controller;
+namespace Controller;
 
 require_once('model/classementManager.php');
 
@@ -27,7 +27,7 @@ class classementController {
   public function __construct(array $donnees)
   {
     $this->hydrate($donnees);
-    $this->classementManager = new \Benjamin\Aslcn\Model\classementManager();  
+    $this->classementManager = new \Model\classementManager();  
   }
 
     public function editPoint(classementController $team) {
@@ -67,7 +67,6 @@ class classementController {
             return self::POINT_EIGHTH;
         }
     }
-
 
     /**
      * Liste des getters
