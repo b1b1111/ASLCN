@@ -1,5 +1,5 @@
 <?php
-require '../src/bootstrap.php';
+require 'src/bootstrap.php';
 
 $data = [
     'date'  => $_GET['date'] ?? date('Y-m-d'),
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $events = new \Calendar\Events(get_pdo());
         $event = $events->hydrate(new \Calendar\Event(), $data);
         $events->create($event);
-        header('Location: ../views/viewCalendar?success=1');
+        header('Location: ../view/frontend/viewCalendar?success=1');
         exit();
     }
 }

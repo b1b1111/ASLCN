@@ -28,6 +28,14 @@ else if($url[0] == 'calendrier') {
     if (empty($url[1])) {
         $postController->printCalendar();
     }
+
+    else if($url[1] == 'addEvent') {
+        $postController->addEvent();
+    }
+
+    else if($url[1] == 'editEvent') {
+        $postController->editEvent();
+    } 
  
 } 
 

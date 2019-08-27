@@ -13,6 +13,8 @@ class Event {
 
     private $end;
 
+    private $teamName;
+
     public function getId(): int {
         return $this->id;
     }
@@ -33,6 +35,10 @@ class Event {
         return new \DateTime($this->end);
     }
 
+    public function getTeamName (): string {
+        return $this->teamName;
+    }
+
     public function setName (string $name) {
         $this->name = $name;
     }
@@ -47,6 +53,10 @@ class Event {
 
     public function setEnd (string $end) {
         $this->end = $end;
+    }
+
+    public function setTeamName (string $teamName) {
+        $this->teamName = $teamName;
     }
 
 }

@@ -392,9 +392,9 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 
 .calendar__button {
     display: block;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
+    width: 52px !important;
+    height: 52px;
+    line-height: 52px;
     text-align: center;
     color: #FFF;
     font-size: 30px;

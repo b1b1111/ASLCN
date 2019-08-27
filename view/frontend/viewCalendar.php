@@ -1,6 +1,9 @@
 <?php
-require '../controller/calendrier.php';
-require '../views/header.php';
+$title = 'ASLCN';
+require('header.php'); 
+require('html.php');
+require('template.php');
+require('controller/calendrier.php');
 ?>
 
 <div class="calendar">
@@ -17,8 +20,8 @@ require '../views/header.php';
     <?php endif; ?>
 
     <div>
-      <a href="viewCalendar.php?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn btn-primary">&lt;</a>
-      <a href="viewCalendar.php?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn btn-primary">&gt;</a>
+      <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-select-calendar">&lt;</a>
+      <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-select-calendar">&gt;</a>
     </div>
   </div>
 
@@ -35,10 +38,10 @@ require '../views/header.php';
                   <?php if ($i === 0): ?>
                     <div class="calendar__weekday"><?= $day; ?></div>
                   <?php endif; ?>
-                <a class="calendar__day" href="add.php?date=<?= $date->format('Y-m-d'); ?>"><?= $date->format('d'); ?></a>
+                <a class="calendar__day"><?= $date->format('d'); ?></a>
                   <?php foreach($eventsForDay as $event): ?>
                     <div class="calendar__event">
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="../views/editEvent.php?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
+                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>viewCalendar/editEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                     </div>
                   <?php endforeach; ?>
               </td>
@@ -47,8 +50,6 @@ require '../views/header.php';
       <?php endfor; ?>
   </table>
 
-  <a href="../views/addEvent.php" class="calendar__button">+</a>
+  <a href="<?= $_POST['URL_PATH'] ?>viewCalendar/addEvent" class="calendar__button">+</a>
 
 </div>
-
-<?php require '../views/footer.php'; ?>

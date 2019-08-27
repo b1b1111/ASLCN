@@ -1,5 +1,5 @@
 <?php
-require '../src/bootstrap.php';
+require 'src/bootstrap.php';
 $pdo = get_pdo();
 $events = new Calendar\Events($pdo);
 $errors = [];
@@ -14,6 +14,7 @@ catch (\Error $e) {
 }
 
 $data = [
+    'teamName'    => $event->getTeamName(),
     'name'        => $event->getName(),
     'date'        => $event->getStart()->format('Y-m-d'),
     'start'       => $event->getStart()->format('H:i'),
@@ -28,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
         $events->hydrate($event, $data);
         $events->update($event);
-        header('Location: ../views/viewCalendar?success=1');
+        header('Location: ../view/frontend/viewCalendar?success=1');
         exit();
     }
 }

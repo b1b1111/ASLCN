@@ -1,5 +1,9 @@
 <?php
-require '../controller/edit.php';
+$title = 'ASLCN';
+require('header.php'); 
+require('html.php');
+require('template.php');
+require('controller/edit.php');
 
 render('header', ['title' => $event->getName()]);
 ?>

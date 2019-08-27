@@ -1,6 +1,10 @@
 <?php
-require '../controller/add.php';
+$title = 'ASLCN';
+require('header.php'); 
+require('html.php');
+require('template.php');
 render('header', ['title' => 'Ajouter un évènement']);
+require('controller/add.php');
 ?>
 
 <div class="container">

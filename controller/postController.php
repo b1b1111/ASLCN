@@ -19,7 +19,17 @@ class postController {
 
     //Affiche le calendrier.
     public function printCalendar() {
-        require('view/frontend/calendrier.php');
+        require('view/frontend/viewCalendar.php');
+    }
+
+    //Affiche le calendrier.
+    public function addEvent() {
+        require('view/frontend/addEvent.php');
+    }
+
+    //Affiche le calendrier.
+    public function editEvent() {
+        require('view/frontend/editEvent.php');
     }
 
     // Afficher un evenement.

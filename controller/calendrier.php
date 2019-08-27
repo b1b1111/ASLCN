@@ -1,5 +1,5 @@
 <?php
-require '../src/bootstrap.php';
+require 'src/bootstrap.php';
 
 $pdo = get_pdo();
 $events = new Calendar\Events($pdo);
