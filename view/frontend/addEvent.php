@@ -3,7 +3,6 @@ $title = 'ASLCN';
 require('header.php'); 
 require('html.php');
 require('template.php');
-render('header', ['title' => 'Ajouter un évènement']);
 require('controller/add.php');
 ?>
 
@@ -23,4 +22,3 @@ require('controller/add.php');
     </div>
   </form>
 </div>
-<?php render('footer'); ?>

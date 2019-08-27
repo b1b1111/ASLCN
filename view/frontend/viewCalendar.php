@@ -3,7 +3,7 @@ $title = 'ASLCN';
 require('header.php'); 
 require('html.php');
 require('template.php');
-require('controller/calendrier.php');
+require_once('controller/calendrier.php');
 ?>
 
 <div class="calendar">
@@ -41,7 +41,7 @@ require('controller/calendrier.php');
                 <a class="calendar__day"><?= $date->format('d'); ?></a>
                   <?php foreach($eventsForDay as $event): ?>
                     <div class="calendar__event">
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>viewCalendar/editEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
+                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/editEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                     </div>
                   <?php endforeach; ?>
               </td>
@@ -50,6 +50,6 @@ require('controller/calendrier.php');
       <?php endfor; ?>
   </table>
 
-  <a href="<?= $_POST['URL_PATH'] ?>viewCalendar/addEvent" class="calendar__button">+</a>
+  <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
 
 </div>

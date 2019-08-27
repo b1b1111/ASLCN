@@ -71,6 +71,7 @@ class Events {
             $data['date'] . ' ' . $data['start'])->format('Y-m-d H:i:s'));
         $event->setEnd(\DateTime::createFromFormat('Y-m-d H:i',
             $data['date'] . ' ' . $data['end'])->format('Y-m-d H:i:s'));
+        $event->setTeamName($data['teamName']);
         return $event;
     }
 
@@ -102,8 +103,8 @@ class Events {
             $event->getDescription(),
             $event->getStart()->format('Y-m-d H:i:s'),
             $event->getEnd()->format('Y-m-d H:i:s'),
+            $event->getTeamName(),
             $event->getId(),
-            $event->getTeamName()
         ]);
     }
 

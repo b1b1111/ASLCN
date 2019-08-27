@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($errors)) {
         $events->hydrate($event, $data);
         $events->update($event);
-        header('Location: ../view/frontend/viewCalendar?success=1');
+        header('Location: '. $_POST['URL_PATH'] . 'calendrier?success=1');
         exit();
     }
 }

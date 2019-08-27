@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $events = new \Calendar\Events(get_pdo());
         $event = $events->hydrate(new \Calendar\Event(), $data);
         $events->create($event);
-        header('Location: ../view/frontend/viewCalendar?success=1');
+        header('Location: '. $_POST['URL_PATH'] . 'calendrier?success=1');
         exit();
     }
 }

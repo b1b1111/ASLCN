@@ -5,7 +5,6 @@ require('html.php');
 require('template.php');
 ?>
 
-
 <section id="section_one">
 
     <div id="presentation">

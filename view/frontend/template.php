@@ -1,7 +1,7 @@
 <header>
 
     <nav>
-        <a ref="http://localhost/aslcn/index">Accueil</a>
+        <a href="http://localhost/aslcn/index">Accueil</a>
         <a id="linkNav1" href="http://localhost/aslcn/calendrier/">Calendrier</a>
         <a id="linkNav2" href="http://localhost/aslcn/contact">Contact</a>
         <a id="linkNav3" href="#">Classement</a>

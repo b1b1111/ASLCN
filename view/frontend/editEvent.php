@@ -4,8 +4,6 @@ require('header.php');
 require('html.php');
 require('template.php');
 require('controller/edit.php');
-
-render('header', ['title' => $event->getName()]);
 ?>
 
 <div class="container">
@@ -22,5 +20,3 @@ render('header', ['title' => $event->getName()]);
     </div>
   </form>
 </div>
-
-<?php render('footer'); ?>

@@ -1,6 +1,18 @@
 <div class="row">
     <div class="col-sm-6">
         <div class="form-group">
+            <label for="teamName">Equipe</label>
+            <input id="teamName" type="text" required class="form-control" name="teamName" value="<?= isset($data['teamName']) ? h($data['teamName']) : ''; ?>">
+            <?php if (isset($errors['teamName'])): ?>
+                <small class="form-text text-muted"><?= $errors['teanName']; ?></small>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
             <label for="name">Titre</label>
             <input id="name" type="text" required class="form-control" name="name" value="<?= isset($data['name']) ? h($data['name']) : ''; ?>">
             <?php if (isset($errors['name'])): ?>
