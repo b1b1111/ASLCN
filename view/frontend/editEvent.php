@@ -6,9 +6,11 @@ require('template.php');
 require('controller/edit.php');
 ?>
 
+<a class="back_link" href="<?= $_POST['URL_PATH'] ?>calendrier">Retour au calendrier</a>
+
 <div class="container">
 
-  <h1>Editer l'évènement
+  <h1>Modifier l'évènement
     <small><?= h($event->getName()); ?></small>
   </h1>
 

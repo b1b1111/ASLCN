@@ -6,6 +6,8 @@ require('template.php');
 require('controller/add.php');
 ?>
 
+<a class="back_link" href="<?= $_POST['URL_PATH'] ?>calendrier"> Retour au calendrier</a>
+
 <div class="container">
 
     <?php if (!empty($errors)): ?>

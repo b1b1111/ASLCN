@@ -13,7 +13,8 @@
 }
 
 body { 
-    background: #1e2a36;
+
+    background: #1e2a36 !important;
     background-size: 100%;
     position: relative;
 }
@@ -36,7 +37,7 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: rgb(247, 126, 14);
 }
 label {
@@ -103,6 +104,7 @@ label {
 
 /*---------------------------------------------MENU---------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
+
 nav {
 	margin: 27px auto 0;
 	position: relative;
@@ -120,9 +122,9 @@ nav a {
 	position: relative;
     z-index: 1;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: none !important;
 	text-align: center;
-	color: white;
+	color: white !important;
 	cursor: pointer;
 }
 
@@ -157,6 +159,7 @@ nav .start-home, a:nth-child(1):hover~.animation {
 	left: 0;
     background-color: #1abc9c;
 }
+
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 110px;
 	left: 110px;
@@ -339,6 +342,27 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 
 /*--------------------------------------------CALENDRIER-----------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
+.top_calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 98%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+  }
+
+.top_calendar h1 {
+    margin-left: 15px;
+}
+
+.alert-success {
+    text-align: center;
+    color: white;
+}
+
 .calendar_title {
     font-size: 2.5em;
     margin-top: -10px;
@@ -439,6 +463,21 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 
 }
 
+.container h1 {
+    color: rgb(247, 126, 14);
+}
+
+.back_link {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.back_link:hover {
+    color: #1abc9c;
+}
 /*---------------------------------------------COMMENTAIRES-------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 #comment {

@@ -8,20 +8,19 @@ require_once('controller/calendrier.php');
 
 <div class="calendar">
 
-  <div class="d-flex flex-row align-items-center justify-content-between mx-sm-3">
+  <div class="top_calendar">
     <h1><?= $month->toString(); ?></h1>
+      <div>
+        <?php if (isset($_GET['success'])): ?>
+          <div class="container">
+            <div class="alert-success">
+              L'évènement a bien été enregistré
+            </div>
+          </div> 
+        <?php endif; ?>
 
-    <?php if (isset($_GET['success'])): ?>
-      <div class="container">
-        <div class="alert alert-success">
-          L'évènement a bien été enregistré
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <div>
-      <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-select-calendar">&lt;</a>
-      <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-select-calendar">&gt;</a>
+        <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-select-calendar">&lt;</a>
+        <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-select-calendar">&gt;</a>
     </div>
   </div>
 
