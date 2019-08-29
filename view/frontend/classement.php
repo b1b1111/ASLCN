@@ -17,3 +17,20 @@ require('template.php');
 
 ?>
 
+<body>  
+      <form>  
+         <select name="team"  onchange="ClassementTeam(this.value)">  
+            <option value="">Selectionner une équipe :</option>  
+            <option value="1">4 gars 1 fille</option>  
+            <option value="2">En avant les glands</option>  
+            <option value="3">Skipailh BZH</option>  
+            <option value="4">Capillo</option> 
+            <option value="5">The Wall</option>
+            <option value="4">4'Ever</option>
+            <option value="4">Les kékéhuetes</option>
+            <option value="4">???</option> 
+         </select>  
+      </form>  
+      <br>  
+      <div id="txt">Les informations sur l'équipe seront listées ici ...</div>  
+   </body>  

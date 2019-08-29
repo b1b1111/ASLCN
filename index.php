@@ -49,6 +49,11 @@ else if($url[0] == 'galerie') {
     $postController->portfolio();
 } 
 
+/*--------------------------------------CLASSEMENT----------------------------------------*/
+
+else if($url[0] == 'classement') {
+    $postController->classement();
+}
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
 /**
  * Connexion espace membre

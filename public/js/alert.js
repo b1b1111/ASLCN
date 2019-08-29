@@ -71,23 +71,3 @@ function SendMail() {
     var msg="Votre email est envoyé";
     alert(msg);
 }
-
-function change_color(n)
-{
-	// Modification des Class :
-	var i;
-	for (i=1; i<5; i++){
-		if(i==n){ // on ajoute la class offre_current
-			document.getElementById('color_' + i).className = "navcolor color_current";
-		} else {
-			document.getElementById('color_' + i).className = "navcolor";
-		}
-	}
-	return false;
-}
-
-const elt = document.getElementById('linkNav1');
-
-elt.addEventListener('click', function() {
-    elt.innerHTML = "background-color: #ff4309";
-});

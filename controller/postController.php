@@ -389,6 +389,11 @@ class postController {
         $posts = $this->postManager->getPosts();
         require 'view/frontend/404.php';
     }
+
+    public function classement() {
+        $req = $this->postManager->getTeam();
+        
+    }
     
 
 }

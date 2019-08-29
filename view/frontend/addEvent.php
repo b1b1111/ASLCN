@@ -20,7 +20,7 @@ require('controller/add.php');
   <form action="" method="post" class="form">
       <?php render('calendar/form', ['data' => $data, 'errors' => $errors]); ?>
     <div class="form-group">
-      <button class="btn btn-primary">Ajouter l'évènement</button>
+      <button class="btn btn-event">Ajouter l'évènement</button>
     </div>
   </form>
 </div>

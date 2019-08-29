@@ -11,10 +11,10 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-fille">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Anthony</h2>
+      <div class="project__description">Antho</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Antho</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -32,10 +32,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Romain</h2>
+      <div class="project__description">Roro</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Roro</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -53,10 +53,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Loriane</h2>
+      <div class="project__description">Lolo</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Lolo</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -74,10 +74,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Maxime</h2>
+      <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Max</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -183,8 +183,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Pierrot</h2>
+      <div class="project__description">Pierrot</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -229,12 +229,12 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Francois Loarrer</h2>
+      <div class="project__description">Fanch</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Fanch Prez</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
+          Monsieur le président directeur général et créateur de l'association ludique et sportive des copains nantais.
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
           voluptates!
         </p>
@@ -250,10 +250,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Eric</h2>
+      <div class="project__description">Rico</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Rico</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -271,10 +271,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Fransisco</h2>
+      <div class="project__description">Sisco</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Sisco</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -380,10 +380,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Samuel </h2>
+      <div class="project__description">Sam</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Sam</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -401,10 +401,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Maxime</h2>
+      <div class="project__description">Boubourse</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Boubourse</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -422,8 +422,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Antoine</h2>
+      <div class="project__description">Toinou</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -447,10 +447,10 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-wall">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Bruno</h2>
+      <div class="project__description">Brune</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Brune</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -468,10 +468,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Kristen</h2>
+      <div class="project__description">Kristen</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Kristen</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -489,10 +489,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Kevin</h2>
+      <div class="project__description">Kev</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Kev</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -510,10 +510,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Arnaud</h2>
+      <div class="project__description">Arnaud</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Arnaud</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -556,10 +556,10 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-ever">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Samuel Larcher</h2>
+      <div class="project__description">Sam</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Sam</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -577,10 +577,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Romain</h2>
+      <div class="project__description">Romain</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Romain</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -598,10 +598,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Julien</h2>
+      <div class="project__description">Ju</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Ju</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -619,10 +619,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Manu</h2>
+      <div class="project__description">Manu</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Manu</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -770,15 +770,15 @@ require('template.php');
     </div>
   </div>
 
-  <h1>???</h1>
+  <h1>Les kékéhuetes</h1>
   <div class="portfolio" id="js-portfolio-flex">
     
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Justine Plos</h2>
+      <div class="project__description">Juju</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Juju</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -796,10 +796,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Joachim Pestel</h2>
+      <div class="project__description">Joachim</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Joachim</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -817,10 +817,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Martine Stéphan</h2>
+      <div class="project__description">Martine</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Martine</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -838,10 +838,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Maxime Coache</h2>
+      <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Max</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -859,10 +859,10 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Sarah Hû</h2>
+      <div class="project__description">Sarah</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Sarah</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam

@@ -6,7 +6,7 @@
             <a href="http://localhost/aslcn/index">Accueil</a>
             <a id="linkNav1" href="http://localhost/aslcn/calendrier/">Calendrier</a>
             <a id="linkNav2" href="http://localhost/aslcn/contact">Contact</a>
-            <a id="linkNav3" href="#">Classement</a>
+            <a id="linkNav3" href="classement">Classement</a>
             <a id="linkNav4" href="http://localhost/aslcn/galerie">Equipes</a>
             <a id="linkNav5" href="http://localhost/aslcn/profil">Connexion</a>
         
@@ -20,6 +20,11 @@
             <h2>Association Sportive et Ludique des Copains Nantais</h2>
             
         </div>
+
+        <script>
+            $("a[href="" + url + """).addClass("active");
+        </script>
+
 </header>
 
         <script src="https://cdn.tiny.cloud/1/376mz5siri1y6bnkll7l26kltznbqkwp9mi2aorxqpadvuxj/tinymce/5/tinymce.min.js"></script>
@@ -33,6 +38,7 @@
         <script src="/public/js/verif.js"></script>
         <script src="/public/js/polyfill.js" ></script>
         <script src="/public/js/app.js"></script>
+        <script src="/public/js/classement.js"></script>
 
         <footer id="footer"></footer>
         

@@ -45,7 +45,7 @@ label {
 }
 
 .signature {
-    color: #E57373;;
+    color: #E57373;
     text-align: right;
 }
 
@@ -68,6 +68,8 @@ label {
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
     color: rgb(204, 191, 191);
     text-transform: uppercase;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
 }
 
 .header_content h1 a {
@@ -414,6 +416,7 @@ table, th, td {
     border: 1px solid gray;
 }
 
+/*------------------------------BUTTON CALENDAR----------------------------------*/
 .calendar__button {
     display: block;
     width: 52px !important;
@@ -454,6 +457,12 @@ table, th, td {
     text-decoration: none;
     color: #FFF;
     transform: scale(1.2);
+}
+
+.btn-event {
+    color: #fff;
+    background-color: #E57373;
+    border-color: #E57373;
 }
 
 /*--------------------------------------------ADD-----------------------------------*/
