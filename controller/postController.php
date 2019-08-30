@@ -391,9 +391,11 @@ class postController {
     }
 
     public function classement() {
-        $req = $this->postManager->getTeam();
-        
+        require 'view/frontend/classement.php';
     }
-    
 
+    public function getClassement($id) {
+        $team = $this->postManager->getTeam($id);
+        var_dump($team);
+    } 
 }

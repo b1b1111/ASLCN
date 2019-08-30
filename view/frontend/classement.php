@@ -19,7 +19,7 @@ require('template.php');
 
 <body>  
       <form>  
-         <select name="team"  onchange="ClassementTeam(this.value)">  
+         <select name="team" onchange="ShowRank(this.value)">  
             <option value="">Selectionner une équipe :</option>  
             <option value="1">4 gars 1 fille</option>  
             <option value="2">En avant les glands</option>  

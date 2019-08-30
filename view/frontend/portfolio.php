@@ -882,7 +882,6 @@ require('template.php');
 
  
 </div>
-<script src="public/js/polyfill.js" ></script>
-<script src="public/js/app.js"></script>
+
 
 

@@ -14,10 +14,16 @@ function ShowRank(res){
         }  
         xmlhttp.onreadystatechange = function() {  
             if(this.readyState == 4 && this.status == 200) {  
-                document.getElementById("txt").innerHTML = this.responseText;  
+                document.getElementById("txt")=
+                var table = document.createElement("table");
+                var tbody = document.createElement("tbody");
+                var row = document.createElement("row");
+                var col = document.createElement("column");
+                var col1 = document.createElement("column1");
+                var col2 = document.createElement("column2");
             }  
         };  
-       xmlhttp.open("GET","classement?r=" + res,true);  
+       xmlhttp.open("GET","/aslcn/classement/" + res,true);  
        xmlhttp.send();  
     }  
 }  

@@ -245,13 +245,13 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
-    public function getTeam() {
-        $r = intval($_GET['r']); 
+    public function getTeam($id) {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM team WHERE id = ?"); 
-        $req->execute(array($r));  
+        $req->execute(array($id));  
         $req = $req->fetchAll(); 
-        echo "<table>  
+        return $req;
+       /* echo "<table>  
             <tr>  
             <th>Nom</th>  
             <th>Classement</th>  
@@ -262,7 +262,7 @@ class postManager extends manager {
             echo "<td>" . $team['rank'] . "</td>";  
             echo "</tr>";  
         }  
-        echo "</table>";
+        echo "</table>";*/
     }
 }
 

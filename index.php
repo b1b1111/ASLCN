@@ -52,7 +52,12 @@ else if($url[0] == 'galerie') {
 /*--------------------------------------CLASSEMENT----------------------------------------*/
 
 else if($url[0] == 'classement') {
-    $postController->classement();
+    if(!empty($url[1])) {
+        $postController->getClassement($url[1]);
+    }
+    else {
+        $postController->classement();
+    }
 }
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
 /**

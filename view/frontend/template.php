@@ -21,24 +21,23 @@
             
         </div>
 
-        <script>
-            $("a[href="" + url + """).addClass("active");
-        </script>
-
 </header>
 
         <script src="https://cdn.tiny.cloud/1/376mz5siri1y6bnkll7l26kltznbqkwp9mi2aorxqpadvuxj/tinymce/5/tinymce.min.js"></script>
-        
         
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-        <script src="/public/js/alert.js"></script>
-        <script src="/public/js/verif.js"></script>
-        <script src="/public/js/polyfill.js" ></script>
-        <script src="/public/js/app.js"></script>
-        <script src="/public/js/classement.js"></script>
+        <script src="/aslcn/public/js/alert"></script>
+        <script src="/aslcn/public/js/verif.js"></script>
+        <script src="/aslcn/public/js/polyfill.js" ></script>
+        <script src="/aslcn/public/js/app.js"></script>
+        <script src="/aslcn/public/js/classement.js"></script>
+
+        <script>
+            $("a[href=\"" + location.url + "\"]").addClass("active");
+        </script>
 
         <footer id="footer"></footer>
         
