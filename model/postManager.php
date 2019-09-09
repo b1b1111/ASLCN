@@ -251,18 +251,6 @@ class postManager extends manager {
         $req->execute(array($id));  
         $req = $req->fetchAll(); 
         return $req;
-       /* echo "<table>  
-            <tr>  
-            <th>Nom</th>  
-            <th>Classement</th>  
-            </tr>";  
-        foreach($req as $team) {  
-            echo "<tr>";  
-            echo "<td>" . $team['teamName'] . "</td>";  
-            echo "<td>" . $team['rank'] . "</td>";  
-            echo "</tr>";  
-        }  
-        echo "</table>";*/
     }
 }
 

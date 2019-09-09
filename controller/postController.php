@@ -395,7 +395,19 @@ class postController {
     }
 
     public function getClassement($id) {
-        $team = $this->postManager->getTeam($id);
-        var_dump($team);
+        $req = $this->postManager->getTeam($id);
+       
+        echo "<div id='table_classement'>
+            <ul>  
+            
+            </ul>";
+        foreach($req as $team) {  
+            echo "<ul>";  
+            echo "<li>" . "Nom : " . $team['teamName'] . "</li>"; 
+            echo "<li>" . "Points : " . $team['teamPoint'] . "</li>";  
+            echo "<li>" . "Classement : " . $team['rank'] . "</li>";  
+            echo "</ul>";  
+        }  
+        echo "</div>";
     } 
 }
