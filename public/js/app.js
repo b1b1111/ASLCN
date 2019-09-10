@@ -124,29 +124,16 @@ class PortfolioFlex extends Portfolio {
 
 }
 
-if($("#js-portefolio-fille").length) {
-  new PortfolioFlex('#js-portfolio-fille')
-}
-if($("#js-portfolio-flex").length) {
-  new PortfolioFlex('#js-portfolio-flex')
-}
-if($("#js-portefolio-gland").length) {
-  new PortfolioFlex('#js-portfolio-gland')
-}
-if($("#js-portefolio-ema").length) {
-  new PortfolioFlex('#js-portfolio-ema')
-}
-if($("#js-portefolio-ever").length) { 
-  new PortfolioFlex('#js-portfolio-ever')
-} 
-if($("#js-portefolio-capillo").length) {
-  new PortfolioFlex('#js-portfolio-capillo')
-}
-if($("#js-portefolio-skip").length) {
-  new PortfolioFlex('#js-portfolio-skip')
-}
-if($("#js-portefolio-wall").length) {
-  new PortfolioFlex('#js-portfolio-wall')
-}
+new PortfolioFlex('#js-portfolio-fille')
+new PortfolioFlex('#js-portfolio-flex')
+new PortfolioFlex('#js-portfolio-gland')
+new PortfolioFlex('#js-portfolio-ema')
+new PortfolioFlex('#js-portfolio-ever')
+new PortfolioFlex('#js-portfolio-capillo')
+new PortfolioFlex('#js-portfolio-skip')
+new PortfolioFlex('#js-portfolio-wall')
+
+
+
 
 

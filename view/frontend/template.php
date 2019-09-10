@@ -1,7 +1,6 @@
 <header>
 
     <div class="navbar_header">
-        
         <nav>
             <a href="http://localhost/aslcn/index">Accueil</a>
             <a id="linkNav1" href="http://localhost/aslcn/calendrier/">Calendrier</a>
@@ -13,15 +12,11 @@
             <div class="animation start-home"></div>
         </nav>
     </div>
-
         <div class="header_content">
-
             <h1><a href="http://localhost/aslcn/index">ASLCN</a></h1>
             <h2>Association Sportive et Ludique des Copains Nantais</h2>
-            
         </div>
-
-      
+   
 </header>
 
         <script src="https://cdn.tiny.cloud/1/376mz5siri1y6bnkll7l26kltznbqkwp9mi2aorxqpadvuxj/tinymce/5/tinymce.min.js"></script>
@@ -31,15 +26,9 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
         <script src="/aslcn/public/js/alert.js"></script>
-        <script src="/aslcn/public/js/verif.js"></script>
-        <script src="/aslcn/public/js/polyfill.js" ></script>
-        <script src="/aslcn/public/js/app.js"></script>
+        <script src="/aslcn/public/js/verif.js"></script> 
         <script src="/aslcn/public/js/classement.js"></script>
 
-        <script>
-            $("a[href=\"" + location.url + "\"]").addClass("active");
-        </script>
-        
         <footer id="footer"></footer>
         
     </body>

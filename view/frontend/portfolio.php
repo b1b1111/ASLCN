@@ -5,7 +5,6 @@ require('html.php');
 require('template.php'); 
 ?>
 
-
 <div class="container">
   <h1>4 gars 1 fille</h1>
   <div class="portfolio-flex" id="js-portfolio-fille">
@@ -881,8 +880,8 @@ require('template.php');
   </div>
 
 </div>
-<script src="/aslcn/public/js/polyfill.js" ></script>
-<script src="/aslcn/public/js/app.js"></script>
 
+<script src="/aslcn/public/js/polyfill.js"></script>
+<script src="/aslcn/public/js/app.js"></script>
 
 
