@@ -880,8 +880,9 @@ require('template.php');
     </div>
   </div>
 
- 
 </div>
+<script src="/aslcn/public/js/polyfill.js" ></script>
+<script src="/aslcn/public/js/app.js"></script>
 
 
 

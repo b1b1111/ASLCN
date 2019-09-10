@@ -56,7 +56,7 @@ else if($url[0] == 'classement') {
         $postController->getClassement($url[1]);
     }
     else {
-        $postController->classement();
+        $postController->classement($url[0]);
     }
 }
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
@@ -151,15 +151,6 @@ else if($url[0] == 'administration') {
     else if (($url[1] == 'deletePost')&&(is_numeric($url[2]))) {
         $adminController->deletePostAdmin($url[2]);
     }
-
-    /*else if ($url[1] == 'create') {
-        $name = $_POST['name'];
-        $description = $_POST['description'];
-        $start = $_POST['start'];
-        $end = $_POST['end'];
-        $adminController->postAdmin($name, $description, $start, $end);
-        
-    } */
 
 } 
 

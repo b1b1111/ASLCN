@@ -22,12 +22,12 @@ class postController {
         require('view/frontend/viewCalendar.php');
     }
 
-    //Affiche le calendrier.
+    //Affiche la creation d'un event.
     public function addEvent() {
         require('view/frontend/addEvent.php');
     }
 
-    //Affiche le calendrier.
+    //Affiche la modification d'un event.
     public function editEvent() {
         require('view/frontend/editEvent.php');
     }
@@ -381,7 +381,6 @@ class postController {
      * Galerie equipe.
      */
     public function portfolio() {
-        $posts = $this->postManager->getPosts();
         require 'view/frontend/portfolio.php';
     }
 
@@ -390,23 +389,55 @@ class postController {
         require 'view/frontend/404.php';
     }
 
-    public function classement() {
+    public function classement($id) {
+        $req = $this->postManager->getTeam($id);
+
+        foreach($req as $team) {
+            echo "<div id='table_classement' align='center'>
+                <table> 
+            
+                </table>";
+              
+                echo "<table>";  
+                echo "<tr>";
+                echo "<th>" . "<mark>Nom</mark> ". "</th>"; 
+                echo "<th>" . "<mark>Points</mark> " . "</th>";  
+                echo "<th>" . "<mark>Classement</mark> " . "</th>";  
+                echo "</tr>";
+                echo "<tr>";
+                echo "<td>" . $team['teamName'] . "</td>"; 
+                echo "<td>" . $team['teamPoint'] . "</td>";  
+                echo "<td>" . $team['rank'] . "</td>"; 
+                echo "</tr>";
+                
+                echo "</table>";  
+            }  
+            echo "</div>";
         require 'view/frontend/classement.php';
     }
 
     public function getClassement($id) {
         $req = $this->postManager->getTeam($id);
-       
-        echo "<div id='table_classement'>
-            <ul>  
+        
+        foreach($req as $team) {
+        echo "<div id='table_classement' align='center'>
+            <table> 
+        
+            </table>";
+          
+            echo "<table>";  
+            echo "<tr>";
+            echo "<th>" . "<mark>Nom</mark> ". "</th>"; 
+            echo "<th>" . "<mark>Points</mark> " . "</th>";  
+            echo "<th>" . "<mark>Classement</mark> " . "</th>";  
+            echo "</tr>";
+            echo "<tr>";
+            echo "<td>" . $team['teamName'] . "</td>"; 
+            echo "<td>" . $team['teamPoint'] . "</td>";  
+            echo "<td>" . $team['rank'] . "</td>"; 
+            echo "</tr>";
             
-            </ul>";
-        foreach($req as $team) {  
-            echo "<ul>";  
-            echo "<li>" . "Nom : " . $team['teamName'] . "</li>"; 
-            echo "<li>" . "Points : " . $team['teamPoint'] . "</li>";  
-            echo "<li>" . "Classement : " . $team['rank'] . "</li>";  
-            echo "</ul>";  
+            echo "</table>";  
         }  
         echo "</div>";
     } 

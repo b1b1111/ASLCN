@@ -7,6 +7,7 @@
 /*Gold : rgb(247, 126, 14);
 /*White :  rgb(233, 231, 231);*/
 /*Grey : rgba(175, 173, 173, 0.863);*/
+/*blue color body font : #1e2a36; */
 
 * {
     font-family:'Open Sans', Verdana, Tahoma, sans-serif;
@@ -497,15 +498,40 @@ table, th, td {
 #table_classement {
     color: white;
     font-size: 1.7em;
-    border: 1px solid white;
     margin: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-#table_classement li {
-    list-style-type: none;
+#table_classement th {
+    border: 2px solid white;
+    padding: 20px;
 }
 
+mark {
+    background: rgb(212, 38, 81);
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.table-responsive th, td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #ccc;
+}
+
+.table-responsive th {
+    background-color: rgb(212, 38, 81);
+    color: #FFF;
+}
+
+.table-responsive tr:nth-child(odd) {
+    background-color: #eee;
+}
 
 
 
@@ -757,7 +783,7 @@ textarea {
   }
 
 
-/*---------------------------------------------Connexion---------------------------------------------------*/
+/*---------------------------------------------CONNEXION---------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 
 #profil,
@@ -895,6 +921,61 @@ footer {
         border: 6px solid rgb(20, 19, 19);
         margin: 110px 15px 0 0;
     }
+}
+
+/*-----------------------------------------------MAX WIDTH 700 PX-------------------------------------------*/
+@media only screen and (max-width: 700px) {
+
+    .table-responsive table, 
+    .table-responsive tbody, 
+    .table-responsive tr, 
+    .table-responsive th, 
+    .table-responsive td {
+        display: block;
+    }
+
+    .table-responsive thead {
+        display: none;
+    }
+
+    .table-responsive td {
+        padding-left: 150px;
+        position: relative;
+        margin-top: -1px;
+        background: #FFF;
+    }
+
+    .table-responsive td:nth-child(odd) {
+        background-color: #eee;
+    }
+
+    .table-responsive td::before {
+        padding: 10px;
+        content: attr(data-label);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        bottom: 0;
+        background-color: rgb(212, 38, 81);
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .table-responsive tr {
+        margin-bottom: 1rem;
+    }
+
+    .table-responsive th + td {
+        padding-left: 10px;
+    }
+
+    .table-responsive th + td::before {
+        display: none;
+    }
+
 }
 
 /*------------------MAX-WIDTH 480PX-------------------------*/

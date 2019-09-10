@@ -1,4 +1,14 @@
 function ShowRank(res){  
+    var selectList = [],
+    selectBox = document.getElementById('txt'),
+    i;
+
+    for (i = 0; i < selectBox.length; i++) {
+        if (selectBox[i].selected) {
+            selectList.push(selectBox[i]);
+        }
+    }
+
     if(res == "") {  
        document.getElementById("txt").innerHTML  =  "";  
        return;  
@@ -19,5 +29,7 @@ function ShowRank(res){
         };  
        xmlhttp.open("GET","/aslcn/classement/" + res,true);  
        xmlhttp.send();  
-    }  
-}  
+    } 
+} 
+
+

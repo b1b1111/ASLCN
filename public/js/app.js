@@ -121,6 +121,7 @@ class PortfolioFlex extends Portfolio {
     }
     this.children[i - 1].after(content)
   }
+
 }
 
 if($("#js-portefolio-fille").length) {
