@@ -3,7 +3,7 @@ $title = 'ASLCN';
 require('header.php');
 require('html.php');
 require('template.php');
-require_once('model/postManager.php');
+$tab = view_classement(); 
 ?>
 
       <form id="form_classement">
@@ -22,6 +22,8 @@ require_once('model/postManager.php');
 
       <br>  
       <div id="txt"></div>
+
+     
       
       <table class="table-responsive">
       
@@ -34,7 +36,8 @@ require_once('model/postManager.php');
         </thead>
         <tbody>
             <tr>
-                <td>4 gars 1 fille</td>
+                <td><?php echo $post['teamName']; ?></td>
+                <?php var_dump($post); ?>
                 <td>0</td>
                 <td>1er</td>
             </tr>
@@ -74,10 +77,9 @@ require_once('model/postManager.php');
                 <td>8ème</td>
             </tr>
         </tbody>
-        
-		<td><? echo $row['teamName']; ?></td>
-		<td><? echo $row['teamPoint']; ?></td>
-      <td><? echo $row['rank']; ?></td>
     
     </table>
+   
+
+    <?php echo $tab; ?>
      

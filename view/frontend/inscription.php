@@ -13,6 +13,9 @@ require('template.php');
         <label for="pseudo"></label>
         <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" value="<?php if(isset($pseudo)) { echo $pseudo; } ?>" />
 
+        <label for="team"></label>
+        <input type="text" placeholder="Votre équipe" id="teamName" name="teamName" value="<?php if(isset($teamName)) { echo $teamName; } ?>" />
+
         <label for="mail"></label>
         <input type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
 

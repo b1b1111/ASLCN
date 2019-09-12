@@ -57,7 +57,7 @@ else if($url[0] == 'galerie') {
 
 else if($url[0] == 'classement') {
     if(!empty($url[1])) {
-        $postController->getClassement($url[1]);
+        $postController->getClassement();
     }
     else {
         $postController->classement($url[0]);

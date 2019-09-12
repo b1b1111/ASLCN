@@ -7,7 +7,11 @@ require_once('controller/calendrier.php');
 ?>
 
 <div class="calendar">
+<?php if($_SESSION['id'] !== 0) { 
+  var_dump($_SESSION) ?>
+  
 Salut <?php echo $_SESSION['pseudo']; ?> de l'équipe <?php echo $_SESSION['teamName']; ?>
+<?php } ?>
   <div class="top_calendar">
     <h1><?= $month->toString(); ?></h1>
       <div>
@@ -41,6 +45,7 @@ Salut <?php echo $_SESSION['pseudo']; ?> de l'équipe <?php echo $_SESSION['team
 
                   <?php foreach($eventsForDay as $event): ?>
                     <div class="calendar__event">
+
                       <?php if($_SESSION['id'] == 0) { ?>
                         <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                       <?php

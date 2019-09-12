@@ -167,8 +167,8 @@ class postManager extends manager {
 
     public function editMembre() {
         $db = $this->newManager->dbConnect();
-        $requser = $db->prepare("SELECT * FROM membres WHERE id = ?");
-        $requser->execute(array($_SESSION['id']));
+        $requser = $db->prepare("SELECT * FROM membres WHERE 1");
+        $requser->execute();
         $user = $requser->fetch();
         return $user;
     }
@@ -266,15 +266,14 @@ class postManager extends manager {
     /*****************************************TEAM************************************************* */
     /********************************************************************************************** */
 
-    public function getTeam($id) {
+    public function getTeam() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM team WHERE id = ?"); 
-        $req->execute(array($id));  
-        $post = $req->fetch(); 
+        $req= $db->prepare("SELECT * FROM team WHERE 1"); 
+        $req->execute();  
+        $post = $req->fetchAll(); 
         return $post;
     }
 
-    // Modification d'un chapitre
     public function updateTeam($id, $teamName, $teamPoint, $teamRank) {
 
         $db = $this->newManager->dbConnect();

@@ -5,7 +5,7 @@
             <a href="http://localhost/aslcn/index">Accueil</a>
             <a id="linkNav1" href= "http://localhost/aslcn/calendrier">Calendrier</a>
             <a id="linkNav2" href="http://localhost/aslcn/contact">Contact</a>
-            <a id="linkNav3" href="classement">Classement</a>
+            <a id="linkNav3" href="http://localhost/aslcn/classement">Classement</a>
             <a id="linkNav4" href="http://localhost/aslcn/galerie">Equipes</a>
             <a id="linkNav5" href="http://localhost/aslcn/profil">Connexion</a>
         

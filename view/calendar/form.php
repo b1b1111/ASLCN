@@ -2,9 +2,9 @@
     <div class="col-sm-6">
         <div class="form-group">
             <label for="teamName">Equipe</label>
-            <input id="teamName" type="text" required class="form-control" name="teamName" value="<?= isset($data['teamName']) ? h($data['teamName']) : ''; ?>">
+            <input id="teamName" type="text" required class="form-control" name="teamName" value="<?php echo $_SESSION['teamName']; ?>"/>
             <?php if (isset($errors['teamName'])): ?>
-                <small class="form-text text-muted"><?= $errors['teanName']; ?></small>
+                <small class="form-text text-muted"><?= $errors['teamName']; ?></small>
             <?php endif; ?>
         </div>
     </div>
