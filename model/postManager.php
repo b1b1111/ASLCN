@@ -93,10 +93,17 @@ class postManager extends manager {
         return $pseudoExist;
     }
 
-    public function getMembre($pseudo, $mail, $mdp) {
+    public function getTeamName($teamName) {
         $db = $this->newManager->dbConnect();
-        $req = $db->prepare("INSERT INTO membres(pseudo, mail, mdp) VALUES(?, ?, ?)");
-        $req->execute(array($pseudo, $mail, $mdp));
+        $req = $db->prepare("SELECT * FROM membres WHERE teamName = ?");
+        $req->execute(array($teamName));
+        return $req;
+    }
+
+    public function getMembre($pseudo, $teamName, $mail, $mdp) {
+        $db = $this->newManager->dbConnect();
+        $req = $db->prepare("INSERT INTO membres(pseudo, teamName, mail, mdp) VALUES(?, ?, ?, ?)");
+        $req->execute(array($pseudo, $teamName, $mail, $mdp));
     }
 
     public function userExist($mailconnect, $mdpconnect) {
@@ -177,6 +184,17 @@ class postManager extends manager {
         $insertpseudo->execute(array($newpseudo, $_SESSION['id']));
     }
 
+     /**
+     * Edition teamName
+     */
+
+    public function editTeam() {
+        $db = $this->newManager->dbConnect();
+        $newteam = htmlspecialchars($_POST['newteam']);
+        $insertteam = $db->prepare("UPDATE membres SET teamName = ? WHERE id = ?");
+        $insertteam->execute(array($newteam, $_SESSION['id']));
+    }
+
     /**
      * Edition du mail.
      */
@@ -245,12 +263,24 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
+    /*****************************************TEAM************************************************* */
+    /********************************************************************************************** */
+
     public function getTeam($id) {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM team WHERE id = ?"); 
         $req->execute(array($id));  
-        $req = $req->fetchAll(); 
-        return $req;
+        $post = $req->fetch(); 
+        return $post;
+    }
+
+    // Modification d'un chapitre
+    public function updateTeam($id, $teamName, $teamPoint, $teamRank) {
+
+        $db = $this->newManager->dbConnect();
+        $request = $db->prepare('UPDATE team SET teamName = ?, teamPoint = ?, teamRank = ? WHERE id = ?');
+        $post = $request->execute(array($id, $teamName, $teamPoint, $teamRank));
+        return $post;    
     }
 }
 

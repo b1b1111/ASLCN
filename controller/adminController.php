@@ -13,24 +13,16 @@ class adminController {
       $this->postManager = new \Model\postManager();  
    }  
 
-
-    // Supprimer un chapitre
-    public function deletePostAdmin($id) {
-        $deletedPost = $this->postManager->deletePost($id);
-        header('Location: '. $_POST['URL_PATH'] . 'administration' . '/' . 'adminChapter');
-    }
-
-    // Approuver un commentaire
-    public function approuveCommentAdmin($id) {
-        
-        $approuve = $this->CommentManager->approuveComment($id);   
-        header('Location: '. $_POST['URL_PATH'] . 'administration' . '/' . 'adminComment');  
-    }
-
-    // Supprimer un commentaire
-    public function deleteCommentAdmin($id) {
-               
-        $supprime = $this->CommentManager->deleteComment($id);
-        header('Location: '. $_POST['URL_PATH'] . 'administration' . '/' . 'adminComment');   
+   // Modifier un chapitre
+   public function editTeamAdmin($id, $teamName, $teamPoint, $rank) {  
+    $edit_team = $this->postManager->updateTeam($id, $teamName, $teamPoint, $rank); 
+    if($edit_team) {
+        $confirm = "Les points sont bien attribués à l'équipe.";  
+    }      
+}
+    // Modifier chapitre
+    public function editTeamPrepare($id) {
+        $post = $this->postManager->getTeam($id);  
+        require 'view/frontend/editPost.php';        
     }
 }

@@ -36,6 +36,10 @@ else if($url[0] == 'calendrier') {
     else if($url[1] == 'editEvent') {
         $postController->editEvent();
     } 
+
+    else if($url[1] == 'viewEvent') {
+        $postController->viewEvent();
+    }
  
 } 
 
@@ -66,7 +70,7 @@ else if($url[0] == 'classement') {
 
 else if($url[0] == 'profil') {
     if(empty($url[1])) {
-    $postController->profil();
+        $postController->profil();
     }
 
     else if($url[1] == 'connexion') {
@@ -106,50 +110,21 @@ else if($url[0] == 'administration') {
         $postController->administration();
     }
 
-    else if($url[1] == 'adminComment') {
-        $postController->adminComment();
+    else if($url[1] == 'adminPoint') {
+        $postController->adminPoint($url[1]);
     }
 
-    else if($url[1] == 'adminChapter') {
-        $postController->adminChapter();
-    }
-
-    /*-----------------Approuve Comment---------------------*/
-    else if (($url[1] == 'confirm')&&(is_numeric($url[2]))) {  
-        $adminController->approuveCommentAdmin($url[2]);
-    }
-
-    else if (($url[1] == 'alert')&&(is_numeric($url[2]))) {
-        // appele function alert comment
-        $commentController->alertComment($url[2]);
-    }
-
-    /*-----------------Delete Comment---------------------*/
-    else if (($url[1] == 'deleteComment')&&(is_numeric($url[2]))) {
-        $adminController->deleteCommentAdmin($url[2]);
-    }
-
-    /*-----------------Approuve chapter---------------------*/
-    else if (($url[1] == 'confirmPoint')&&(is_numeric($url[2]))) {  
-        $commentController->editPoint($url[2]);
-    }
-
-    /*-----------------Modified chapter---------------------*/
-    else if ($url[1] == 'editPost' && is_numeric($url[2]))  {
+    else if ($url[1] == 'editPoint' && is_numeric($url[2]))  {
         if ($url[3] == 'prepare') {
-            $adminController->editPostPrepare($url[2]);
+            $adminController->editTeamPrepare($url[2]);
         }
         else { 
-            $title = $_POST['title'];
-            $content = $_POST['content'];
-            $adminController->editPostAdmin($url[2], $title, $content);
-            header('Location: '. $_POST['URL_PATH'] . 'administration' . '/' . 'adminChapter'); 
+            $teamName = $_POST['teamName'];
+            $teamPoint = $_POST['teamPoint'];
+            $teamRank = $_POST['teamRank'];
+            $adminController->editTeamAdmin($url[2], $teamName, $teamPoint, $teamRank);
+            header('Location: '. $_POST['URL_PATH'] . 'administration'); 
         }
-    }
-
-    /*-----------------Delete chapter---------------------*/
-    else if (($url[1] == 'deletePost')&&(is_numeric($url[2]))) {
-        $adminController->deletePostAdmin($url[2]);
     }
 
 } 

@@ -13,6 +13,8 @@ require('template.php');
     <form method="POST" action="" enctype="multipart/form-data">
         <label>Pseudo :</label>
         <input type="text" name="newpseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" /><br /><br />
+        <label>Nom d'équipe :</label>
+        <input type="text" name="newteam" placeholder="Equipe" value="<?php echo $user['teamName']; ?>" /><br /><br />
         <label>Mail :</label>
         <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" /><br /><br />
         <label>Mot de passe :</label>

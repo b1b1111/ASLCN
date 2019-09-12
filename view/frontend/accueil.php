@@ -4,6 +4,7 @@ require('header.php');
 require('html.php');
 require('template.php');
 ?>
+<link href="<?= $_POST['URL_PATH'] ?>public/css/slideshow.css" type="text/css" rel="stylesheet"/>
 
 <section id="section_one">
 
@@ -13,6 +14,7 @@ require('template.php');
             Bienvenue sur le site de l'ASLCN <br />
             
         <h5 class="signature">ASLCN</h5>
+        
     </div>
 
 </section>
@@ -24,10 +26,21 @@ require('template.php');
     <div id="resum">
         <h1 id="title_resum">L'Association </h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit metus turpis, vel accumsan ligula sagittis non. Nullam nec viverra risus. Sed pretium, nibh ac ultricies sagittis, urna purus rhoncus eros, in mattis tortor velit ac libero. Nulla molestie, ipsum at malesuada auctor, metus arcu hendrerit neque, vel interdum massa lorem vel diam. Nam semper pharetra augue, nec pharetra purus eleifend a. Donec eget lorem nec orci egestas consequat sed eu ipsum. Etiam rhoncus neque ac dolor sodales, sit amet pharetra arcu dictum. In commodo dui at nunc lobortis porttitor. In maximus porttitor iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris venenatis tincidunt consequat. Integer luctus feugiat tristique. Mauris nulla libero, aliquam et diam sit amet, dapibus rutrum nibh. Nunc et odio vestibulum, accumsan diam vitae, pulvinar metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sagittis justo a magna pretium, sed sagittis dui aliquet.<br /><br /><br /><br />
-
-
-            Ut suscipit nisl quam, non bibendum urna semper ut. Integer id ultricies lorem, in fermentum mauris. Nam venenatis mauris sed rhoncus blandit. Etiam facilisis eros venenatis dui varius, ut consectetur ipsum mollis. Nam congue sed metus vel ultricies. Integer eu nisl commodo, ultricies sem a, venenatis arcu. Curabitur facilisis tortor ex, at dignissim elit condimentum sed. Vestibulum fermentum porta nisl, rhoncus congue lectus lobortis id. In hac habitasse platea dictumst. Quisque ac laoreet mi, id ornare lectus.<br /><br /><br /><br />
+        <div class="container" id="container">
+        <div class="caption" id="slider-caption">
+            <div class="caption-heading">
+            <h1>Lorem Ipsum</h1>
+            </div>
+            <div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div><a class="btn" href="#">Sit Amet</a>
+        </div>
+        <div class="left-col" id="left-col">
+            <div id="left-slider"></div>
+        </div>
+        <ul class="nav">
+            <li class="slide-up"> <a href="#"><</a></li>
+            <li class="slide-down"> <a id="down_button" href="#">></a></li>
+        </ul>
+        </div>
 
     </div>
 
@@ -53,3 +66,5 @@ require('template.php');
         </div>
     </div>
 </footer>
+
+<script src="/aslcn/public/js/slideshow.js"></script>

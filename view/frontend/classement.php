@@ -21,7 +21,7 @@ require_once('model/postManager.php');
       </form> 
 
       <br>  
-      <div id="txt">Le classement des équipes</div>
+      <div id="txt"></div>
       
       <table class="table-responsive">
       

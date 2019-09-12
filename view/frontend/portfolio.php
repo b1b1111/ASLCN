@@ -6,11 +6,11 @@ require('template.php');
 ?>
 
 <div class="container">
-  <h1>4 gars 1 fille</h1>
+  <h1> <img src="public/images/4g1f/logo_mini.jpg" alt="logo_mini" class="mini_logo"> 4 gars 1 fille</h1>
   <div class="portfolio-flex" id="js-portfolio-fille">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Anthony</h2>
+      <h2 class="project__name">Anthony Guihéneuf</h2>
       <div class="project__description">Antho</div>
       <div class="project__body js-body">
         <h2>Antho</h2>
@@ -31,7 +31,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Romain</h2>
+      <h2 class="project__name">Ronan Delannée</h2>
       <div class="project__description">Roro</div>
       <div class="project__body js-body">
         <h2>Roro</h2>
@@ -52,7 +52,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Loriane</h2>
+      <h2 class="project__name">Loriane Gautier</h2>
       <div class="project__description">Lolo</div>
       <div class="project__body js-body">
         <h2>Lolo</h2>
@@ -73,7 +73,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Maxime</h2>
+      <h2 class="project__name">Maxime Lopez</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
         <h2>Max</h2>
@@ -94,7 +94,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
+      <h2 class="project__name">Yvan Coutellec</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
@@ -161,7 +161,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
-      <h2 class="project__name">Fabien LeGuennec</h2>
+      <h2 class="project__name">Fabien Le Guennec</h2>
       <div class="project__description">Fab</div>
       <div class="project__body js-body">
         <h2>Co - Président et glandum</h2>
@@ -182,7 +182,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Pierrot</h2>
+      <h2 class="project__name">Pierre Le Cagnec</h2>
       <div class="project__description">Pierrot</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
@@ -203,7 +203,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
+      <h2 class="project__name">Julien Moulin</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
@@ -228,10 +228,10 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Francois Loarrer</h2>
+      <h2 class="project__name">Francois Loarer</h2>
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
-        <h2>Fanch Prez</h2>
+        <h2>President</h2>
         <p>
           Monsieur le président directeur général et créateur de l'association ludique et sportive des copains nantais.
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -249,7 +249,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Eric</h2>
+      <h2 class="project__name">Eric Marchaland</h2>
       <div class="project__description">Rico</div>
       <div class="project__body js-body">
         <h2>Rico</h2>
@@ -270,7 +270,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Fransisco</h2>
+      <h2 class="project__name">Alain Talabardon</h2>
       <div class="project__description">Sisco</div>
       <div class="project__body js-body">
         <h2>Sisco</h2>
@@ -291,7 +291,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
+      <h2 class="project__name">Mélaine Legland</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
@@ -312,8 +312,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Jonathan Attard</h2>
+      <div class="project__description">Ti john</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -337,7 +337,7 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-capillo">
     <div class="project js-item" tabindex="0">
       <img src="public/images/capillo/toon.jpg" alt="" class="project__image">
-      <h2 class="project__name">Anthony Kerebel</h2>
+      <h2 class="project__name">Anthony Kérébel</h2>
       <div class="project__description">Toon</div>
       <div class="project__body js-body">
         <h2>Capitoon des Capillo</h2>
@@ -379,7 +379,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Samuel </h2>
+      <h2 class="project__name">Samuel Souffoy</h2>
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
         <h2>Sam</h2>
@@ -400,7 +400,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Maxime</h2>
+      <h2 class="project__name">Maxime Le Boursicaud</h2>
       <div class="project__description">Boubourse</div>
       <div class="project__body js-body">
         <h2>Boubourse</h2>
@@ -421,7 +421,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Antoine</h2>
+      <h2 class="project__name">Eric Devillon</h2>
       <div class="project__description">Toinou</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
@@ -446,7 +446,7 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-wall">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Bruno</h2>
+      <h2 class="project__name">Bruno Bercegeay</h2>
       <div class="project__description">Brune</div>
       <div class="project__body js-body">
         <h2>Brune</h2>
@@ -467,7 +467,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Kristen</h2>
+      <h2 class="project__name">Kristen Le Nestic</h2>
       <div class="project__description">Kristen</div>
       <div class="project__body js-body">
         <h2>Kristen</h2>
@@ -488,8 +488,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Kevin</h2>
-      <div class="project__description">Kev</div>
+      <h2 class="project__name">Thomas Bonnaudet</h2>
+      <div class="project__description">Toto</div>
       <div class="project__body js-body">
         <h2>Kev</h2>
         <p>
@@ -509,7 +509,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Arnaud</h2>
+      <h2 class="project__name">Arnaud Nael</h2>
       <div class="project__description">Arnaud</div>
       <div class="project__body js-body">
         <h2>Arnaud</h2>
@@ -530,8 +530,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">François Guiban</h2>
+      <div class="project__description">Fanch</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -555,7 +555,7 @@ require('template.php');
   <div class="portfolio-flex" id="js-portfolio-ever">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Samuel Larcher</h2>
+      <h2 class="project__name">Samuel Larchet</h2>
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
         <h2>Sam</h2>
@@ -576,7 +576,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Romain</h2>
+      <h2 class="project__name">Romain Plissoneau</h2>
       <div class="project__description">Romain</div>
       <div class="project__body js-body">
         <h2>Romain</h2>
@@ -597,7 +597,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Julien</h2>
+      <h2 class="project__name">Julien Delanoë</h2>
       <div class="project__description">Ju</div>
       <div class="project__body js-body">
         <h2>Ju</h2>
@@ -618,7 +618,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Manu</h2>
+      <h2 class="project__name">Manu </h2>
       <div class="project__description">Manu</div>
       <div class="project__body js-body">
         <h2>Manu</h2>
@@ -639,8 +639,29 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Florian Pons</h2>
+      <div class="project__description">Flo</div>
+      <div class="project__body js-body">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
+          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
+          voluptates!
+        </p>
+        <p>
+          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
+          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
+          repellendus.
+        </p>
+        <p>
+          <a href="#">En savoir plus</a>
+        </p>
+      </div>
+    </div>
+    <div class="project js-item" tabindex="0">
+      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <h2 class="project__name">Jocelyn Athimon</h2>
+      <div class="project__description">Jocelyn</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -660,12 +681,12 @@ require('template.php');
     </div>
   </div>
 
-  <h1>EMA</h1>
+  <h1>Team 8</h1>
   <div class="portfolio-flex" id="js-portfolio-ema">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Anne-Laure Demullenheim</h2>
+      <div class="project__description">Anne</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -685,8 +706,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Stephane Page</h2>
+      <div class="project__description">Steph</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -706,8 +727,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Antoine Ghaleb</h2>
+      <div class="project__description">Toinou</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -727,8 +748,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">Phillipe Talaud</h2>
+      <div class="project__description">Fifou</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
@@ -748,8 +769,8 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">Lorem ipsum</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <h2 class="project__name">François ???</h2>
+      <div class="project__description">François</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>

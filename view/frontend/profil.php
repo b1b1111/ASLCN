@@ -5,7 +5,6 @@ require('html.php');
 require('template.php'); 
 ?>
 
-
 <?php 
 if($_SESSION['id'] == 0) {
 ?>
@@ -22,8 +21,6 @@ if($_SESSION['id'] == 0) {
         <p class="paragraphe">Pour vous connecter - <a href="<?= $_POST['URL_PATH'] ?>profil/connexion">Connexion</a><br />
         Vous avez oubliez votre mot de passe ? Merci de suivre ce lien - <a href="<?= $_POST['URL_PATH'] ?>profil/recuperation">Recupération du mot de passe</a>
         </p>
-
-        
     </div>   
 <?php
 }
@@ -33,15 +30,27 @@ else {
         <h2>Profil de <?php echo $_SESSION['pseudo']; ?></h2>
         <br />
         <p class="paragraphe">Pseudo = <?php echo $_SESSION['pseudo']; ?></p>  
+        <p class="paragraphe">Equipe = <?php echo $_SESSION['teamName']; ?></p> 
         <p class="paragraphe">Mail = <?php echo $_SESSION['mail']; ?></p>  
         <?php
         if(isset($_SESSION['id']) == $_SESSION['id']) {
         ?>
         <br />
-
-     
-        <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
-        <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
+        <div id="eventCreation">
+            <h2>Pour créer un évènement, cliquez sur le bouton</h2>
+            <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
+        </div>
+        <br />
+        <div id="eventModif">
+       
+        </div>
+       
+        
+        <div id="linkProfil">
+            <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
+            <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
+        </div>
+        
 
         <?php
         }

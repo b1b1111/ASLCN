@@ -108,6 +108,48 @@ label {
 /*---------------------------------------------MENU---------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 
+#menu {
+    margin: 27px auto 0;
+    background-color: #34495e;
+    width: 880px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+#tabs {
+    list-style-type: none;
+}
+
+#tabs li {
+    display: inline-block;
+}
+
+#tabs .animation {
+    position: absolute;
+    height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+#tabs a {
+    line-height: 50px;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-decoration: none !important;
+	text-align: center;
+	color: white !important;
+	cursor: pointer;  
+}
+
+#tabs a:hover {
+    background-color: #1abc9c;
+}
+
 nav {
 	margin: 27px auto 0;
 	position: relative;
@@ -173,37 +215,20 @@ nav .start-blog, a:nth-child(3):hover~.animation {
 	left: 220px;
 	background-color: #3498db;
 }
-nav .start-blog, a:nth-child(3):focus~.animation {
-	width: 110px;
-	left: 220px;
-	background-color: #3498db;
-}
+
 nav .start-portefolio, a:nth-child(4):hover~.animation {
 	width: 110px;
 	left: 330px;
 	background-color: #e6be0b;
 }
-nav .start-portefolio, a:nth-child(4):focus~.animation {
-	width: 110px;
-	left: 330px;
-	background-color: #e6be0b;
-}
+
 nav .start-contact, a:nth-child(5):hover~.animation {
 	width: 110px;
     left: 440px;
     background-color: #e6224d;
 }
-nav .start-contact, a:nth-child(5):focus~.animation {
-	width: 110px;
-    left: 440px;
-    background-color: #e6224d;
-}
+
 nav .start-contact, a:nth-child(6):hover~.animation {
-	width: 110px;
-	left: 550px;
-	background-color: #fd7702;
-}
-nav .start-contact, a:nth-child(6):focus~.animation {
 	width: 110px;
 	left: 550px;
 	background-color: #fd7702;
@@ -211,11 +236,8 @@ nav .start-contact, a:nth-child(6):focus~.animation {
 
 /*---------------------------------------------ACCUEIL------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
-#logoASLCN {
-    display: flex;
-    align-items: center;
-    width: 20%;
-}
+
+
 
 /*-------------------------------SECTION--------------------------------*/
 
@@ -418,24 +440,6 @@ table, th, td {
 }
 
 /*------------------------------BUTTON CALENDAR----------------------------------*/
-.calendar__button {
-    display: block;
-    width: 52px !important;
-    height: 52px;
-    line-height: 52px;
-    text-align: center;
-    color: #FFF;
-    font-size: 30px;
-    background-color: #1abc9c;
-    border-radius: 50%;
-
-    box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
 
 .btn-select-calendar {
   
@@ -454,16 +458,33 @@ table, th, td {
 
 }
 
-.calendar__button:hover {
-    text-decoration: none;
-    color: #FFF;
-    transform: scale(1.2);
-}
-
 .btn-event {
     color: #fff;
     background-color: #E57373;
     border-color: #E57373;
+}
+
+/*-----------------------BUTTON CREATION EVENT-------------------*/
+.button_modif {
+    display: block;
+    width: 26px !important;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFF;
+    font-size: 0.7em;
+    background-color: #1abc9c;
+    border-radius: 50%;
+
+    box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.button_modif:hover {
+    text-decoration: none;
+    color: #FFF;
+    transform: scale(1.1);
 }
 
 /*--------------------------------------------ADD-----------------------------------*/
@@ -532,10 +553,6 @@ table {
 .table-responsive tr:nth-child(odd) {
     background-color: #eee;
 }
-
-
-
-
 
 /*---------------------------------------------COMMENTAIRES-------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
@@ -697,6 +714,10 @@ textarea {
     resize: none;
 }
 
+#linkProfil {
+    margin-top: 15px;
+}
+
 /*----------------------BUTTON SUPPRIMER-------------------*/
 .btn_suppr {
     margin-top: 15px;
@@ -781,6 +802,32 @@ textarea {
     box-shadow: inset -4px -4px 0px 0px rgb(173, 173, 169);
     border-radius: 5px;
   }
+
+  /*-----------------------BUTTON CREATION EVENT-------------------*/
+  .calendar__button {
+    display: block;
+    width: 52px !important;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    background-color: #1abc9c;
+    border-radius: 50%;
+
+    box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
+    position: relative;
+    left: calc(50% - 26px);
+    margin-top: 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.calendar__button:hover {
+    text-decoration: none;
+    color: #FFF;
+    transform: scale(1.2);
+}
 
 
 /*---------------------------------------------CONNEXION---------------------------------------------------*/

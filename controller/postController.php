@@ -32,6 +32,11 @@ class postController {
         require('view/frontend/editEvent.php');
     }
 
+    //Affiche un event.
+    public function viewEvent() {
+        require('view/frontend/viewEvent.php');
+    }
+
     // Afficher un evenement.
     public function showCalendar($id) {
         $post = $this->postManager->getPost($id);
@@ -46,7 +51,7 @@ class postController {
         if(!empty($_POST['nom']) AND !empty($_POST['mail']) AND !empty($_POST['message'])) {
             //Version d'encodage mail.
             $header="MIME-Version: 1.0\r\n";
-            $header.='From:"ASLCN"<benjamin.lefebvre04@gmail.com>'."\n";
+            $header.='From:"ASLCN"<aslcn44000@gmail.com>'."\n";
             $header.='Content-Type:text/html; charset="uft-8"'."\n";
             $header.='Content-Transfer-Encoding: 8bit';
             
@@ -66,7 +71,7 @@ class postController {
             </html>
             ';
             
-            mail('benjamin.lefebvre04@gmail.com', "Contact - ASLCN", $message, $header);
+            mail('aslcn44000@gmail.com', "Contact - ASLCN", $message, $header);
         }
     }
 
@@ -86,18 +91,20 @@ class postController {
     public function inscription() {
         if(isset($_POST['forminscription'])) {
             $pseudo = htmlspecialchars($_POST['pseudo']);
+            $teamName = htmlspecialchars($_POST['teamName']);
             $mail = htmlspecialchars($_POST['mail']);
             $mdp = sha1($_POST['mdp']);
 
-            if(!empty($_POST['pseudo']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
+            if(!empty($_POST['pseudo']) AND !empty($_POST['teamName']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
                 $pseudolength = strlen($pseudo);
                 $req = $this->postManager->getPseudo($pseudo);
                 if($pseudolength <= 255) {
                     if($req == 0) {
+                        $req = $this->postManager->getTeamName($teamName);
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                             $reqmail = $this->postManager->getMail($mail);
                                 if($reqmail == 0) {
-                                    $insertmbr = $this->postManager->getMembre($pseudo, $mail, $mdp);
+                                    $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $mail, $mdp);
                                     $erreur = "Votre compte a bien été créé ! <a href=\"http://localhost/aslcn%20ok/profil\">Me connecter</a>";
                                 } 
                                 else {
@@ -138,6 +145,7 @@ class postController {
                     $user = $this->postManager->getUser($mailconnect, $mdpconnect);
                     $_SESSION['id'] = $user['id'];
                     $_SESSION['pseudo'] = $user['pseudo'];
+                    $_SESSION['teamName'] = $user['teamName'];
                     $_SESSION['mail'] = $user['mail'];
                     $_SESSION['admin'] = !!$user['admin'];
                     header('Location: '. $_POST['URL_PATH'] . 'profil?id='.$user['id']);
@@ -176,6 +184,10 @@ class postController {
             $user = $this->postManager->editMembre();
             if(isset($_POST['newpseudo']) AND !empty($_POST['newpseudo']) AND $_POST['newpseudo'] != $user['pseudo']) {
             $this->postManager->editPseudo();
+            header('Location: '. $_POST['URL_PATH'] .'profil?id=' . $_SESSION['id']);
+            }
+            if(isset($_POST['newteam']) AND !empty($_POST['newteam']) AND $_POST['newteam'] != $user['teamName']) {
+            $this->postManager->editTeam();
             header('Location: '. $_POST['URL_PATH'] .'profil?id=' . $_SESSION['id']);
             }
             if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
@@ -301,6 +313,7 @@ class postController {
                     $user = $this->postManager->getUserRecup($mdpRecup);
                     $_SESSION['id'] = $user['id'];
                     $_SESSION['pseudo'] = $user['pseudo'];
+                    $_SESSION['teamName'] = $user['teamName'];
                     $_SESSION['mail'] = $user['mail'];
                     $_SESSION['admin'] = !!$user['admin'];
                     header('Location: '. $_POST['URL_PATH'] . 'profil' . '/' . 'editMP'); 
@@ -358,22 +371,13 @@ class postController {
         require 'view/frontend/administration.php';
     }
 
-    /**
-     * Espace modification commentaires administration.
-     */
-    public function adminComment() {
-        $posts = $this->postManager->getPosts();
-        $comments = $this->commentManager->getAllComments();
-        require 'view/frontend/adminComment.php';
-    }
 
     /**
-     * Espace modifications chapitres administration.
+     * Espace modifications des points administration.
      */
-    public function adminChapter() {
-        $posts = $this->postManager->getPosts();
-        $comments = $this->commentManager->getAllComments();
-        require 'view/frontend/adminChapter.php';
+    public function adminPoint($id) {
+        $post = $this->postManager->getTeam($id); 
+        require 'view/frontend/adminPoint.php';
     }
 
 
