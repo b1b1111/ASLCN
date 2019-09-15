@@ -393,8 +393,8 @@ class postController {
         require 'view/frontend/404.php';
     }
 
-    public function classement($id) {
-        $post = $this->postManager->getTeam($id);
+    public function classement() {
+        $post = $this->postManager->getTeam();
         require 'view/frontend/classement.php';
     }
 

@@ -21,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="alternate" hreflang="fr" href="https://www.alaska.webagency-lefebvre.fr/" /> 
+        <link rel="alternate" hreflang="fr" href="" /> 
         <link href="<?= $_POST['URL_PATH'] ?>public/css/style.css" type="text/css" rel="stylesheet"/>
         <link href="<?= $_POST['URL_PATH'] ?>public/css/app.css" type="text/css" rel="stylesheet"/>
     

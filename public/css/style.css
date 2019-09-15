@@ -529,14 +529,13 @@ table, th, td {
     padding: 20px;
 }
 
-mark {
-    background: rgb(212, 38, 81);
-    color: white;
-}
-
 table {
     width: 100%;
     border-collapse: collapse
+}
+
+.position {
+    width: 5%;
 }
 
 .table-responsive th, td {
