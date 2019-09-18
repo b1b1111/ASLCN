@@ -375,8 +375,8 @@ class postController {
     /**
      * Espace modifications des points administration.
      */
-    public function adminPoint($id) {
-        $post = $this->postManager->getTeam($id); 
+    public function adminPoint() {
+        $post = $this->postManager->getTeam(); 
         require 'view/frontend/adminPoint.php';
     }
 
@@ -422,5 +422,10 @@ class postController {
             echo "</table>";  
         }  
         echo "</div>";
+    } 
+
+    public function presence() {
+        $post = $this->postManager->getEvents();
+        require 'view/frontend/presence.php';
     } 
 }

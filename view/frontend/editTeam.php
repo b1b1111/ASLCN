@@ -9,11 +9,15 @@ require('template.php');
 
 <h2 class="adminH2">Points de séance</h2>
 
-    <form id="modif_articles" method="post" action="administration/editPost/<?= $post['id'] ?>">
+    <?php foreach($post as &$a) { ?>
 
-        <label for="teamName">Equipe</label><br />
-        <input type="number" class="point" name="point" value="<?= $post['teamPoint'] ?>" /><br /><br />
+    <form id="modif_articles" method="post" action="administration/editTeam
+    /<?= $a['id'] ?>">
 
+        <br /><label for="teamName"><?= $a['teamName'] ?></label>&nbsp;&nbsp;<br />
+        <input type="text" class="point" name="point" value="<?= $a['teamPoint'] ?>" />&nbsp;&nbsp;
         <input type="submit" class="btn_valid" value="Valider" onclick="ModifPost()">
         
-  </form>
+    </form>
+
+    <?php } ?>

@@ -21,33 +21,6 @@ require('template.php');
 
     <br>  
     <div id="txt"></div>
-
-    <?php { /*
-
-foreach($post as $team) {
-    echo "<div>";
-        
-        echo "<table>";  
-        echo "<thead>";
-            echo "<tr>";
-                echo "<th>" . "Nom". "</th>"; 
-                echo "<th>" . "Points" . "</th>";  
-                echo "<th>" . "Classement" . "</th>";  
-            echo "</tr>";
-        echo "</thead>";
-        echo "<tbody>";
-            echo "<tr>";
-            echo "<td>" . $team['teamName'] . "</td>"; 
-            echo "<td>" . $team['teamPoint'] . "</td>";  
-            echo "<td>" . $team['teamRank'] . "</td>"; 
-            echo "</tr>";
-        echo "</tbody>";
-        
-        echo "</table>";  
-    }  
-    echo "</div>"; */
-         
-    } ?>
       
     <table class="table-responsive">
         <thead>

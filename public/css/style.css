@@ -439,6 +439,10 @@ table, th, td {
     border: 1px solid gray;
 }
 
+.presence p {
+    color: white;
+}
+
 /*------------------------------BUTTON CALENDAR----------------------------------*/
 
 .btn-select-calendar {
@@ -545,7 +549,7 @@ table {
 }
 
 .table-responsive th {
-    background-color: rgb(212, 38, 81);
+    background-color: #e6be0b;
     color: #FFF;
 }
 

@@ -44,7 +44,7 @@ function SupprPost() {
  * Alert confirmation de modification d'un article
  */
 function ModifPost() {
-    var msg="Votre chapitre est modifié";
+    var msg="Les points de l'équipe sont bien changés";
     alert(msg);
 }
 

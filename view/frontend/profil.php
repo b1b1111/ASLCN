@@ -33,25 +33,23 @@ else {
         <p class="paragraphe">Equipe = <?php echo $_SESSION['teamName']; ?></p> 
         <p class="paragraphe">Mail = <?php echo $_SESSION['mail']; ?></p>  
         <?php
-        if(isset($_SESSION['id']) == $_SESSION['id']) {
-        ?>
-        <br />
-        <div id="eventCreation">
-            <h2>Pour créer un évènement, cliquez sur le bouton</h2>
-            <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
-        </div>
-        <br />
-        <div id="eventModif">
-       
-        </div>
-       
-        
-        <div id="linkProfil">
-            <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
-            <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
-        </div>
-        
+            if(isset($_SESSION['id']) == $_SESSION['id']) { ?> <br />
 
+            <div id="eventCreation">
+                <h2>Pour créer un évènement, cliquez sur le bouton</h2>
+                <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
+            </div> <br />
+        
+            <div>
+                <h2>Pour vous inscrire aux futures rencontres</h2>
+                <a href="<?= $_POST['URL_PATH'] ?>profil/presence" class="calendar__button">P</a>
+            </div>
+            
+            <div id="linkProfil">
+                <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
+                <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
+            </div>
+            
         <?php
         }
         ?>

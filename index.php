@@ -63,6 +63,10 @@ else if($url[0] == 'classement') {
         $postController->classement($url[0]);
     }
 }
+
+/*--------------------------------------PRESENCE----------------------------------------*/
+
+
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
 /**
  * Connexion espace membre
@@ -71,6 +75,10 @@ else if($url[0] == 'classement') {
 else if($url[0] == 'profil') {
     if(empty($url[1])) {
         $postController->profil();
+    }
+
+    else if($url[1] == 'presence') {
+        $postController->presence();
     }
 
     else if($url[1] == 'connexion') {
@@ -107,26 +115,19 @@ else if($url[0] == 'profil') {
 /*-----------------Accueil administration---------------------*/
 else if($url[0] == 'administration') {
     if(empty($url[1])) { 
-        $postController->administration();
+        $postController->adminPoint();
     }
 
-    else if($url[1] == 'adminPoint') {
-        $postController->adminPoint($url[1]);
-    }
-
-    else if ($url[1] == 'editPoint' && is_numeric($url[2]))  {
+    else if ($url[1] == 'editTeam' && is_numeric($url[2]))  {
         if ($url[3] == 'prepare') {
             $adminController->editTeamPrepare($url[2]);
         }
         else { 
-            $teamName = $_POST['teamName'];
             $teamPoint = $_POST['teamPoint'];
-            $teamRank = $_POST['teamRank'];
-            $adminController->editTeamAdmin($url[2], $teamName, $teamPoint, $teamRank);
+            $adminController->editTeamAdmin($url[2], $teamPoint);
             header('Location: '. $_POST['URL_PATH'] . 'administration'); 
         }
     }
-
 } 
 
 else {

@@ -27,42 +27,7 @@ class postManager extends manager {
         return $post;
     }
 
-    // Création d'un nouveau chapitre
-    public function addPost($name, $description, $start, $end) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('INSERT INTO events (name, description, start, end) VALUES (?, ?, ?, ?)');
-        $request->execute(array($name, $description, $start, $end));
-    }
-
-    // Appouver un chapitre
-    public function approuvePost($id) {
-        
-        $db = $this->newManager->dbConnect();
-        $req = $db->prepare('UPDATE posts SET approuve = 1 WHERE id = ?');
-        $req->execute(array($id));
-    }
-
-    // Modification d'un chapitre
-    public function updatePost($id, $title, $content) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE posts SET title = ?, content = ?, creation_date = NOW() WHERE id = ?');
-        $post = $request->execute(array($title, $content, $id));
-        return $post;    
-    }
-
-    // Supprimer un chapitre
-    public function deletePost($id) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('DELETE FROM posts WHERE id = ?');
-        $suppr = $request->execute(array($id));
-        return $suppr;
-    }
-
     public function getAllUser() {
-
         $db = $this->newManager->dbConnect();
         $request = $db->query('SELECT * FROM membres ORDER BY id DESC');    
         return $request;
@@ -263,22 +228,33 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
-    /*****************************************TEAM************************************************* */
+    /*****************************************EVENT************************************************ */
     /********************************************************************************************** */
 
-    public function getTeam() {
+    public function getEvents() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM team WHERE 1"); 
+        $req= $db->prepare("SELECT * FROM events ORDER BY start"); 
         $req->execute();  
         $post = $req->fetchAll(); 
         return $post;
     }
 
-    public function updateTeam($id, $teamName, $teamPoint, $teamRank) {
+    /*****************************************TEAM************************************************* */
+    /********************************************************************************************** */
+
+    public function getTeam() {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM team ORDER BY teamPoint DESC"); 
+        $req->execute();  
+        $post = $req->fetchAll(); 
+        return $post;
+    }
+
+    public function updateTeam($teamPoint) {
 
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE team SET teamName = ?, teamPoint = ?, teamRank = ? WHERE id = ?');
-        $post = $request->execute(array($id, $teamName, $teamPoint, $teamRank));
+        $request = $db->prepare('UPDATE team SET teamPoint = ? WHERE id = ?');
+        $post = $request->execute(array($teamPoint));
         return $post;    
     }
 }

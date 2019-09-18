@@ -7,14 +7,15 @@ require('template.php');
 
 <p class="paragraphe"> Vous êtes administrateur <?php echo $_SESSION['pseudo']; ?>.</p>
 
-<ul id="list_post">
-        <h2 class="adminH2">Liste des équipes</h2>
-        <p class="adminParagraphe"><em>Points de fin de séance</em></p>
+<ul id="list_point">
+        <h2 class="adminH2">tableau des points</h2>
+        <p class="adminParagraphe"><em>Modifier les points d'équipe.</em></p>
 
-        <?php while($posts = $post->fetch()) { ?>
+        <?php foreach($post as $a) { ?>
 
-        <br /><li><?= $posts['teamName']?><br />
-        
-        <a class="btn_valid" href="<?= $_POST['URL_PATH'] ?>administration/editPoint/<?= $posts['id'] ?>/prepare">Valider</a></li>
+        <br /><li><?= $a['id'] ?> : <?= $a['teamName']?><br />
+       
+        <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>administration/editTeam/<?= $a['id'] ?>/prepare">Modification</a></li>
         <?php } ?>
   </ul>
+
