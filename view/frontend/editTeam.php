@@ -5,11 +5,11 @@ require('html.php');
 require('template.php');
 ?>
 
-<h2><a href="<?= $_POST['URL_PATH'] ?>administration">Retour à l'administration'</a></h2>
+<h2><a href="<?= $_POST['URL_PATH'] ?>administration">Retour à l'administration</a></h2>
 
 <h2 class="adminH2">Points de séance</h2>
 
-    <?php while($a = $post->fetch()) { ?>
+    <?php foreach($post as &$a) { ?>
 
     <form id="modif_articles" method="post" action="administration/editTeam
     /<?= $a['id'] ?>">

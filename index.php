@@ -116,7 +116,7 @@ else if($url[0] == 'administration') {
     }
 
     else if ($url[1] == 'editTeam' && is_numeric($url[2]))  {
-        if ($url[3] == 'prepare') {
+        if ($url[3] == 'prepare') {  
             $adminController->editTeamPrepare($url[2]);
         }
         else { 

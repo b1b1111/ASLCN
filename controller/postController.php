@@ -35,6 +35,7 @@ class postController {
 
     //Affiche un event.
     public function viewEvent() {
+        $membre = $this->postManager->getMembers();
         require('view/frontend/viewEvent.php');
     }
 
@@ -101,7 +102,7 @@ class postController {
                 $req = $this->postManager->getPseudo($pseudo);
                 if($pseudolength <= 255) {
                     if($req == 0) {
-                        $req = $this->postManager->getTeamName($teamName);
+                        $req = $this->postManager->getTeamsName($teamName);
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                             $reqmail = $this->postManager->getMail($mail);
                                 if($reqmail == 0) {
@@ -368,7 +369,7 @@ class postController {
      * Espace modifications des points administration.
      */
     public function adminPoint() {
-        $post = $this->postManager->getTeam(); 
+        $post = $this->postManager->getTeams(); 
         require 'view/frontend/administration.php';
     }
 
@@ -386,12 +387,12 @@ class postController {
     }
 
     public function classement() {
-        $post = $this->postManager->getTeam();
+        $post = $this->postManager->getTeams();
         require 'view/frontend/classement.php';
     }
 
     public function getClassement() {
-        $post = $this->postManager->getTeam();
+        $post = $this->postManager->getTeams();
         
         foreach($post as $team) {
         echo "<div id='table_classement' align='center'>
@@ -418,7 +419,6 @@ class postController {
 
     public function presence() {
         $post = $this->postManager->getEvents();
-        $membre = $this->postManager->getMembers();
         require 'view/frontend/presence.php';
     } 
 }

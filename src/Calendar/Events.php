@@ -87,7 +87,7 @@ class Events {
            $event->getDescription(),
            $event->getStart()->format('Y-m-d H:i:s'),
            $event->getEnd()->format('Y-m-d H:i:s'),
-           $event->getTeamName(),
+           $event->getTeamsName(),
         ]);
     }
 
@@ -103,7 +103,7 @@ class Events {
             $event->getDescription(),
             $event->getStart()->format('Y-m-d H:i:s'),
             $event->getEnd()->format('Y-m-d H:i:s'),
-            $event->getTeamName(),
+            $event->getTeamsName(),
             $event->getId(),
         ]);
     }

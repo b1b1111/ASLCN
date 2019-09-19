@@ -12,6 +12,7 @@ require('template.php');
             <th>Date</th>
             <th>Présent</th>
             <th>Absent</th>
+            <th>Valider</th>
         </tr>
     </thead>
     <?php {
@@ -20,8 +21,9 @@ require('template.php');
                 echo "<tr>";
                     echo "<td>" . $e['name'] . "</td>";
                     echo "<td>" . $e['start'] . "</td>"; 
-                    echo "<td>" . '<input type="submit" value="Présent" />' . "</td>"; 
-                    echo "<td>" . '<input type="submit" value="Absent" />' . "</td>";
+                    echo "<td>" . "  <form method='post' action=''>  " . '<input type="radio" name="present" value="oui" />' . "<label for='oui'>" . 'oui' . "</label>" . "</td>"; 
+                    echo "<td>" . '<input type="radio" name="present" value="nom" />' . "<label for='non'>" . 'non' . "</label>" . "</td>";
+                    echo "<td>" . '<input type="submit" value="valider" />' . "</form>" . "</td>";
                 echo "</tr>";
             echo "</tbody>";   
         }   

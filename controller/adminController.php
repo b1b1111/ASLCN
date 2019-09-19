@@ -17,8 +17,8 @@ class adminController {
         $post = $this->postManager->updateTeam($teamPoint);     
     }
 
-    public function editTeamPrepare() {
-        $post = $this->postManager->getTeam();  
+    public function editTeamPrepare($id) {
+        $post = $this->postManager->getTeam($id);  
         require 'view/frontend/editTeam.php';        
     }
 

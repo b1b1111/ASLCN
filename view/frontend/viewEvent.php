@@ -64,10 +64,37 @@ require('controller/edit.php');
         </div>
     </div>
 </div>
+
 <div class="form-group">
     <label for="description">Description</label>
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
+
+<?php echo $_POST['present']; ?>
+
+<table class="table-responsive">
+    <thead>
+        <tr>
+            <th>Equipe</th>
+            <th>Nom</th>
+            <th>Présent</th>
+            <th>Absent</th>
+        </tr>
+    </thead>
+    <?php {
+        foreach($membre as $m) {
+            
+            echo "<tbody>";
+                echo "<tr>";
+                    echo "<td>" . $m['teamName'] . "</td>";
+                    echo "<td>" . $m['pseudo'] . "</td>";
+                    echo "<td>" . $m['present'] . "</td>";
+                    echo "<td>" . $m['absent'] . "</td>"; 
+                echo "</tr>";
+            echo "</tbody>";   
+        }   
+    } ?>
+</table>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 

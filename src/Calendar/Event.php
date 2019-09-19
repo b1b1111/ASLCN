@@ -35,7 +35,7 @@ class Event {
         return new \DateTime($this->end);
     }
 
-    public function getTeamName (): string {
+    public function getTeamsName (): string {
         return $this->teamName;
     }
 

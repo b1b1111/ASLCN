@@ -58,7 +58,7 @@ class postManager extends manager {
         return $pseudoExist;
     }
 
-    public function getTeamName($teamName) {
+    public function getTeamsName($teamName) {
         $db = $this->newManager->dbConnect();
         $req = $db->prepare("SELECT * FROM membres WHERE teamName = ?");
         $req->execute(array($teamName));
@@ -230,7 +230,7 @@ class postManager extends manager {
 
     public function getMembers() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM members WHERE 1"); 
+        $req= $db->prepare("SELECT * FROM membres ORDER BY teamName"); 
         $req->execute();  
         $membre = $req->fetchAll(); 
         return $membre;
@@ -250,10 +250,18 @@ class postManager extends manager {
     /*****************************************TEAM************************************************* */
     /********************************************************************************************** */
 
-    public function getTeam() {
+    public function getTeams() {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM team ORDER BY teamPoint DESC"); 
         $req->execute();  
+        $post = $req->fetchAll(); 
+        return $post;
+    }
+
+    public function getTeam($id) {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM team WHERE id= ?"); 
+        $req->execute(array($id));  
         $post = $req->fetchAll(); 
         return $post;
     }

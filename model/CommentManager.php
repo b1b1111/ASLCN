@@ -9,7 +9,7 @@ class CommentManager extends manager {
         $this->newManager = new \Model\Manager();      
     }
 
-    public function getTeam() {
+    public function getTeams() {
 
         $db = $this->newManager->dbConnect();
         $comments = $db->query('SELECT * FROM team WHERE 1');

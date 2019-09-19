@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 
 function e404 () {
-    require '../public/404.php';
+    require '../aslcn/view/frontend/404.php';
     exit();
 }
 

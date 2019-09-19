@@ -14,7 +14,7 @@ catch (\Error $e) {
 }
 
 $data = [
-    'teamName'    => $event->getTeamName(),
+    'teamName'    => $event->getTeamsName(),
     'name'        => $event->getName(),
     'date'        => $event->getStart()->format('Y-m-d'),
     'start'       => $event->getStart()->format('H:i'),
