@@ -14,11 +14,8 @@ class adminController {
    }  
 
     public function editTeamAdmin($teamPoint) {  
-        $post = $this->postManager->updateTeam($teamPoint); 
-            if($post) {
-                $confirm = "Les points sont bien attribués à l'équipe.";  
-            }     
-        }
+        $post = $this->postManager->updateTeam($teamPoint);     
+    }
 
     public function editTeamPrepare() {
         $post = $this->postManager->getTeam();  

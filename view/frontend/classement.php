@@ -7,7 +7,7 @@ require('template.php');
 
     <form id="form_classement">
         <select name="team" onchange="ShowRank(this.value)">  
-        <option value="">Selectionner une équipe :</option>  
+        <option value="">Selectionner une epreuve :</option>  
         <option value="1">4 gars 1 fille</option>  
         <option value="2">En avant les glands</option>  
         <option value="3">Skipailh BZH</option>  
@@ -42,5 +42,3 @@ require('template.php');
             }   
         } ?>
     </table>
-   
-     

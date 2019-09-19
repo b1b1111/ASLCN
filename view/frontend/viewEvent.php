@@ -69,15 +69,6 @@ require('controller/edit.php');
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
-<div class="presence">
-   <p>
-    Salut <?php echo $_SESSION['pseudo']; ?>, peux tu nous dire si tu sera présent pour la séance ?<br />
-       <input type="checkbox" name="present" id="present" /> <label for="present">Présent</label><br />
-       <input type="checkbox" name="absent" id="absent" /> <label for="absent">Absent</label><br />
-       <input type="submit" name="btn_pres" value="Envoyer"/>
-   </p>  
-</div>
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   </form>

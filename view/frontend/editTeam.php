@@ -9,7 +9,7 @@ require('template.php');
 
 <h2 class="adminH2">Points de séance</h2>
 
-    <?php foreach($post as &$a) { ?>
+    <?php while($a = $post->fetch()) { ?>
 
     <form id="modif_articles" method="post" action="administration/editTeam
     /<?= $a['id'] ?>">

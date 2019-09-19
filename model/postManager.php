@@ -228,6 +228,14 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
+    public function getMembers() {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM members WHERE 1"); 
+        $req->execute();  
+        $membre = $req->fetchAll(); 
+        return $membre;
+    }
+
     /*****************************************EVENT************************************************ */
     /********************************************************************************************** */
 

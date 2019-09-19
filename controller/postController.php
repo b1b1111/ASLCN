@@ -19,6 +19,7 @@ class postController {
 
     //Affiche le calendrier.
     public function printCalendar() {
+        $post = $this->postManager->getMembers();
         require('view/frontend/viewCalendar.php');
     }
 
@@ -362,22 +363,13 @@ class postController {
         require 'view/frontend/deconnexion.php';
     }
 
-    /**
-     * Espace administration.
-     */
-    public function administration() {
-        $posts = $this->postManager->getPosts();
-        $comments = $this->commentManager->getAllComments();
-        require 'view/frontend/administration.php';
-    }
-
 
     /**
      * Espace modifications des points administration.
      */
     public function adminPoint() {
         $post = $this->postManager->getTeam(); 
-        require 'view/frontend/adminPoint.php';
+        require 'view/frontend/administration.php';
     }
 
 
@@ -426,6 +418,7 @@ class postController {
 
     public function presence() {
         $post = $this->postManager->getEvents();
+        $membre = $this->postManager->getMembers();
         require 'view/frontend/presence.php';
     } 
 }

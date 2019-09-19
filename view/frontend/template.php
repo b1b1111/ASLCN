@@ -7,7 +7,7 @@
             <a id="linkNav2" href="http://localhost/aslcn/contact">Contact</a>
             <a id="linkNav3" href="http://localhost/aslcn/classement">Classement</a>
             <a id="linkNav4" href="http://localhost/aslcn/galerie">Equipes</a>
-            <a id="linkNav5" href="http://localhost/aslcn/profil">Connexion</a>
+            <a id="linkNav5" href="http://localhost/aslcn/profil">Profil</a>
         
             <div class="animation start-home"></div>
         </nav>

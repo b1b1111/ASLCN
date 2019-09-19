@@ -33,28 +33,3 @@
             return $menu;
     }
 ?>
-
-<?php
-    function view_classement() {
-        
-        $tab_name = array("4 gars 1 fille", "En avant les glands", "Skipailh BZH", "Capillo", "The Wall", "4'Ever", "Les kékéhuetes", "8ème");
-
-        $info = pathinfo($_SERVER['PHP_SELF']);
-
-        $tab = "\n<div id=\"tabClassement\">\n      <ul id=\"tabs\">\n";
-        
-            foreach($tab_name as $cle=>$link) {
-                $tab .="<li";
-
-                    if($info['basename'] == $link)
-                        $tab .="class=\"active\"";
-
-                    $tab .= "><a href=\"" . $_POST['URL_PATH'] . $link . "\">" . $tab_name[$cle] . "</a></li>\n";
-            }
-           
-            
-            $tab .= "</ul>\n</div>";
-
-            return $tab;
-    }
-?>
