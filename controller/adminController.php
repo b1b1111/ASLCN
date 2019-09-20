@@ -13,8 +13,11 @@ class adminController {
       $this->postManager = new \Model\postManager();  
    }  
 
-    public function editTeamAdmin($teamPoint) {  
-        $post = $this->postManager->updateTeam($teamPoint);     
+    public function editTeamAdmin($id, $teamPoint) {    
+        $edit_point = $this->postManager->updateTeam($id, $teamPoint);
+        if($edit_point) {
+            $confirm = "Les points sont bien modifiés";
+        }
     }
 
     public function editTeamPrepare($id) {

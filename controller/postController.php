@@ -373,7 +373,6 @@ class postController {
         require 'view/frontend/administration.php';
     }
 
-
     /**
      * Galerie equipe.
      */

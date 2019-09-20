@@ -266,12 +266,13 @@ class postManager extends manager {
         return $post;
     }
 
-    public function updateTeam($teamPoint) {
+    public function updateTeam($id, $teamPoint) {
 
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('UPDATE team SET teamPoint = ? WHERE id = ?');
-        $post = $request->execute(array($teamPoint));
-        return $post;    
+        $post = $request->execute(array($teamPoint, $id));   
+        return $post; 
     }
+
 }
 

@@ -11,9 +11,9 @@ require('template.php');
         <p class="adminParagraphe"><em>Modifier les points d'équipe.</em></p>
 
         <?php
-        foreach($post as $a) { ?>
-        <?php echo $a['teamName'] ?>
-        <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>administration/editTeam/<?= $a['id'] ?>/prepare">Modification</a></li>
+        foreach($post as $team) { ?>
+        <?php echo $team['teamName'] ?>
+        <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>administration/editTeam/<?= $team['id'] ?>/prepare">Modification</a></li>
         <?php } ?>
   </ul>
 

@@ -70,8 +70,6 @@ require('controller/edit.php');
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
-<?php echo $_POST['present']; ?>
-
 <table class="table-responsive">
     <thead>
         <tr>
