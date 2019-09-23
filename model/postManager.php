@@ -228,6 +228,16 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
+    public function editPresence($id, $present, $absent) {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("UPDATE membres SET present = ?, absent = ? WHERE id= ?"); 
+        $req->execute(array($id, $present, $absent));  
+        $membre = $req->fetchAll(); 
+        return $membre;
+    }
+
+    /*****************************************MEMBRE*********************************************** */
+    /********************************************************************************************** */
     public function getMembers() {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM membres ORDER BY teamName"); 
@@ -245,6 +255,75 @@ class postManager extends manager {
         $req->execute();  
         $post = $req->fetchAll(); 
         return $post;
+    }
+
+    public function getEventId($getid) {
+        $db = $this->newManager->dbConnect();   
+        $check = $db->prepare('SELECT id FROM events WHERE id = ?');
+        $check->execute(array($getid));
+        return $check;
+    }
+
+    /*****************************************PRESENCE********************************************* */
+    /********************************************************************************************** */
+
+    /*********************************PRESENCE************************************ */
+
+    public function checkPres($getid,$sessionid) {
+        $db = $this->newManager->dbConnect();  
+        $check_pres = $db->prepare('SELECT id FROM presences WHERE id_events = ? AND id_membres = ?');
+        $check_pres->execute(array($getid,$sessionid));
+        return $check_pres;
+    }
+
+    public function insertPres($getid, $sessionid) {
+        $db = $this->newManager->dbConnect();  
+        $ins = $db->prepare('INSERT INTO presences (id_events, id_membres) VALUES (?, ?)');
+        $ins->execute(array($getid, $sessionid));
+        return $ins;
+    }
+
+    public function deletePres($getid,$sessionid) {
+        $db = $this->newManager->dbConnect();
+        $del = $db->prepare('DELETE FROM presences WHERE id_events = ? AND id_membres = ?');
+        $del->execute(array($getid,$sessionid));
+        return $del;
+    }
+
+    public function selectPres($id) {
+        $db = $this->newManager->dbConnect();
+        $pres = $db->prepare('SELECT id FROM presences WHERE id_events = ?');
+        $pres->execute(array($id));
+        return $pres;
+    }
+
+    /*********************************ABSENCE************************************ */
+    public function deleteAbs($getid,$sessionid) {
+        $db = $this->newManager->dbConnect();  
+        $del = $db->prepare('DELETE FROM absences WHERE id_events = ? AND id_membres = ?');
+        $del->execute(array($getid,$sessionid));
+        return $del;
+    }
+
+    public function checkAbs($getid,$sessionid) {
+        $db = $this->newManager->dbConnect();
+        $check_abs = $db->prepare('SELECT id FROM absences WHERE id_events = ? AND id_membres = ?');
+        $check_abs->execute(array($getid,$sessionid));
+        return $check_abs;
+    }
+
+    public function insertAbs($getid, $sessionid) {
+        $db = $this->newManager->dbConnect();
+        $ins = $db->prepare('INSERT INTO absences (id_events, id_membres) VALUES (?, ?)');
+        $ins->execute(array($getid, $sessionid));
+        return $ins;
+    }
+
+    public function selectAbs($id) {
+        $db = $this->newManager->dbConnect();
+        $abs = $db->prepare('SELECT id FROM absences WHERE id_events = ?');
+        $abs->execute(array($id));
+        return $abs;
     }
 
     /*****************************************TEAM************************************************* */
@@ -272,6 +351,23 @@ class postManager extends manager {
         $request = $db->prepare('UPDATE team SET teamPoint = ? WHERE id = ?');
         $post = $request->execute(array($teamPoint, $id));   
         return $post; 
+    }
+
+    /*****************************************SCORE************************************************ */
+    /********************************************************************************************** */
+
+    public function getScore($id) {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM score WHERE id= ?"); 
+        $req->execute(array($id));  
+        $post = $req->fetchAll(); 
+        return $post;
+    }
+
+    public function addPresence($present, $absent) {
+        $db = $this->newManager->dbConnect();
+        $request = $db->prepare('INSERT INTO membres (present, absent) VALUES (?, ?)');
+        $request->execute(array($present, $absent));
     }
 
 }

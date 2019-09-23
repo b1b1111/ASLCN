@@ -52,4 +52,56 @@
     <textarea name="description" id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
+<table class="table_score">
+    <thead>
+        <tr>
+            <th>Equipe</th>
+            <th>Point</th>
+            <th>Joker</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>4 gars 1 fille</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>En avant les Glands</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Skipailh BZH</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Capillo</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>The Wall</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>4'Ever</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>EMA</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>kékéhuetes</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

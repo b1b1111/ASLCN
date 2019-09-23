@@ -4,7 +4,16 @@ require('header.php');
 require('html.php');
 require('template.php');
 ?>
-<link href="<?= $_POST['URL_PATH'] ?>public/css/slideshow.css" type="text/css" rel="stylesheet"/>
+
+    <div id="slider">
+        <figure>
+            <img src="../aslcn/public/images/slider/img1.jpg" alt="banner1">
+            <img src="../aslcn//public/images/slider/img2.jpg" alt="banner2">
+            <img src="../aslcn/public/images/slider/img3.jpg" alt="banner3">
+            <img src="../aslcn/public/images/slider/img4.jpg" alt="banner4">
+            <img src="../aslcn/public/images/slider/img5.jpg" alt="banner5">   
+        </figure>
+    </div>
 
 <section id="section_one">
 
@@ -25,22 +34,13 @@ require('template.php');
 
     <div id="resum">
         <h1 id="title_resum">L'Association </h1>
-        <p>
-        <div class="container" id="container">
-        <div class="caption" id="slider-caption">
-            <div class="caption-heading">
-            <h1>Lorem Ipsum</h1>
-            </div>
-            <div class="caption-subhead"><span>dolor sit amet, consectetur adipiscing elit. </span></div><a class="btn" href="#">Sit Amet</a>
-        </div>
-        <div class="left-col" id="left-col">
-            <div id="left-slider"></div>
-        </div>
-        <ul class="nav">
-            <li class="slide-up"> <a href="#"><</a></li>
-            <li class="slide-down"> <a id="down_button" href="#">></a></li>
-        </ul>
-        </div>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        </p>
 
     </div>
 
@@ -61,10 +61,6 @@ require('template.php');
 <footer>
 
     <div>
-        <div id="bio">
-          
-        </div>
+        <p><a href="#">Mentions légales</a> - site made with <img src="../aslcn/public/images/logo/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
     </div>
 </footer>
-
-<script src="/aslcn/public/js/slideshow.js"></script>

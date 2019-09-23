@@ -21,9 +21,11 @@ require('template.php');
                 echo "<tr>";
                     echo "<td>" . $e['name'] . "</td>";
                     echo "<td>" . $e['start'] . "</td>"; 
-                    echo "<td>" . "  <form method='post' action=''>  " . '<input type="radio" name="present" value="oui" />' . "<label for='oui'>" . 'oui' . "</label>" . "</td>"; 
-                    echo "<td>" . '<input type="radio" name="present" value="nom" />' . "<label for='non'>" . 'non' . "</label>" . "</td>";
-                    echo "<td>" . '<input type="submit" value="valider" />' . "</form>" . "</td>";
+                    foreach($membre as $m) {
+                        echo "<td>" . "  <form method='post' action='create'>  " . '<input type="radio" name="present" value="oui" />' . "<label for='oui'>" . $m['present'] . "</label>" . "</td>"; 
+                        echo "<td>" . '<input type="radio" name="present" value="non" />' . "<label for='non'>" . $m['absent'] . "</label>" . "</td>";
+                        echo "<td>" . '<input type="submit" value="valider" />' . "</form>" . "</td>";
+                    } 
                 echo "</tr>";
             echo "</tbody>";   
         }   

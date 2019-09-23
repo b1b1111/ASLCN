@@ -16,4 +16,5 @@ class CommentManager extends manager {
 
         return $comments;
     }
+
 }

@@ -237,7 +237,42 @@ nav .start-contact, a:nth-child(6):hover~.animation {
 /*---------------------------------------------ACCUEIL------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 
+/*--------------------------Banner-------------------------*/
 
+#slider {
+    position: relative;
+    margin: 0 250px 0 250px;				
+    overflow: hidden;	
+    box-shadow: 12px 5px 0px #1a242e;	
+    border-radius: 3px;			
+}
+#slider figure {
+    position: relative;
+	width: 500%;					
+	margin: 0%;
+	padding: 0%;
+	font-size: 0%;
+	text-align: left;
+    animation: 30s slide infinite; 
+    
+}
+#slider figure img {
+	width: 20%;						
+	height: 480px;
+    float: left;
+    
+}
+@keyframes slide {
+	0% {left: 0%;}					
+	20% {left: 0%;}
+	25% {left: -100%;}
+	45% {left: -100%;}
+	50% {left: -200%;}
+	70% {left: -200%;}
+	75% {left: -300%;}
+	95% {left: -300%;}
+	100% {left: -400%;}
+}
 
 /*-------------------------------SECTION--------------------------------*/
 
@@ -253,10 +288,9 @@ nav .start-contact, a:nth-child(6):hover~.animation {
     background-color: #e2df29;
     position: absolute;
     width: 100%;
-    top: 250px;
     left: 0;
     overflow: hidden;
-    padding-top: 500px;
+    padding-top: 450px;
     color: #1e2a36;
 }
 
@@ -264,7 +298,7 @@ nav .start-contact, a:nth-child(6):hover~.animation {
     content: "";
     display: block;
     background: #1e2a36;
-    height: 450px;
+    height: 400px;
     width: 8000px;
     position: absolute;
     z-index: 1;
@@ -306,7 +340,7 @@ nav .start-contact, a:nth-child(6):hover~.animation {
 #resum {
     width: 60%;
     text-align: justify;
-    margin: 400px 50px 0 0;
+    margin: 375px 60px 0 0;
     color: rgb(243, 224, 224);
 }
 
@@ -329,7 +363,7 @@ nav .start-contact, a:nth-child(6):hover~.animation {
     width: 100%;
     right: 0;
     overflow: hidden;
-    padding-top: 280px;
+    padding-top: 270px;
     color: #1e2a36;
 }
 
@@ -342,14 +376,13 @@ nav .start-contact, a:nth-child(6):hover~.animation {
     position: relative;
     z-index: 2;
     right: 50%;
-    margin-right: -4000px;
     -webkit-transform: rotate(9deg);
     transform: rotate(9deg);
 }
     
 #title_ranking {
     position: absolute;
-    top: 180px;
+    top: 200px;
     left: 200px;
     width: 100%;
     font-size: 3em;
@@ -443,6 +476,33 @@ table, th, td {
     color: white;
 }
 
+.table_score {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.table_score tr {
+    background-color: #3c3c3d;
+    color: white;
+}
+
+.table_score th, td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #ccc;
+}
+
+.table_score th {
+    background-color: #ff4309;
+    color: #FFF;
+}
+
+.table_score tr:nth-child(odd) {
+    background-color: #eee;
+    color: black;
+}
+
 /*------------------------------BUTTON CALENDAR----------------------------------*/
 
 .btn-select-calendar {
@@ -512,6 +572,10 @@ table, th, td {
 
 .back_link:hover {
     color: #1abc9c;
+}
+
+#pres {
+    color: white;
 }
 /*---------------------------------------------CLASSEMENT-------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
@@ -898,15 +962,7 @@ textarea {
 footer {
     background: #1e2a36;
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;   
-}
-
-#bio {
-    width: 60%;
-    margin: 60px 0 0 30px;
-    color: rgb(36, 35, 35);
+    text-align: center;  
 }
 
 /*----------------------------------------------RESPONSIVE--------------------------------------------------*/

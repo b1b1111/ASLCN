@@ -39,7 +39,7 @@ else {
                 <h2>Pour créer un évènement, cliquez sur le bouton</h2>
                 <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
             </div> <br />
-        
+
             <div>
                 <h2>Pour vous inscrire aux futures rencontres</h2>
                 <a href="<?= $_POST['URL_PATH'] ?>profil/presence" class="calendar__button">P</a>

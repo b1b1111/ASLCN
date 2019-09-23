@@ -11,8 +11,7 @@ class commentController {
 
     // Nouveau commentaire
     public function addComment($post_id, $author, $content) {
-        $comments = $this->CommentManager->postComment($post_id, $author, $content);
-        
+        $comments = $this->CommentManager->postComment($post_id, $author, $content);   
     }
 
     // Signaler un commentaire
@@ -21,5 +20,9 @@ class commentController {
         $alert = $_POST['alert'];    
         header('Location: '. $_POST['URL_PATH'] . 'chapitres'); 
     } 
+
+    
+
+
 
 }
