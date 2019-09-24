@@ -347,8 +347,12 @@ class postManager extends manager {
 
     public function getTablePres($id) {
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('SELECT * FROM membres, events WHERE events.id_membres = membres.id');
-        $post = $request->execute(array($id));   
+        $request = $db->prepare('SELECT *
+        FROM membres
+        RIGHT JOIN events
+        ON events.id_membres = membres.id');
+        $request->execute(array($id)); 
+        $post = $request->fetchAll();   
         return $post; 
     }
 

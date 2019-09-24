@@ -6,7 +6,7 @@ require('template.php');
 ?>
 
 <div class="container">
-  <h1> <img src="public/images/4g1f/logo_mini.jpg" alt="logo_mini" class="mini_logo"> 4 gars 1 fille</h1>
+  <h1> <img src="public/images/4g1f/logo_mini.jpg" alt="logo_mini_4g1f" class="mini_logo"> 4 gars 1 fille</h1>
   <div class="portfolio-flex" id="js-portfolio-fille">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -115,14 +115,14 @@ require('template.php');
     </div>
   </div>
 
-  <h1>En avant les Glands</h1>
+  <h1><img src="public/images/glands/logo_mini.jpg" alt="logo_mini_glands" class="mini_logo"> En avant les Glands</h1>
   <div class="portfolio-flex" id="js-portfolio-gland">
     <div class="project js-item" tabindex="0">
-      <img src="public/images/glands/max.jpg" alt="glands_max" class="project__image">
-      <h2 class="project__name">Maxime Lethu</h2>
-      <div class="project__description">Max</div>
+    <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
+      <h2 class="project__name">Dorian Alves</h2>
+      <div class="project__description">El portos</div>
       <div class="project__body js-body">
-        <h2>Maximus Glandus</h2>
+        <h2>Dorian</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -139,7 +139,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="public/images/glands/robin.jpg" alt="gland_max" class="project__image">
+      <img src="public/images/glands/robin_mini.jpg" alt="gland_max" class="project__image">
       <h2 class="project__name">Robin Lehoux</h2>
       <div class="project__description">Robin</div>
       <div class="project__body js-body">
@@ -333,7 +333,7 @@ require('template.php');
     </div>
   </div>
 
-  <h1>Capillo</h1>
+  <h1><img src="public/images/capillo/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">Capillo</h1>
   <div class="portfolio-flex" id="js-portfolio-capillo">
     <div class="project js-item" tabindex="0">
       <img src="public/images/capillo/toon.jpg" alt="" class="project__image">
@@ -442,7 +442,7 @@ require('template.php');
     </div>
   </div>
 
-  <h1>The Wall</h1>
+  <h1><img src="public/images/wall/logo_mini.jpg" alt="logo_mini_wall" class="mini_logo">The Wall</h1>
   <div class="portfolio-flex" id="js-portfolio-wall">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -551,7 +551,7 @@ require('template.php');
     </div>
   </div>
 
-  <h1>4'Ever</h1>
+  <h1><img src="public/images/4ever/logo_mini.jpg" alt="logo_mini_4ever" class="mini_logo">4'Ever</h1>
   <div class="portfolio-flex" id="js-portfolio-ever">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">

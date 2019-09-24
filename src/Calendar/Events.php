@@ -109,7 +109,7 @@ class Events {
     }
 
     public function delete($id) {
-        $delete = $this->pdo->prepare('DELETE FROM events WHERE id = ?');
+        $delete = $this->pdo->prepare('DELETE * FROM events WHERE id = ?');
         $suppr = $delete->execute(array($id));
         return $suppr;
     }

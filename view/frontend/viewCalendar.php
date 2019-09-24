@@ -7,10 +7,7 @@ require_once('controller/calendrier.php');
 ?>
 
 <div class="calendar">
-<?php if($_SESSION['id'] !== 0) { ?>
-  
-Salut <?php echo $_SESSION['pseudo']; ?> de l'équipe <?php echo $_SESSION['teamName']; ?>
-<?php } ?>
+
   <div class="top_calendar">
     <h1><?= $month->toString(); ?></h1>
       <div>

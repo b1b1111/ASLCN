@@ -389,32 +389,6 @@ class postController {
         require 'view/frontend/classement.php';
     }
 
-    public function getClassement() {
-        $post = $this->postManager->getTeams();
-        
-        foreach($post as $team) {
-        echo "<div id='table_classement' align='center'>
-            <table> 
-        
-            </table>";
-          
-            echo "<table>";  
-            echo "<tr>";
-            echo "<th>" . "<mark>Nom</mark> ". "</th>"; 
-            echo "<th>" . "<mark>Points</mark> " . "</th>";  
-            echo "<th>" . "<mark>Classement</mark> " . "</th>";  
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td>" . $team['teamName'] . "</td>"; 
-            echo "<td>" . $team['teamPoint'] . "</td>";  
-            echo "<td>" . $team['teamRank'] . "</td>"; 
-            echo "</tr>";
-            
-            echo "</table>";  
-        }  
-        echo "</div>";
-    } 
-
     public function presence($id) {
         $post = $this->postManager->getEvents();
         $membre = $this->postManager->getMember($id);
