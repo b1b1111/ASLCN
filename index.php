@@ -38,10 +38,7 @@ else if($url[0] == 'calendrier') {
     } 
 
     else if($url[1] == 'viewEvent') {
-        $getid = (int) $_GET['id'];
-        $id = (int) $_GET['id'];
-        $postController->viewEvent($getid,$id);
-        $adminController->pres();
+        $adminController->getAllPres();
     }
  
 } 
@@ -77,15 +74,18 @@ else if($url[0] == 'profil') {
         $postController->profil();
     }
 
-    else if($url[1] == 'presence') {
-        $postController->presence();
+    else if ($url[1] == 'editPresence' && is_numeric($url[2]))  {
+        if ($url[3] == 'pres') {  
+            $adminController->getPres($url[2]);
+            
+        }
+        else { 
+            $present = $_POST['present'];
+            $absent = $_POST['absent'];
+            $adminController->editPresence($url[2], $present, $absent);
+            header('Location: '. $_POST['URL_PATH'] . 'profil'); 
+        }
     }
-
-    else if ($url[1] == 'create') {
-        $present = $_POST['present'];
-        $absent = $_POST['absent'];
-        $postController->postPresence($present, $absent);
-    }  
 
     else if($url[1] == 'connexion') {
         $postController->connexion();

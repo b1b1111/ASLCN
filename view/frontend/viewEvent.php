@@ -70,10 +70,6 @@ require('controller/edit.php');
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
-<div id="pres">
-    <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent/t=1&id=<?= $id ?>">Present</a> (<?= $pres ?>)<br />
-    <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent/t=2&id=<?= $id?>">Absent</a> (<?= $abs ?>)
-</div>
 
 <table class="table_score">
     <thead>
@@ -126,6 +122,27 @@ require('controller/edit.php');
         </tr>
     </tbody>
 </table>
+
+<table class="table-responsive">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Present</th>
+                <th>Absent</th>
+            </tr>
+        </thead>
+        <?php {
+            foreach($post as $pres) {
+                echo "<tbody>";
+                    echo "<tr>";
+                    echo "<td>" . $pres['pseudo'] . "</td>";
+                    echo "<td>" . $pres['present'] . "</td>"; 
+                    echo "<td>" . $pres['absent'] . "</td>";   
+                    echo "</tr>";
+                echo "</tbody>";   
+            }   
+        } ?>
+    </table>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 

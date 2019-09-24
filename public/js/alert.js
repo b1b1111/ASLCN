@@ -49,6 +49,14 @@ function ModifPost() {
 }
 
 /**
+ * Alert confirmation de modification presence
+ */
+function ModifPres() {
+    var msg="Merci d'avoir indiqué tes présences";
+    alert(msg);
+}
+
+/**
  * Alert confirmation de signalement d'un commentaire.
  */
 function Signal() {

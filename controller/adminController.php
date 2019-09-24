@@ -25,40 +25,38 @@ class adminController {
         require 'view/frontend/editTeam.php';        
     }
 
-    public function pres() {
-        if(isset($_GET['t'],$_GET['id']) AND !empty($_GET['t']) AND !empty($_GET['id'])) {
-        $gett = (int) $_GET['t'];
-        $sessionid = $_SESSION['id'];
-        $getid = (int) $_GET['id'];
-        $check = $this->postManager->getEventId($getid);
-        if($check->rowCount() == 1) {
-            if($gett == 1) {
-                $check_pres = $this->postManager->checkPres($getid,$sessionid);
-                $del = $this->postManager->deleteAbs($getid,$sessionid);
-                if($check_pres->rowCount() == 1) {
-                    $del = $this->postManager->deletePres($getid,$sessionid);
-                } else {
-                    $ins = $this->postManager->insertPres($getid, $sessionid);
-                }
-                
-            } 
-            else if($gett == 2) {
-                $check_abs = $this->postManager->checkAbs($getid,$sessionid);
-                $del = $this->postManager->deletePres($getid,$sessionid);
-                if($check_abs->rowCount() == 1) {
-                    $del = $this->postManager->deleteAbs($getid,$sessionid);
-                } else {
-                    $ins = $this->postManager->insertAbs($getid, $sessionid);
-                }
-            }
-            header('Location: '. $_POST['URL_PATH'] . "calendrier" . "/" . 'viewEvent?id=' . $getid);
-        } else {
-            exit('Erreur fatale. <a href="#">Revenir à l\'accueil</a>');
+    public function editPresence($id, $present, $absent) {
+        $edit_pres = $this->postManager->updatePres($id, $present, $absent);
+        if($edit_pres) {
+            $confirm = "Tu as bien noté tes présences";
         }
-        } else {
-        exit('Erreur fatale. <a href="#">Revenir à l\'accueil</a>');
-        }
-         
     }
- 
+
+    public function getPres($id) {
+        $post = $this->postManager->getTablePres($id);
+        require 'view/frontend/presence.php';
+    }
+
+    public function getAllPres() {
+        $post = $this->postManager->getAllPres();
+        require 'view/frontend/viewEvent.php';
+    }
+
+    public function editEv($id, $presents, $absents) {
+        $edit_ev = $this->postManager->updateEv($id, $presents, $absents);
+        if($edit_ev) {
+            $confirm = "Tu as bien noté tes présences";
+        }
+    }
+
+    public function getEv($id) {
+        $event = $this->postManager->getEv($id);
+        require 'view/frontend/presence.php';
+    }
+
+    public function getAllEv() {
+        $event = $this->postManager->getEvents();
+        require 'view/frontend/viewEvent.php';
+    }
+
 }

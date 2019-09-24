@@ -28,8 +28,7 @@ else {
 ?>
     <div id="profil">
         <h2>Profil de <?php echo $_SESSION['pseudo']; ?></h2>
-        <br />
-        <p class="paragraphe">Pseudo = <?php echo $_SESSION['pseudo']; ?></p>  
+        
         <p class="paragraphe">Equipe = <?php echo $_SESSION['teamName']; ?></p> 
         <p class="paragraphe">Mail = <?php echo $_SESSION['mail']; ?></p>  
         <?php
@@ -40,15 +39,14 @@ else {
                 <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
             </div> <br />
 
-            <div>
-                <h2>Pour vous inscrire aux futures rencontres</h2>
-                <a href="<?= $_POST['URL_PATH'] ?>profil/presence" class="calendar__button">P</a>
-            </div>
+                <h2>Clique içi pour indiquer aux petits camarades si tu viens ou non</h2>
+                <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres">Presence</a></li>
             
             <div id="linkProfil">
+                <h2>Pour modifidier ton profil ou te déconnecter</h2>
                 <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
                 <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
-            </div>
+            </div><br />
             
         <?php
         }

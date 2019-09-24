@@ -34,16 +34,8 @@ class postController {
     }
 
     //Affiche un event.
-    public function viewEvent($getid,$id) {
-        $getid = (int) $_GET['id'];
-        $id = (int) $_GET['id'];
-        $membre = $this->postManager->getEventId($getid);
-        $pres = $this->postManager->selectPres($id);
-        $pres = $pres->rowCount();
-        $abs = $this->postManager->selectAbs($id);
-        $abs = $abs->rowCount();
-
-        require('view/frontend/viewEvent.php');
+    public function viewEvents($getid) {
+        $post = $this->postManager->getEventId($getid);  
     }
 
     // Afficher un evenement.
@@ -423,19 +415,19 @@ class postController {
         echo "</div>";
     } 
 
-    public function postMembres() {
-        
-    }
-
-    public function presence() {
+    public function presence($id) {
         $post = $this->postManager->getEvents();
-        $membre = $this->postManager->getMembers();
+        $membre = $this->postManager->getMember($id);
         require 'view/frontend/presence.php';
     } 
 
     public function postPresence($present, $absent) {    
         $post = $this->postManager->addPresence($present, $absent);
         header('Location: '. $_POST['URL_PATH'] . 'profil');
+    }
+
+    public function editPres($id, $idmembres) {
+        $post = $this->postManager->updatePres($id, $idmembres);
     }
     
 }
