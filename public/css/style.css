@@ -14,10 +14,14 @@
 }
 
 body { 
-
     background: #1e2a36 !important;
+    width: 100%;
     background-size: 100%;
     position: relative;
+}
+
+#body {
+    width: 75%;
 }
 
 h3 {
@@ -63,6 +67,10 @@ label {
 
 /*---------------------------------------------HEADER------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
+header {
+    width: 25%;
+
+}
 .header_content h1 {
     text-align: center;
     font-size: 2.8em;
@@ -155,7 +163,6 @@ nav {
 	position: relative;
 	width: 660px;
 	height: 50px;
-	background-color: #34495e;
 	border-radius: 8px;
     font-size: 0;
 }

@@ -1,6 +1,4 @@
 <?php $title = 'ASLCN'; ?>
-<?php require('header.php'); 
-?>
 <?php require('html.php'); ?>
 <?php require('template.php'); ?>
 

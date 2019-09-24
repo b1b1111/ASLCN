@@ -1,6 +1,5 @@
 <?php
-$title = 'ASLCN';
-require('header.php'); 
+$title = 'ASLCN'; 
 require('html.php');
 require('template.php'); 
 ?>

@@ -32,6 +32,8 @@
    
 </header>
 
+<div id="body">
+
         <script src="https://cdn.tiny.cloud/1/376mz5siri1y6bnkll7l26kltznbqkwp9mi2aorxqpadvuxj/tinymce/5/tinymce.min.js"></script>
         
         <script
@@ -44,7 +46,7 @@
         <script src="/aslcn/public/js/ytmenu.js"></script> 
 
         <footer id="footer"></footer>
-        
+    
     </body>
-  
+    </div>
 </html>
