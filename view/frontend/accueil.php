@@ -3,7 +3,7 @@ $title = 'ASLCN';
 require('html.php');
 require('template.php');
 ?>
-
+<div class="body">
     <div id="slider">
         <figure>
             <img src="../aslcn/public/images/slider/img1.jpg" alt="banner1">
@@ -63,3 +63,4 @@ require('template.php');
         <p><a href="#">Mentions légales</a> - site made with <img src="../aslcn/public/images/logo/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
     </div>
 </footer>
+</div>
