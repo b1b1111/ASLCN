@@ -39,14 +39,14 @@ require_once('controller/calendrier.php');
                   <a class="calendar__day"><?= $date->format('d'); ?></a>
 
                   <?php foreach($eventsForDay as $event): ?>
+                  <?php if(isset($_SESSION['id']) === 0) { ?>
                     <div class="calendar__event">
 
-                      <?php if($_SESSION['id'] == 0) { ?>
+                      
                         <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                       <?php
                       }
-                      else {
-                      ?>
+                      if(isset($_SESSION['id']) == $_SESSION['id']) { ?>
                         <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                         <a href="<?= $_POST['URL_PATH'] ?>calendrier/editEvent?id=<?= $event['id']; ?>" class="button_modif">M</a>
                       <?php } ?>  

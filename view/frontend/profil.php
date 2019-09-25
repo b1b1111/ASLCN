@@ -3,7 +3,7 @@ $title = 'ASLCN';
 require('html.php');
 require('template.php'); 
 ?>
-
+<link href="<?= $_POST['URL_PATH'] ?>public/css/profil.css" type="text/css" rel="stylesheet"/>
 <?php 
 if($_SESSION['id'] == 0) {
 ?>
@@ -25,44 +25,36 @@ if($_SESSION['id'] == 0) {
 }
 else {
 ?>
+
     <div id="profil">
         <h2>Profil de <?php echo $_SESSION['pseudo']; ?></h2>
         
-        <p class="paragraphe">Equipe = <?php echo $_SESSION['teamName']; ?></p> 
-        <p class="paragraphe">Mail = <?php echo $_SESSION['mail']; ?></p>  
         <?php
             if(isset($_SESSION['id']) == $_SESSION['id']) { ?> <br />
 
-            <div id="eventCreation">
-                <h2>Pour créer un évènement, cliquez sur le bouton</h2>
-                <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="calendar__button">+</a>
-            </div> <br />
 
-                <h2>Clique içi pour indiquer aux petits camarades si tu viens ou non</h2>
-                <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres">Presence</a></li>
-            
-            <div id="linkProfil">
-                <h2>Pour modifidier ton profil ou te déconnecter</h2>
-                <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil">Editer mon profil - </a>
-                <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion">Se déconnecter</a>
-            </div><br />
-            
-        <?php
-        }
-        ?>
+<nav class="profil_menu">
+   <input type="checkbox" href="#" class="profil_menu-open" name="profil_menu-open" id="profil_menu-open" />
+   <label class="profil_menu-open-button" for="profil_menu-open">
+    <span class="lines line-1"></span>
+    <span class="lines line-2"></span>
+    <span class="lines line-3"></span>
+  </label>
 
-        <?php 
-            if($_SESSION['admin'] == true) {
-        ?>
-        <br />
-        <a href="<?= $_POST['URL_PATH'] ?>administration">Accéder à l'espace administration</a>
-        
-        <?php
-        }
-        ?>
-    </div>
-<?php
-}
-?>
+   <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="profil_menu-item blue"><img src="../aslcn/public/images/icons/add.png" alt="icon_add"/></a>
+   <a href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green"><img src="../aslcn/public/images/icons/update.png" alt="icon_update"/></a>
+   <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red"><img src="../aslcn/public/images/icons/profil.png" alt="icon_profil"/></a>
+   <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion" class="profil_menu-item purple"> <img src="../aslcn/public/images/icons/deco.png" alt="icon_deco"/> </a>
+</nav>
+  
+<?php } ?>
+
+<?php  if($_SESSION['admin'] == true) { ?>
+    <br />
+    <a id="link_admin" href="<?= $_POST['URL_PATH'] ?>administration">Accéder à l'espace administration</a>
+
+<?php } ?>
+</div>
+<?php } ?>
 
 

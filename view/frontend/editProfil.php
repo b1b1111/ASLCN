@@ -4,11 +4,11 @@ require('html.php');
 require('template.php');
 ?>
 
-<a href="<?= $_POST['URL_PATH'] ?>profil">Retour à la page d'accueil du profil</a>
+<a class="back_link" href="<?= $_POST['URL_PATH'] ?>profil"> Retour au profil</a>
 
 <div align="center">
     <h2>Edition de mon profil</h2>
-    <div align="left">
+    <div align="center">
     <form method="POST" action="" enctype="multipart/form-data">
         <label>Pseudo :</label>
         <input type="text" name="newpseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" /><br /><br />

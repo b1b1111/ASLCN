@@ -4,6 +4,8 @@ require('html.php');
 require('template.php'); 
 ?>
 
+<a class="back_link" href="<?= $_POST['URL_PATH'] ?>profil"> Retour au profil</a>
+
 <?php foreach($post as $p) { ?>
 
 <form id="modif_presence" method="post" action="profil/editPres/<?= $p['id'] ?>">

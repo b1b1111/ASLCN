@@ -1,24 +1,22 @@
 <header>
-<input type='checkbox' id='mmeennuu'>
-<label class='menu' for='mmeennuu'>
-
-<div class='barry'>
-	<span class='bar'></span>
-	<span class='bar'></span>
-	<span class='bar'></span>
-	<span class='bar'></span>
-</div>
-	
-<ul>
-	<li><a id='home' href='http://localhost/aslcn/index'>Accueil</a></li>
-	<li><a id='calendar' href='http://localhost/aslcn/calendrier'>Calendrier</a></li>
-	<li><a id='contact' href='http://localhost/aslcn/contact'>Contact</a></li>
-    <li><a id='class' href='http://localhost/aslcn/classement'>Classement</a></li>
-    <li><a id='team' href='http://localhost/aslcn/classement'>Team</a></li>
-    <li><a id='profil' href='http://localhost/aslcn/profil'>Profil</a></li>
-</ul>
-<div class="animation"></div>
-</label>
+    <input type='checkbox' id='head_menu'>
+        <label class='menu' for='head_menu'>
+            <div class='barry'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </div>
+                
+            <ul>
+                <li><a id='home' href='http://localhost/aslcn/index'>Accueil</a></li>
+                <li><a id='calendar' href='http://localhost/aslcn/calendrier'>Calendrier</a></li>
+                <li><a id='contact' href='http://localhost/aslcn/contact'>Contact</a></li>
+                <li><a id='class' href='http://localhost/aslcn/classement'>Classement</a></li>
+                <li><a id='team' href='http://localhost/aslcn/classement'>Team</a></li>
+                <li><a id='profil' href='http://localhost/aslcn/profil'>Profil</a></li>
+            </ul>
+    </label>
 <!--<div class="navbar_header">
        <nav>
             <a href="http://localhost/aslcn/index">Accueil</a>
