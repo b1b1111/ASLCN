@@ -264,6 +264,14 @@ class postManager extends manager {
         return $post;
     }
 
+    public function getEvOrder($id) {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM events WHERE id= ? ORDER BY start"); 
+        $req->execute(array($id));  
+        $event = $req->fetchAll(); 
+        return $event;
+    }
+
     public function getEv($id) {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM events WHERE id= ?"); 

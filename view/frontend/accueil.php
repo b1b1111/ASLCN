@@ -34,11 +34,12 @@ require('template.php');
     <div id="resum">
         <h1 id="title_resum">L'Association </h1>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        <p>L'ASCN, ce n'est pas un fleuve, oh non ! c'est une compétition multisports ! Et tu en fais partie ...
+        Tu vas avoir l'occasion de donner de ta personne dans l'effort et l'allégresse, dans le cadre d'un championnat multisports, un soir par semaine, de novembre à juin environ … 
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        <p>Mais pas toutes les semaines, faut pas déconner! On a quand même une vie, une famille, du linge à sécher, des séries à terminer, un footing à caler, un peu de boulot accessoirement et peut-être une grosse fin de soirée au Berlin à gérer ...
         </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tempore consequatur eum aspernatur distinctio, necessitatibus, exercitationem aut mollitia, non atque alias odit veritatis enim dolorem vel? Assumenda quia illum error!
+        <p>Maintenant, pose-toi les bonnes questions, fais le point sur ta condition physique, Prépare de suite Monsieur ou Madame à ne plus te voir la mercredi soir, achète une paire de running et surtout echauffe toi ça va piquer !!!
         </p>
 
     </div>
@@ -48,11 +49,16 @@ require('template.php');
 <section id="section_three">
 
     <div id="resum_ranking">
-        <h1 id="title_ranking">Prochaine rencontre</h1>
+        <h1 id="title_ranking">Des questions ?</h1>
         <p>
           
-            Ut suscipit nisl quam, non bibendum urna semper ut.
+        <?php
+        foreach($posts as $ev) { ?>
+        <?php echo $ev['name'] ?>
+        <?php } ?>
+        </p>
 
+        <p><a href="<?= $_POST['URL_PATH'] ?>contact">Contact</a></p>
     </div>
 
 </section>

@@ -12,8 +12,8 @@ class postController {
     }
 
     //Page accueil
-    public function getPosts() {
-        $posts = $this->postManager->getPosts();
+    public function getPosts($id) {
+        $posts = $this->postManager->getEvOrder($id);
         require 'view/frontend/accueil.php';
     }
 

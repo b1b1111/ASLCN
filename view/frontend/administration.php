@@ -15,5 +15,7 @@ require('template.php');
         <?php echo $team['teamName'] ?>
         <a class="admin_modif" href="<?= $_POST['URL_PATH'] ?>administration/editTeam/<?= $team['id'] ?>/prepare">Modification</a></li>
         <?php } ?>
+
+        <a href=""></a>
   </ul>
 
