@@ -403,5 +403,9 @@ class postController {
     public function editPres($id, $idmembres) {
         $post = $this->postManager->updatePres($id, $idmembres);
     }
+
+    public function mentions() {
+        require 'view/frontend/mentions.php';
+    }
     
 }

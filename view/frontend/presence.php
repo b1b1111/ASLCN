@@ -8,9 +8,8 @@ require('template.php');
 
 <?php foreach($post as $p) { ?>
 
-<form id="modif_presence" method="post" action="profil/editPres/<?= $p['id'] ?>">
+<form id="modif_presence" method="post" action="profil/editPresence/<?= $p['id'] ?>">
 
-    <p class="paragraphe"><?php echo $_SESSION['pseudo']; ?> Merci de noter si vous êtes présent ou non.</p>
     <p><?= $p['name'] ?></p>
 
     <label for="present">Present</label>
@@ -25,7 +24,6 @@ require('template.php');
     <thead>
         <tr>
             <th>Evenement</th>
-            <th>Nom</th>
             <th>Présent</th>
             <th>Absent</th>
             <th>Valider</th>
@@ -34,9 +32,8 @@ require('template.php');
     <?php {
         echo "<tbody>";
             echo "<tr>";
-                echo "<td>" . $p['name'] . "</td>";
-                echo "<td>" . $p['pseudo'] . "</td>"; 
-                echo "<td>" . "  <form method='post' action='create'>  " . '<input type="radio" name="presents" value="oui" />' . "<label for='oui'>" . $p['presents'] . "</label>" . "</td>"; 
+                echo "<td>" . $p['name'] . "</td>"; 
+                echo "<td>" . "  <form method='post' action=''>  " . '<input type="radio" name="presents" value="oui" />' . "<label for='oui'>" . $p['presents'] . "</label>" . "</td>"; 
                 echo "<td>" . '<input type="radio" name="presents" value="non" />' . "<label for='non'>" . $p['absents'] . "</label>" . "</td>";
                 echo "<td>" . '<input type="submit" value="valider" />' . "</form>" . "</td>";
             echo "</tr>";

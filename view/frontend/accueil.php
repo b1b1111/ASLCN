@@ -66,7 +66,7 @@ require('template.php');
 <footer>
 
     <div>
-        <p><a href="#">Mentions légales</a> - site made with <img src="../aslcn/public/images/icons/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
+        <p><a href="<?= $_POST['URL_PATH'] ?>mentions">Mentions légales</a> - site made with <img src="../aslcn/public/images/icons/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
     </div>
 </footer>
 </div>

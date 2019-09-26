@@ -23,6 +23,10 @@ if (empty($url)) {
     $postController->getPosts($url);
 } 
 
+else if ($url[0] == 'mentions') {
+    $postController->mentions();
+} 
+
 /*--------------------------------------CALENDRIER----------------------------------------*/
 else if($url[0] == 'calendrier') {
     if (empty($url[1])) {

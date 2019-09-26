@@ -13,6 +13,8 @@ class adminController {
       $this->postManager = new \Model\postManager();  
    }  
 
+    /***********************************TEAM******************************************** */
+
     public function editTeamAdmin($id, $teamPoint) {    
         $edit_point = $this->postManager->updateTeam($id, $teamPoint);
         if($edit_point) {
@@ -24,6 +26,8 @@ class adminController {
         $post = $this->postManager->getTeam($id);  
         require 'view/frontend/editTeam.php';        
     }
+
+     /***********************************PRESENCE******************************************** */
 
     public function editPresence($id, $present, $absent) {
         $edit_pres = $this->postManager->updatePres($id, $present, $absent);
@@ -41,6 +45,8 @@ class adminController {
         $post = $this->postManager->getAllPres();
         require 'view/frontend/viewEvent.php';
     }
+
+    /***********************************EVENTS******************************************** */
 
     public function editEv($id, $presents, $absents) {
         $edit_ev = $this->postManager->updateEv($id, $presents, $absents);
