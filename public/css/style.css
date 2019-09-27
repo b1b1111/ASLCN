@@ -545,14 +545,7 @@ table, th, td {
 #pres {
     color: white;
 }
-/*---------------------------------------------PRESENCE-------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
-#presence input {
-    background-color: #1abc9c;
-}
-#absence input {
-    background: rgb(247, 126, 14);
-}
+
 
 /*---------------------------------------------CLASSEMENT-------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
@@ -617,59 +610,6 @@ table, th, td {
 .table-responsive tr:nth-child(odd) {
     background-color: #eee;
 }
-
-/*---------------------------------------------COMMENTAIRES-------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
-#comment {
-    color: rgb(255, 251, 251);
-    font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
-}
-
-.comment_paragraphe {
-  color: white;
-  font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
-}
-
-#author, textarea {
-    width: 40%;
-    height: 32px;
-    resize: none;
-    border: 2px none white;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 200px;
-}
-
-.btn_comment {
-    margin: 10px 0 5px 0;
-    background: rgb(202, 145, 64);
-    text-align: center;
-    position: relative;
-    display: inline-flex;
-    font-size: 0.8em;
-    padding: 12px;
-    font-family: 'Merriweather', 'Open Sans', Verdana;
-    text-decoration: none;
-    color: white;
-    box-shadow: inset -4px -4px 0px 0px rgb(143, 102, 44);
-    border-radius: 5px;
-  }
-.btn_comment:hover, .btn_comment:focus {
-    background: rgb(192, 139, 48);
-    box-shadow: inset -6px -6px 0px 0px rgb(143, 102, 44);
-  }
-  .btn_comment:active {
-    box-shadow: inset 4px 4px 0px 0px rgb(143, 102, 44);
-  }
-  .btn_comment:before, .btn_comment:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-  }
 
 /*---------------------------------------------CONTACT------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
@@ -923,6 +863,15 @@ textarea {
 
 #link_admin {
     margin-top: 100px;
+}
+
+/*---------------------------------------------PRESENCE-------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+#presence input {
+    background-color: #1abc9c;
+}
+#absence input {
+    background: rgb(247, 126, 14);
 }
 
 /*---------------------------------------------MODIFICATION-------------------------------------------------*/

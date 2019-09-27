@@ -2,14 +2,12 @@
 
 namespace Controller;
 
-require_once('model/CommentManager.php');
 require_once('model/postManager.php');
 require_once('model/classementManager.php');
 
 class adminController {
 
    function __construct() {
-      $this->CommentManager = new \Model\CommentManager();
       $this->postManager = new \Model\postManager();  
    }  
 
@@ -30,7 +28,7 @@ class adminController {
      /***********************************PRESENCE******************************************** */
 
     public function editPresence($id, $present, $absent) {
-        $edit_pres = $this->postManager->updatePres($id, $present, $absent);
+        $edit_pres = $this->postManager->updatePres($id, $present, $present);
         if($edit_pres) {
             $confirm = "Tu as bien noté tes présences";
         }

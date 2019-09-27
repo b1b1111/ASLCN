@@ -20,7 +20,7 @@ require('template.php');
         <h1>Bonjour, </h1>
         <p>
             Bienvenue sur le site de l'ASLCN <br />
-            
+        </p>
         <h5 class="signature">ASLCN</h5>
         
     </div>
@@ -50,21 +50,12 @@ require('template.php');
 
     <div id="resum_ranking">
         <h1 id="title_ranking">Des questions ?</h1>
-        <p>
-          
-        <?php
-        foreach($posts as $ev) { ?>
-        <?php echo $ev['name'] ?>
-        <?php } ?>
-        </p>
-
         <p><a href="<?= $_POST['URL_PATH'] ?>contact">Contact</a></p>
     </div>
 
 </section>
 
 <footer>
-
     <div>
         <p><a href="<?= $_POST['URL_PATH'] ?>mentions">Mentions légales</a> - site made with <img src="../aslcn/public/images/icons/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
     </div>

@@ -22,6 +22,10 @@ body {
   counter-reset: portfolio;
 }
 
+.head_folio {
+  display: flex;
+}
+
 .project {
   counter-increment: portfolio;
   cursor: pointer;

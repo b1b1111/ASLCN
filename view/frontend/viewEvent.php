@@ -126,17 +126,13 @@ require('controller/edit.php');
         <thead>
             <tr>
                 <th>Nom</th>
-                <th>Present</th>
-                <th>Absent</th>
             </tr>
         </thead>
         <?php {
             foreach($post as $pres) {
                 echo "<tbody>";
                     echo "<tr>";
-                    echo "<td>" . $pres['pseudo'] . "</td>";
-                    echo "<td>" . $pres['present'] . "</td>"; 
-                    echo "<td>" . $pres['absent'] . "</td>";   
+                    echo "<td>" . $pres['pseudo'] . "</td>"; 
                     echo "</tr>";
                 echo "</tbody>";   
             }   

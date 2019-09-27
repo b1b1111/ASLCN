@@ -3,12 +3,10 @@
 namespace Controller;
 
 require_once('model/postManager.php');
-require_once('model/CommentManager.php');
 class postController {
 
     function __construct() {
         $this->postManager = new \Model\postManager();  
-        $this->commentManager = new \Model\CommentManager();  
     }
 
     //Page accueil

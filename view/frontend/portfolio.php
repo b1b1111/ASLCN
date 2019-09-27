@@ -5,7 +5,13 @@ require('template.php');
 ?>
 
 <div class="container">
-  <h1><img src="public/images/4g1f/logo_mini.jpg" alt="logo_mini_4g1f" class="mini_logo">4 gars 1 fille</h1>
+  <div class="head_folio">
+    <a href="public/images/4g1f/logo.jpg">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="logo_mini_4g1f" class="mini_logo">
+    </a>
+    <h1>4 gars 1 fille</h1>
+  </div>
+  
   <div class="portfolio-flex" id="js-portfolio-fille">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -114,12 +120,13 @@ require('template.php');
     </div>
   </div>
 
-  <h1>
+  <div class="head_folio">
     <a href="public/images/glands/logo.jpg">
-      <img src="public/images/glands/logo_mini.jpg" alt="logo_mini_glands" class="mini_logo"/>
+        <img src="public/images/glands/logo_mini.jpg" alt="logo_mini_glands" class="mini_logo"/>
     </a>
-    En avant les Glands
-  </h1>
+    <h1>En avant les Glands</h1>
+  </div>
+ 
   <div class="portfolio-flex" id="js-portfolio-gland">
     <div class="project js-item" tabindex="0">
     <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
@@ -228,7 +235,12 @@ require('template.php');
     </div>
   </div>
 
-  <h1><a href="public/images/skip/logo.jpg"/><img src="public/images/skip/logo_mini.jpg" alt="logo_mini_skip" class="mini_logo">Skipailh BZH</h1>
+  <div class="head_folio">
+    <a href="public/images/skip/logo.jpg"/>
+      <img src="public/images/skip/logo_mini.jpg" alt="logo_mini_skip" class="mini_logo"/>
+    </a>
+    <h1>Skipailh BZH</h1>
+  </div>
   <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -337,7 +349,13 @@ require('template.php');
     </div>
   </div>
 
-  <h1><a href="public/images/capillo/logo.jpg"/><img src="public/images/capillo/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">Capillo</h1>
+  <div class="head_folio">
+    <a href="public/images/capillo/logo.jpg"/>
+      <img src="public/images/capillo/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">
+    </a>
+    <h1>Capillo</h1>
+  </div>
+  
   <div class="portfolio-flex" id="js-portfolio-capillo">
     <div class="project js-item" tabindex="0">
       <img src="public/images/capillo/toon.jpg" alt="" class="project__image">
@@ -445,8 +463,14 @@ require('template.php');
       </div>
     </div>
   </div>
+ 
+  <div class="head_folio">
+    <a href="public/images/wall/logo.jpg"/>
+      <img src="public/images/wall/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">
+    </a>
+    <h1>The Wall</h1>
+  </div>
 
-  <h1><a href="public/images/wall/logo.jpg"/><img src="public/images/wall/logo_mini.jpg" alt="logo_mini_wall" class="mini_logo">The Wall</h1>
   <div class="portfolio-flex" id="js-portfolio-wall">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -555,7 +579,13 @@ require('template.php');
     </div>
   </div>
 
-  <h1><a href="public/images/4ever/logo.jpg"/><img src="public/images/4ever/logo_mini.jpg" alt="logo_mini_4ever" class="mini_logo">4'Ever</h1>
+  <div class="head_folio">
+    <a href="public/images/4ever/logo.jpg"/>
+      <img src="public/images/4ever/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">
+    </a>
+    <h1>4'Ever</h1>
+  </div>
+
   <div class="portfolio-flex" id="js-portfolio-ever">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
@@ -685,7 +715,12 @@ require('template.php');
     </div>
   </div>
 
-  <h1>Team 8</h1>
+  <div class="head_folio">
+    <a href="public/images/wall/logo.jpg"/>
+      <img src="public/images/wall/logo_mini.jpg" alt="logo_mini_cap" class="mini_logo">
+    </a>
+    <h1>Team 8</h1>
+  </div>
   <div class="portfolio-flex" id="js-portfolio-ema">
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">

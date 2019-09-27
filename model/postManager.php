@@ -49,7 +49,6 @@ class postManager extends manager {
         return $codeUnique;
     }
 
-
     public function getPseudo($pseudo) {
         $db = $this->newManager->dbConnect();
         $req = $db->prepare("SELECT * FROM membres WHERE pseudo = ?");
@@ -130,6 +129,8 @@ class postManager extends manager {
         return $userinfo;
     }
 
+    /*****************************************EDIT PROFIL***************************************** */
+
     public function editMembre() {
         $db = $this->newManager->dbConnect();
         $requser = $db->prepare("SELECT * FROM membres WHERE 1");
@@ -182,9 +183,7 @@ class postManager extends manager {
         $insertmdp->execute(array($mdp1, $_SESSION['id']));
     }
 
-    /**
-     * Edition du mot de passe
-     */
+    /***************************************** RECUP MDP******************************************* */
 
     public function modifMdp() {
         $mdp1 = sha1($_POST['newmdp1']);
@@ -320,7 +319,7 @@ class postManager extends manager {
 
     public function getAllPres() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM presences"); 
+        $req= $db->prepare("SELECT * FROM membres ORDER BY pseudo"); 
         $req->execute();  
         $post = $req->fetchAll(); 
         return $post;
@@ -337,17 +336,16 @@ class postManager extends manager {
     public function updatePres($id, $present, $absent) {
 
         $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE membres SET present = ?, absent = ? WHERE id = ?');
-        $post = $request->execute(array($present, $absent, $id));   
-        return $post; 
+        $request = $db->prepare('UPDATE membres SET session_1 = ?, session_2 = ?, session_3 = ?, session_4 = ?, session_5 = ? WHERE id = ?');
+        $post = $request->execute(array($present, $absent, $id));return $post; 
     }
 
     public function getTablePres($id) {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT *
         FROM membres
-        RIGHT JOIN seance
-        ON seance.id_membres = membres.id');
+        RIGHT JOIN presences
+        ON presences.id_membre = membres.id');
         $request->execute(array($id)); 
         $post = $request->fetchAll();   
         return $post; 

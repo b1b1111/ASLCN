@@ -6,11 +6,9 @@ use Controller\adminController;
 $_POST['URL_PATH'] = 'http://localhost/aslcn/';
 
 require_once('controller/postController.php');
-require_once('controller/commentController.php');
 require_once('controller/adminController.php');
 
     $postController = new \Controller\postController();
-    $commentController = new \Controller\commentController();
     $adminController = new \Controller\adminController(); 
     
 $url = '';
