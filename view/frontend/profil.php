@@ -5,7 +5,7 @@ require('template.php');
 ?>
 <link href="<?= $_POST['URL_PATH'] ?>public/css/profil.css" type="text/css" rel="stylesheet"/>
 <?php 
-if($_SESSION['id'] == 0) {
+if(!isset($_SESSION['id']) || $_SESSION['id'] == 0) {
 ?>
     <div id="text_inscription">
         <h2>Inscription</h2>

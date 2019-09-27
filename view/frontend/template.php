@@ -17,18 +17,7 @@
                 <li><a id='profil' href='http://localhost/aslcn/profil'>Profil</a></li>
             </ul>
     </label>
-<!--<div class="navbar_header">
-       <nav>
-            <a href="http://localhost/aslcn/index">Accueil</a>
-            <a href="http://localhost/aslcn/calendrier">Calendrier</a>
-            <a href="http://localhost/aslcn/contact">Contact</a>
-            <a href="http://localhost/aslcn/classement">Classement</a>
-            <a href="http://localhost/aslcn/galerie">Equipes</a>
-            <a href="http://localhost/aslcn/profil">Profil</a>
-        
-            <div class="animation"></div>
-        </nav>
-    </div>-->
+
     <div class="header_content">
             <h1><a href="http://localhost/aslcn/index">ASLCN</a></h1>
             <h2>Association Sportive et Ludique des Copains Nantais</h2>

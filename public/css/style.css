@@ -204,8 +204,9 @@ label {
     position: relative;
     margin: 0 250px 0 250px;				
     overflow: hidden;	
-    box-shadow: 12px 5px 0px #1a242e;	
-    border-radius: 3px;			
+    border: 18px #1a242e solid;
+   
+    border-radius: 8px;			
 }
 #slider figure {
     position: relative;
@@ -376,7 +377,7 @@ label {
 
 table, th, td {
     border-collapse: collapse;
-  }
+}
 
 .top_calendar h1 {
     margin-left: 15px;

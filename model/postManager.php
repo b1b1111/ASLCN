@@ -315,23 +315,12 @@ class postManager extends manager {
         return $post; 
     }
 
-    /*****************************************SCORE************************************************ */
-    /********************************************************************************************** */
-
-    public function getScore($id) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM score WHERE id= ?"); 
-        $req->execute(array($id));  
-        $post = $req->fetchAll(); 
-        return $post;
-    }
-
     /*****************************************PRESENCE********************************************* */
     /********************************************************************************************** */
 
     public function getAllPres() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM membres ORDER BY pseudo DESC"); 
+        $req= $db->prepare("SELECT * FROM presences"); 
         $req->execute();  
         $post = $req->fetchAll(); 
         return $post;
@@ -357,8 +346,8 @@ class postManager extends manager {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT *
         FROM membres
-        RIGHT JOIN events
-        ON events.id_membres = membres.id');
+        RIGHT JOIN seance
+        ON seance.id_membres = membres.id');
         $request->execute(array($id)); 
         $post = $request->fetchAll();   
         return $post; 

@@ -38,20 +38,23 @@ require_once('controller/calendrier.php');
                   <?php endif; ?>
                   <a class="calendar__day"><?= $date->format('d'); ?></a>
 
-                  <?php foreach($eventsForDay as $event): ?>
-                  <?php if(isset($_SESSION['id']) === 0) { ?>
+                  <?php foreach($eventsForDay as $event){ ?>
+                    
                     <div class="calendar__event">
-
-                      
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
+                     
                       <?php
-                      }
-                      if(isset($_SESSION['id']) == $_SESSION['id']) { ?>
+                        if(isset($_SESSION['id']) && $event['id'] == $_SESSION['id']) { ?>                     
                         <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
                         <a href="<?= $_POST['URL_PATH'] ?>calendrier/editEvent?id=<?= $event['id']; ?>" class="button_modif">M</a>
-                      <?php } ?>  
+                      <?php } 
+
+                      else { ?>                     
+                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
+                      <?php } ?>   
+                      
                     </div>
-                  <?php endforeach; ?>
+                        
+                    <?php } ?>
               </td>
             <?php endforeach; ?>
         </tr>

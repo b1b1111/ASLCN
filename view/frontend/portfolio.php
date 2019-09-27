@@ -114,7 +114,12 @@ require('template.php');
     </div>
   </div>
 
-  <h1><a href="public/images/glands/logo.jpg"/><img src="public/images/glands/logo_mini.jpg" alt="logo_mini_glands" class="mini_logo"> En avant les Glands</h1>
+  <h1>
+    <a href="public/images/glands/logo.jpg">
+      <img src="public/images/glands/logo_mini.jpg" alt="logo_mini_glands" class="mini_logo"/>
+    </a>
+    En avant les Glands
+  </h1>
   <div class="portfolio-flex" id="js-portfolio-gland">
     <div class="project js-item" tabindex="0">
     <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
