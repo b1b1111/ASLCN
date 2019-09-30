@@ -280,10 +280,16 @@ class postManager extends manager {
     }
 
     public function updateEv($id, $presents, $absents) {
-
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('UPDATE events SET presents = ?, absents = ? WHERE id = ?');
         $post = $request->execute(array($presents, $absents, $id));   
+        return $post; 
+    }
+
+    public function deletEv($id) {
+        $db = $this->newManager->dbConnect();
+        $request = $db->prepare('DELETE FROM events WHERE events.id = ?');
+        $post = $request->execute(array($id));   
         return $post; 
     }
 

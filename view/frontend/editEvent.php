@@ -17,7 +17,6 @@ require('controller/edit.php');
       <?php render('calendar/form', ['data' => $data, 'errors' => $errors]); ?>
     <div class="form-group">
       <button class="btn btn-event">Modifier l'évènement</button>
-      <button class="btn btn-event">Supprimer l'évènement</button>
     </div>
   </form>
 </div>

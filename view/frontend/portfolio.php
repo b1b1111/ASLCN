@@ -14,7 +14,7 @@ require('template.php');
   
   <div class="portfolio-flex" id="js-portfolio-fille">
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="antho" class="project__image">
       <h2 class="project__name">Anthony Guihéneuf</h2>
       <div class="project__description">Antho</div>
       <div class="project__body js-body">
@@ -35,7 +35,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="roro" class="project__image">
       <h2 class="project__name">Ronan Delannée</h2>
       <div class="project__description">Roro</div>
       <div class="project__body js-body">
@@ -56,7 +56,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="lolo" class="project__image">
       <h2 class="project__name">Loriane Gautier</h2>
       <div class="project__description">Lolo</div>
       <div class="project__body js-body">
@@ -77,7 +77,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="max" class="project__image">
       <h2 class="project__name">Maxime Lopez</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
@@ -98,7 +98,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4g1f/logo_mini.jpg" alt="yvan" class="project__image">
       <h2 class="project__name">Yvan Coutellec</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
@@ -129,7 +129,7 @@ require('template.php');
  
   <div class="portfolio-flex" id="js-portfolio-gland">
     <div class="project js-item" tabindex="0">
-    <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
+    <img src="public/images/glands/logo_mini.jpg" alt="dorian" class="project__image">
       <h2 class="project__name">Dorian Alves</h2>
       <div class="project__description">El portos</div>
       <div class="project__body js-body">
@@ -150,7 +150,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="public/images/glands/robin_mini.jpg" alt="gland_max" class="project__image">
+      <img src="public/images/glands/robin_mini.jpg" alt="robin" class="project__image">
       <h2 class="project__name">Robin Lehoux</h2>
       <div class="project__description">Robin</div>
       <div class="project__body js-body">
@@ -171,7 +171,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="http://via.placeholder.com/350x350" alt="gland_fab" class="project__image">
+      <img src="public/images/glands/logo_mini.jpg" alt="fab" class="project__image">
       <h2 class="project__name">Fabien Le Guennec</h2>
       <div class="project__description">Fab</div>
       <div class="project__body js-body">
@@ -192,7 +192,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/glands/logo_mini.jpg" alt="pierrot" class="project__image">
       <h2 class="project__name">Pierre Le Cagnec</h2>
       <div class="project__description">Pierrot</div>
       <div class="project__body js-body">
@@ -213,11 +213,11 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/glands/logo_mini.jpg" alt="julien" class="project__image">
       <h2 class="project__name">Julien Moulin</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <div class="project__description">En avant les glands</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Juju</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -243,7 +243,7 @@ require('template.php');
   </div>
   <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/skip/logo_mini.jpg" alt="fanch" class="project__image">
       <h2 class="project__name">Francois Loarer</h2>
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
@@ -264,7 +264,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/skip/logo_mini.jpg" alt="rico" class="project__image">
       <h2 class="project__name">Eric Marchaland</h2>
       <div class="project__description">Rico</div>
       <div class="project__body js-body">
@@ -285,7 +285,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/skip/logo_mini.jpg" alt="alain" class="project__image">
       <h2 class="project__name">Alain Talabardon</h2>
       <div class="project__description">Sisco</div>
       <div class="project__body js-body">
@@ -306,7 +306,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/skip/logo_mini.jpg" alt="mel" class="project__image">
       <h2 class="project__name">Mélaine Legland</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
@@ -327,7 +327,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/skip/logo_mini.jpg" alt="" class="project__image">
       <h2 class="project__name">Jonathan Attard</h2>
       <div class="project__description">Ti john</div>
       <div class="project__body js-body">

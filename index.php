@@ -39,6 +39,10 @@ else if($url[0] == 'calendrier') {
         $postController->editEvent();
     } 
 
+    else if($url[1] == 'deleteEvent') {
+        $adminController->delEv($url[1]);
+    }
+
     else if($url[1] == 'viewEvent') {
         $adminController->getAllPres();
     }
@@ -106,7 +110,7 @@ else if($url[0] == 'profil') {
     }
 
     else if($url[1] == "recuperation") {
-        $postController->recupMdp($mailexist);
+        $postController->recupMdp();
     }
 
     else if($url[1] == "reboot") {
@@ -114,7 +118,7 @@ else if($url[0] == 'profil') {
     }
 
     else if($url[1] == 'editMP') {
-        $postController->editMP($getid);
+        $postController->editMP($url[1]);
     }
 } 
 

@@ -63,4 +63,8 @@ class adminController {
         require 'view/frontend/viewEvent.php';
     }
 
+    public function delEv($id) {
+        $post = $this->postManager->deleteEv($id);
+        require 'view/frontend/editEvent.php';
+    }
 }
