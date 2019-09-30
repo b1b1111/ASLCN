@@ -27,7 +27,7 @@ h3 {
 }
 
 h2 {
-    color: #E57373;;
+    color: #E57373;
 }
 
 h4 {
@@ -209,7 +209,6 @@ label {
     margin: 0 250px 0 250px;				
     overflow: hidden;	
     border: 18px #1a242e solid;
-   
     border-radius: 8px;			
 }
 #slider figure {
@@ -241,56 +240,6 @@ label {
 
 /*-------------------------------SECTION--------------------------------*/
 
-/*----------SECTION ONE-----------*/
-#section_one {
-    margin: 100px 0 40px 0;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;   
-}
-
-#presentation {
-    background-color: #e2df29;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    overflow: hidden;
-    padding-top: 450px;
-    color: #1e2a36;
-}
-
-#presentation:after {
-    content: "";
-    display: block;
-    background: #1e2a36;
-    height: 400px;
-    width: 8000px;
-    position: absolute;
-    z-index: 1;
-    bottom: -40%;
-    left: 50%;
-    margin-left: -4000px;
-    -webkit-transform: rotate(-9deg);
-    transform: rotate(-9deg);
-}
- 
-#presentation h1 {
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    width: 100%;
-    font-size: 3em;
-    font-weight: 500;
-  }
-
-#presentation p {
-    position: absolute;
-    top: 130px;
-    left: 200px;
-    width: 100%;
-    font-size: 2em;
-    font-weight: 400;
-}
 
 /*------------SECTION TWO-----------*/
 
@@ -305,7 +254,7 @@ label {
 #resum {
     width: 60%;
     text-align: justify;
-    margin: 375px 60px 0 0;
+    margin: 80px 60px 0 0;
     color: rgb(243, 224, 224);
 }
 
@@ -317,33 +266,33 @@ label {
 
 /*----------SECTION THREE-----------*/
 #section_three {
-    margin-top: 30px; 
-}
-
-#resum_ranking {
+    margin-top: 80px; 
     background-color: #e2df29;
     width: 100%;
     overflow: hidden;
     padding: 5%;
     color: #1e2a36;
 }
-   
-#title_ranking {
 
-    margin-left: 10%;
-    font-size: 3em;
-    font-weight: 500;
-  }
-
-#resum_ranking p {
-    margin-left: 10%;
-    font-size: 1.6em;
-    font-weight: 400;
+#list_section_three ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
-#resum_ranking a {
-    color: #25598d;
-    font-size: 1.2em;  
-    font-weight: 600;
+
+.logo_section_three {
+    text-align: center;
+}
+
+.logo_section_three img {
+    border: 8px #1e2a36 solid;
+    border-radius: 50%;	
+    padding: 10px;
+}
+
+.logo_section_three h2 {
+    color: #1e2a36;
 }
 
 /*--------------------------------------------CALENDRIER----------------------------------------------*/
@@ -467,15 +416,12 @@ table, th, td {
     font-weight: 800;
     background-color: rgb(247, 126, 14);
     border-radius: 50px;
-
 }
 
-.btn-event {
-    color: #fff;
-    background-color: #E57373;
-    border-color: #E57373;
+.btn-select-calendar:hover {
+    text-decoration: none;
+    transform: scale(1.1);
 }
-
 /*-----------------------BUTTON CREATION EVENT-------------------*/
 .button_modif {
     display: block;
@@ -503,7 +449,6 @@ table, th, td {
 #full_full {
     border: 2px solid grey;
     margin-top: 20px;
-
 }
 
 .container h1 {
@@ -666,6 +611,10 @@ table, th, td {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#list_point {
+    text-align: center;
+}
+
 .adminH2 {
     background: rgb(233, 231, 231);
     text-align: center;
@@ -702,91 +651,6 @@ table, th, td {
 #linkProfil {
     margin-top: 15px;
 }
-
-/*----------------------BUTTON SUPPRIMER-------------------*/
-.btn_suppr {
-    margin-top: 15px;
-    background: rgb(44, 43, 42);
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 8px;
-    text-decoration: none;
-    color: white;
-    box-shadow: inset -4px -4px 0px 0px rgb(34, 33, 32);
-    border-radius: 5px;
-  }
-.btn_suppr:hover, .btn_suppr:focus {
-    background: rgb(37, 37, 37);
-    box-shadow: inset -6px -6px 0px 0px rgb(34, 33, 32);
-  }
-  .btn_suppr:active {
-    box-shadow: inset 4px 4px 0px 0px rgb(34, 33, 32);
-  }
-  .btn_suppr:before, .btn_suppr:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-  }
-
-/*-----------------------BUTTON MODIFIED-------------------*/
-
-  .admin_modif {
-    margin-top: 15px;
-    background: rgb(228, 227, 221);
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 0.9em;
-    font-weight: 600;
-    padding: 8px;
-    text-decoration: none;
-    color: rgb(202, 145, 64);
-    box-shadow: inset -4px -4px 0px 0px rgb(173, 173, 169);
-    border-radius: 5px;
-  }
-.admin_modif:hover, .admin_modif:focus {
-    background: rgb(197, 197, 195);
-    box-shadow: inset -6px -6px 0px 0px rgb(173, 173, 169);
-  }
-  .admin_modif:active {
-    box-shadow: inset 4px 4px 0px 0px rgb(173, 173, 169);
-  }
-  .admin_modif:before, .admin_modif:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-  }
-  .admin_modif:before {
-    top: -6px;
-    left: 0;
-  }
-  .admin_modif:after {
-    left: -6px;
-    top: 0;
-  }
-
-  /*-----------------------BUTTON SIGNAL-------------------*/
-  .admin_signal {
-    margin-top: 5px;
-    margin-left: 10px;
-    background: rgb(228, 227, 221);
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-size: 0.8em;
-    font-weight: 700;
-    padding: 8px;
-    text-decoration: none;
-    color: rgb(145, 60, 26);
-    box-shadow: inset -4px -4px 0px 0px rgb(173, 173, 169);
-    border-radius: 5px;
-  }
 
   /*-----------------------BUTTON CREATION EVENT-------------------*/
   .calendar__button {
@@ -888,8 +752,8 @@ table, th, td {
   text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
 }
 
-/*---------------------------------------------FOOTER------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------FOOTER------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 
 footer {
     background: #1e2a36;
@@ -905,7 +769,7 @@ footer {
 
 @media all and (max-width: 960px) {
 
-/*-----------------------------------------------HEADER--------------------------------------------------*/
+    /**********************************HEADER***************************************/
     .header_content h1 {
         font-size: 2em;
     }
@@ -917,7 +781,7 @@ footer {
         font-size: 1em;
     }
 
-/*---------------------------------------------ACCUEIL-----------------------------------------------*/
+    /**********************************ACCUEIL***************************************/
     #section_one p,
     #section_two p {
         font-size: 0.82em;
@@ -971,64 +835,18 @@ footer {
     }
 
     /********************************SECTION****************************************/
-        
-    /*----------SECTION ONE-----------*/
-    #section_one {
-        margin-top: 30px;
-        display: inline-block;
-    }
-
-    #presentation {
-        padding: 100px;
-        margin: 0 0 0 0;
-    }
-
-    #presentation:after {
-        background: #1e2a36;
-        height: 20px;
-        position: relative;
-        bottom: 0;
-        left: 0px;
-        margin-left: 0px;
-    }
-    
-    #presentation h1 {
-    
-        top: 50px;
-        left: 40px;
-        width: 100%;
-        font-size: 2.5em;
-        font-weight: 500;
-    }
-
-    #presentation p {
-        top: 130px;
-        left: 40px;
-        font-size: 1.8em;
-        font-weight: 400;
-    }
-
-    #presentation h5 {
-        display: none;
-    }
 
     /*------------SECTION TWO-----------*/
 
-    #section_two {
-        width: 100%;
-        display: block;
-        position: relative;
-    }
 
     #resum {
         width: 96%;
         text-align: right;
-        margin-top: 200px;
         color: rgb(243, 224, 224);
     }
 
     #title_resum {
-        font-size: 2em;
+        font-size: 1.6em;
         font-weight: 500;
         text-align: right;
     }
@@ -1036,6 +854,7 @@ footer {
     /*----------SECTION THREE-----------*/
     #section_three {
         margin-top: 30px; 
+        font-size: 0.8em;
     }
 
     #resum_ranking {
@@ -1086,226 +905,192 @@ footer {
     
 }
 
-/*-----------------------------------------------MAX WIDTH 700 PX-------------------------------------------*/
-@media only screen and (max-width: 700px) {
-
-    .table-responsive table, 
-    .table-responsive tbody, 
-    .table-responsive tr, 
-    .table-responsive th, 
-    .table-responsive td {
-        display: block;
-    }
-
-    .table-responsive thead {
-        display: none;
-    }
-
-    .table-responsive td {
-        padding-left: 150px;
-        position: relative;
-        margin-top: -1px;
-        background: #FFF;
-    }
-
-    .table-responsive td:nth-child(odd) {
-        background-color: #eee;
-    }
-
-    .table-responsive td::before {
-        padding: 10px;
-        content: attr(data-label);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 130px;
-        bottom: 0;
-        background-color: rgb(212, 38, 81);
-        color: #FFF;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-    }
-
-    .table-responsive tr {
-        margin-bottom: 1rem;
-    }
-
-    .table-responsive th + td {
-        padding-left: 10px;
-    }
-
-    .table-responsive th + td::before {
-        display: none;
-    }
-
-}
-
 /*------------------MAX-WIDTH 480PX-------------------------*/
 /*-------------------------------------------*/
 
 @media all and (max-width: 480px) {
 
-/*-----------------------------------------------HEADER--------------------------------------------------*/
-    .header_content h1 {
-        font-size: 1.4em;
-    }
-    .header_content h2 {
-        font-size: 0.8em;
-        margin-left: calc(50% + 60px);
+
+   /**********************************HEADER***************************************/
+   .header_content h1 {
+    font-size: 1.8em;
     }
 
     .header_content h1::before {
-        width: 160px;
-        left: calc(50% - 80px);
-        margin-bottom: 4px;
+	height: 3px;
+	width: 160px;
+	left: calc(50% - 80px);
     }
 
     .header_content h1::after {
-        width: 160px;
-        left: calc(50% - 80px);
+	height: 3px;
+	width: 160px;
+    left: calc(50% - 80px);
     }
 
-/*-----------------------------------------------MENU--------------------------------------------------*/
-
-    #menu {
-        justify-content: left;
-    }
-
-    #tabs li {
-        display: block;
-    }
-
-    #tabs a {
-        font-size: 0.85em;
-        margin-left: -5px;
-        padding: 0 0 2px 0;
-    }
-
-/*-----------------------------------------------ACCUEIL------------------------------------------------*/
-    #section_one p,
-    #section_two p {
-        font-size: 0.82em;
-        text-align: justify;
-    }
-
-    #presentation {
-        margin: -40px 60px 0 60px;
-    }
-
-    #resum {
-        margin: 10px 60px 0 60px;
-    }
-
-    #dream_img,
-    #moon_img {
-        display: none;
-    }
-
-    .separator {
-        display: inline-block;
-        width: 160px;
-        left: calc(50% - 80px);
-        margin-bottom: 35px;
-    }
-
-/*----------------------------------------------ARTICLES--------------------------------------------------*/
-
-    #title_articles {
-        font-size: 0.82em;
-    }
-
-    .news {
-        font-size: 0.8em;
-        width: 80%;
-    }
-
-    #content_news {
-        padding: 0 10px 0 10px;
-    }
-
-    #link_chapter {
+    .header_content h2 {
         font-size: 1em;
     }
 
-/*--------------------------------------------COMMENTAIRES--------------------------------------------------*/    
-
-    #author, textarea {
-        width: 70%;
-        margin: 0 40px 0 40px;
-    }
-
-    label {
-        margin: 0 40px 0 40px;
-    }
-    
-    textarea {
-        height: 200px;
-    }
-
-    #title_comment {
-        font-size: 1.1em;
-    }
-
-    .btn_comment {
-        left: calc(50% - 72px);
-        margin: 10px 0 5px 0;
-        background: rgb(202, 145, 64);
-        font-size: 0.7em;
-        padding: 9px;
-      }
-
-/*----------------------------------------------CONTACT--------------------------------------------------*/
-
-    #contact_form input {
-        width: 200px;
-    }
-    
-    #contact_form textarea {
-        width: 200px;
-        resize: none;
-        margin: 0 30px 0 30px;
-    }
-
-
-/*--------------------------------------------ADMINISTRATION--------------------------------------------------*/
-    .adminH2 {
+    #tabs a {
         font-size: 0.8em;
-        padding: 10px;
-        margin: 40px 70px 10px 30px;
     }
 
-    .adminParagraphe {
+    /**********************************MENU***************************************/
+      
+    #head_menu:checked ~ .menu {
+        width: 150px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 3px none;
+        height: 50px;
+    }
+    
+    #head_menu:checked ~ .menu > ul {
+        display: initial;  
+    }
+    
+    .menu {
+        display: table-cell;
+        text-align: center;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        background-color: #1e2a36;
+        border: 4px solid transparent;
+    }
+    .menu div.barry {
+        width: 15px;
+        margin: 5px auto;
+    }
+    .menu div.barry .bar {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 4px auto;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+
+    /********************************SLIDER****************************************/
+
+    #slider {
+        display: none;	
+    }
+
+    /********************************SECTION****************************************/
+
+    /*------------SECTION TWO-----------*/
+    
+    #title_resum {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #section_two p {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #resum {
+        width: 90%;
+        color: rgb(243, 224, 224);
+    }
+    
+    /*----------SECTION THREE-----------*/
+    #section_three {
+        margin-top: 80px; 
+        padding: 3%;
+    }
+
+    #list_section_three ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-left: -18px;
+    }
+
+    .logo_section_three {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .logo_section_three img {
+        width: 60px;
+        height: 60px;
+        border: 8px #1e2a36 solid;
+        border-radius: 50%;	
+        padding: 8px;
+    }
+
+    .logo_section_three h2 {
         font-size: 0.95em;
     }
 
-    .btn_suppr {
-        margin-top: 15px;
+    /*----------SECTION FOOTER-----------*/
+
+    footer {
+        margin-top: 10px;
         font-size: 0.8em;
     }
 
-    .btn_valid {
-        left: 8px;
-        font-size: 0.8em;
+    /********************************CALENDRIER****************************************/
+
+    .calendar__table {  
+        width: 95%;
+        height: calc(100vh - 128px);
+        margin: 5px;
+    }
+    .calendar__table td {
         padding: 8px;
+        border: 2px solid rgb(143, 138, 138);
+        vertical-align: top;
+        width: 14.29%;
+        height: 20%;
+    }
+    
+    .calendar__table td.is-today {
+        background-color: #f7e7ec5b;
+    }
+    
+    .calendar__table--6weeks td {
+        height:  16.66%;
+    }
+    
+    .calendar__weekday {
+        font-weight: bold;
+        color: rgb(248, 240, 240);
+        font-size: 1.2em;
     }
 
-    .admin_modif {
-        font-size: 0.8em;
-        padding: 8px;
+    .btn-select-calendar {
+  
+        display: inline-block;
+        position: relative;
+        left: 0;
+        margin: 0 0 8px 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+        background-color: rgb(247, 126, 14);
+        border-radius: 50px;
+    }
+    
+    .btn-select-calendar:hover {
+        text-decoration: none;
+        transform: scale(1.1);
     }
 
-/*-----------------------------------------------FOOTER-------------------------------------------*/
-    #bio {
-        font-weight: 600;
-        font-size: 0.82em;
-        text-align: justify;
-        margin: 10px 60px 0 60px;
-    }
-
-    #jean_img {
+    .table-responsive1 {
         display: none;
     }
 
+    .table-responsive {
+        margin: 0 8px 8px 8px;
+    }
 
 }

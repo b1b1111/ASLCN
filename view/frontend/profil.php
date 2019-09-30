@@ -4,6 +4,7 @@ require('html.php');
 require('template.php'); 
 ?>
 <link href="<?= $_POST['URL_PATH'] ?>public/css/profil.css" type="text/css" rel="stylesheet"/>
+
 <?php 
 if(!isset($_SESSION['id']) || $_SESSION['id'] == 0) {
 ?>
@@ -35,16 +36,27 @@ else {
 
 <nav class="profil_menu">
    <input type="checkbox" href="#" class="profil_menu-open" name="profil_menu-open" id="profil_menu-open" />
-   <label class="profil_menu-open-button" for="profil_menu-open">
-    <span class="lines line-1"></span>
-    <span class="lines line-2"></span>
-    <span class="lines line-3"></span>
-  </label>
+    <label class="profil_menu-open-button" for="profil_menu-open">
+        <span class="lines line-1"></span>
+        <span class="lines line-2"></span>
+        <span class="lines line-3"></span>
+    </label>
 
-   <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="profil_menu-item blue"><img src="../aslcn/public/images/icons/add.png" alt="icon_add"/></a>
-   <a href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green"><img src="../aslcn/public/images/icons/update.png" alt="icon_update"/></a>
-   <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red"><img src="../aslcn/public/images/icons/profil.png" alt="icon_profil"/></a>
-   <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion" class="profil_menu-item purple"> <img src="../aslcn/public/images/icons/deco.png" alt="icon_deco"/> </a>
+    <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="profil_menu-item blue">
+        <img src="../aslcn/public/images/icons/add.png" alt="icon_add"/>
+    </a>
+
+    <a href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green">
+        <img src="../aslcn/public/images/icons/update.png" alt="icon_update"/>
+    </a>
+
+    <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red">
+        <img src="../aslcn/public/images/icons/profil.png" alt="icon_profil"/>
+    </a>
+
+    <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion" class="profil_menu-item purple"> 
+        <img src="../aslcn/public/images/icons/deco.png" alt="icon_deco"/> 
+    </a>
 </nav>
   
 <?php } ?>

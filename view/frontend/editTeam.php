@@ -12,9 +12,9 @@ require('template.php');
 
     <form id="modif_articles" method="post" action="administration/editTeam/<?= $team['id'] ?>">
 
-        <label for="teamPoint">Point de l'équipe</label><br />
-        <input type="text" class="teamPoint" name="teamPoint" value="<?= $team['teamPoint'] ?>" />&nbsp;&nbsp;
-        <input type="submit" class="btn_valid" value="Modifier" onclick="ModifPost()">
+        <label for="teamPoint">Point de l'équipe</label>
+        <input type="text" class="teamPoint" name="teamPoint" value="<?= $team['teamPoint'] ?>" />
+        <input type="submit" class="btn_valid" value="Modifier" onclick="ModifPost()"/>
     </form>
 
     <?php } ?>

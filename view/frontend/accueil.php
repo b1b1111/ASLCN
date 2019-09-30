@@ -14,19 +14,6 @@ require('template.php');
         </figure>
     </div>
 
-<section id="section_one">
-
-    <div id="presentation">
-        <h1>Bonjour, </h1>
-        <p>
-            Bienvenue sur le site de l'ASLCN <br />
-        </p>
-        <h5 class="signature">ASLCN</h5>
-        
-    </div>
-
-</section>
-
 <div class="separator" ></div>
 
 <section id="section_two">
@@ -48,10 +35,32 @@ require('template.php');
 
 <section id="section_three">
 
-    <div id="resum_ranking">
-        <h1 id="title_ranking">Des questions ?</h1>
-        <p><a href="<?= $_POST['URL_PATH'] ?>contact">Contact</a></p>
-    </div>
+    <aside id="list_section_three">
+        <ul>   
+            <li>
+                <div class="logo_section_three">
+                    <a href="<?= $_POST['URL_PATH'] ?>calendrier">
+                        <img src="../aslcn/public/images/icons/calendar.png"/>
+                    </a>
+                    <h2>Une rencontre ?</h2>
+                </div> 
+            </li>                   
+            <li>
+                <div class="logo_section_three">
+                    <a href="<?= $_POST['URL_PATH'] ?>classement">
+                        <img src="../aslcn/public/images/icons/podium.png"/>
+                    </a>
+                    <h2>Le classement ?</h2>
+                </div>
+            </li>   
+            <li>
+                <div class="logo_section_three">
+                    <a href="<?= $_POST['URL_PATH'] ?>contact"><img src="../aslcn/public/images/icons/mail.png"/></a>
+                    <h2>Une question ?</h2>
+                </div>
+            </li>            
+        </ul>         
+    </aside>
 
 </section>
 
