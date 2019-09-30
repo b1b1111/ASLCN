@@ -830,7 +830,7 @@ require('template.php');
   </div>
 
   <h1>Les kékéhuetes</h1>
-  <div class="portfolio" id="js-portfolio-flex">
+  <div class="portfolio-flex" id="js-portfolio-flex">
     
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
