@@ -36,14 +36,21 @@ class adminController {
 
     public function getPres($id) {
         $post = $this->postManager->getTablePres($id);
-        require 'view/frontend/presence.php';
     }
 
     public function getAllPres() {
-        $post = $this->postManager->getAllPres();
+        $req = $this->postManager->getAllPres();
         require 'view/frontend/viewEvent.php';
     }
 
+    public function pres($id) {
+        $post = $this->postManager->getTablePres($id);
+    }
+
+    public function editPresPrepare($idEvent, $idMembre, $id) {
+        $post = $this->postManager->updatePres($idEvent, $idMembre, $id);
+        require 'view/frontend/presence.php';
+    }
     /***********************************EVENTS******************************************** */
 
     public function editEv($id, $presents, $absents) {

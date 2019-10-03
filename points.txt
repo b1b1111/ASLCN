@@ -1,12 +1,12 @@
-	Assiduité :
+	Assiduitï¿½ :
 
-Proposition d’un bonus de point pour les 3 premières équipes en taux d’assiduité (sur la base de 4 joueurs) par tranches de 8 activités (bonus à la 8ème, 16ème, 24ème et 32ème activité).
+Proposition dï¿½un bonus de point pour les 3 premiï¿½res ï¿½quipes en taux dï¿½assiduitï¿½ (sur la base de 4 joueurs) par tranches de 8 activitï¿½s (bonus ï¿½ la 8ï¿½me, 16ï¿½me, 24ï¿½me et 32ï¿½me activitï¿½).
 
-Les points de « bonification présences » sont validés ainsi : +10 points à la 1ère équipe, +7 points à la 2ème et +3 points à la 3ème.
+Les points de ï¿½ï¿½bonification prï¿½sencesï¿½ï¿½ sont validï¿½s ainsiï¿½: +10 points ï¿½ la 1ï¿½re ï¿½quipe, +7 points ï¿½ la 2ï¿½me et +3 points ï¿½ la 3ï¿½me.
 
 	Calcul binome :
 
-Proposition d’ajustement du calcul des points gagnés à une rencontre pour une équipe ayant 2 binômes présents : pondération d’un coefficient 2 pour le meilleur binôme et d’un coefficient 1 pour le 2ème binôme lorsqu’une équipe présente 4 joueurs à une rencontre.
+Proposition dï¿½ajustement du calcul des points gagnï¿½s ï¿½ une rencontre pour une ï¿½quipe ayant 2 binï¿½mes prï¿½sentsï¿½: pondï¿½ration dï¿½un coefficient 2 pour le meilleur binï¿½me et dï¿½un coefficient 1 pour le 2ï¿½me binï¿½me lorsquï¿½une ï¿½quipe prï¿½sente 4 joueurs ï¿½ une rencontre.
 
 Mail asso :
 
@@ -14,7 +14,7 @@ aslcn44000@gmail.com
 mp : aqwzsxEDC1
 
 
-Joker utiliser tableau + dérouleur épreuves ok
+Joker utiliser tableau + dï¿½rouleur ï¿½preuves ok
 
 Rappel le dimanche 19h.
 2 semaines a l'avance

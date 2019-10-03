@@ -252,7 +252,7 @@ label {
 }
 
 #resum {
-    width: 60%;
+    width: 50%;
     text-align: justify;
     margin: 80px 60px 0 0;
     color: rgb(243, 224, 224);
@@ -283,10 +283,11 @@ label {
 
 .logo_section_three {
     text-align: center;
+    margin-left: -48px;
 }
 
 .logo_section_three img {
-    border: 8px #1e2a36 solid;
+    border: 6px #1e2a36 solid;
     border-radius: 50%;	
     padding: 10px;
 }
@@ -471,6 +472,64 @@ table, th, td {
     color: white;
 }
 
+/*--------------------------------------------CONTACT------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
+#contact_form {
+    text-align: center;
+}
+
+#contact_title {
+    text-align: center;
+}
+
+#contact_form input {
+    width: 400px;
+    height: 32px;
+    resize: none;
+    border: 2px none white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact_form textarea {
+    width: 400px;
+    resize: none;
+    border: 2px none white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+#btn_contact {
+    background: #3498db;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    font-size: 0.8em;
+    padding: 12px;
+    font-family: 'Merriweather', 'Open Sans', Verdana;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px #207ab6;
+    border-radius: 5px;
+}
+
+#btn_contact:hover, #btn_contact:focus {
+    background: #218dd4;
+    box-shadow: inset -6px -6px 0px 0px #2b95db;
+}
+
+#btn_contact:active {
+    box-shadow: inset 4px 4px 0px 0px #2b95db;
+}
+
+#btn_contact:before, #btn_contact:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
 
 /*---------------------------------------------CLASSEMENT---------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
@@ -536,61 +595,6 @@ table, th, td {
     background-color: #eee;
 }
 
-/*--------------------------------------------CONTACT------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------*/
-#contact_form {
-    text-align: center;
-}
-
-#contact_title {
-    text-align: center;
-}
-
-#contact_form input {
-    width: 400px;
-    height: 32px;
-    resize: none;
-    border: 2px none white;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-#contact_form textarea {
-    width: 400px;
-    resize: none;
-    border: 2px none white;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-}
-
-#btn_contact {
-    background: #3498db;
-    text-align: center;
-    position: relative;
-    display: inline-flex;
-    font-size: 0.8em;
-    padding: 12px;
-    font-family: 'Merriweather', 'Open Sans', Verdana;
-    text-decoration: none;
-    color: white;
-    box-shadow: inset -4px -4px 0px 0px #207ab6;
-    border-radius: 5px;
-  }
-#btn_contact:hover, #btn_contact:focus {
-    background: #218dd4;
-    box-shadow: inset -6px -6px 0px 0px #2b95db;
-  }
-  #btn_contact:active {
-    box-shadow: inset 4px 4px 0px 0px #2b95db;
-  }
-  #btn_contact:before, #btn_contact:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
-  }
 
 /*----------------------------------------ADMINISTRATION-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
@@ -613,6 +617,10 @@ table, th, td {
 
 #list_point {
     text-align: center;
+}
+
+#list_point a {
+    margin-bottom: 15px;
 }
 
 .adminH2 {
@@ -1091,6 +1099,20 @@ footer {
 
     .table-responsive {
         margin: 0 8px 8px 8px;
+    }
+
+    /********************************CONTACT****************************************/
+
+    #contact_form input{
+        width: 96%;
+    }
+
+    #contact_form textarea {
+        width: 96%;
+    }
+
+    #btn_contact {
+        margin-bottom: 10px;
     }
 
 }

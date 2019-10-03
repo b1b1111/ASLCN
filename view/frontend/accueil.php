@@ -22,11 +22,11 @@ require('template.php');
         <h1 id="title_resum">L'Association </h1>
         
         <p>L'ASCN, ce n'est pas un fleuve, oh non ! c'est une compétition et tu en fais partie ...
-        Tu vas avoir l'occasion de donner de ta personne dans l'effort et l'allégresse, dans le cadre d'un championnat multisports, un soir par semaine, d'octobre à juin environ. 
+        Tu vas avoir l'occasion de donner de ta personne dans l'effort et l'allégresse, dans le cadre d'un championnat multisports, un soir par semaine, d'octobre à juin. 
         </p>
         <p>Mais pas toutes les semaines, faut pas déconner! On a quand même une vie, une famille, du linge à sécher, des séries à terminer, un footing à caler, un peu de boulot accessoirement et peut-être une grosse fin de soirée au Berlin à gérer ...
         </p>
-        <p>Maintenant, pose-toi les bonnes questions, fais le point sur ta condition physique, Prépare de suite Monsieur ou Madame à ne plus te voir la mercredi soir, achète une paire de running et surtout echauffe toi ça va piquer !!!
+        <p>Maintenant, pose-toi les bonnes questions, fais le point sur ta condition physique, Prépare de suite Monsieur ou Madame à ne plus te voir le mercredi soir, achète une paire de running et surtout echauffe toi ça va piquer !!!
         </p>
 
     </div>

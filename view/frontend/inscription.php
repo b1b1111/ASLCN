@@ -15,9 +15,6 @@ require('template.php');
         <label for="team"></label>
         <input type="text" placeholder="Votre équipe" id="teamName" name="teamName" value="<?php if(isset($teamName)) { echo $teamName; } ?>" />
 
-        <label for="id_team"></label>
-        <input type="text" hidden id="id_team" name="id_team" value="<?php if(isset($id_team)) { echo $id_team; } ?>" />
-
         <label for="mail"></label>
         <input type="email" placeholder="Votre mail" id="mail" name="mail" value="<?php if(isset($mail)) { echo $mail; } ?>" />
 

@@ -63,12 +63,10 @@ require('controller/edit.php');
         </div>
     </div>
 </div>
-
 <div class="form-group">
     <label for="description">Description</label>
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
-
 
 <table class="table_score">
     <thead>

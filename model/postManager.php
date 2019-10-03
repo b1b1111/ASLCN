@@ -263,6 +263,13 @@ class postManager extends manager {
         return $post;
     }
 
+    public function getEventPres($getid) {
+        $db = $this->newManager->dbConnect(); 
+        $check = $db->prepare('SELECT id FROM events WHERE id = ?');
+        $check->execute(array($getid));
+        return $check;
+    }
+
     public function getEvOrder($id) {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM events WHERE id= ? ORDER BY start"); 
@@ -326,9 +333,15 @@ class postManager extends manager {
     public function getAllPres() {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM membres ORDER BY pseudo"); 
-        $req->execute();  
-        $post = $req->fetchAll(); 
-        return $post;
+        $req->execute(array());  
+        return $req;
+    }
+
+    public function getPresence($getid,$sessionid) {
+        $db = $this->newManager->dbConnect(); 
+        $check_pres = $db->prepare('SELECT id FROM presences WHERE id_event = ? AND id_membre = ?');
+        $check_pres->execute(array($getid,$sessionid));
+        return $check_pres;
     }
 
     public function getPres($id) {
@@ -339,13 +352,14 @@ class postManager extends manager {
         return $post;
     }
 
-    public function updatePres($id, $present, $absent) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE membres SET session_1 = ?, session_2 = ?, session_3 = ?, session_4 = ?, session_5 = ? WHERE id = ?');
-        $post = $request->execute(array($present, $absent, $id));return $post; 
+    public function pres($id) {
+        $db = $this->newManager->dbConnect(); 
+        $req= $db->prepare("SELECT * FROM presences WHERE id= ?"); 
+        $req->execute(array($id));  
+        $post = $req->fetchAll(); 
+        return $post;
     }
-
+    
     public function getTablePres($id) {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT *
@@ -354,6 +368,14 @@ class postManager extends manager {
         ON presences.id_membre = membres.id');
         $request->execute(array($id)); 
         $post = $request->fetchAll();   
+        return $post; 
+    }
+
+    public function updatePres($idEvent, $idMembre, $id) {
+
+        $db = $this->newManager->dbConnect();
+        $request = $db->prepare('UPDATE presences SET id_event = ?, id_membre = ? WHERE id = ?');
+        $post = $request->execute(array($idEvent, $idMembre, $id));   
         return $post; 
     }
 
