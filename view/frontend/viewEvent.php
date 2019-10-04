@@ -68,74 +68,27 @@ require('controller/edit.php');
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
-<table class="table_score">
-    <thead>
-        <tr>
-            <th>Equipe</th>
-            <th>Point</th>
-            <th>Joker</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>4 gars 1 fille</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>En avant les Glands</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Skipailh BZH</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Capillo</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>The Wall</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>4'Ever</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>EMA</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>kékéhuetes</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-    </tbody>
-</table>
+<h2 id="title_comment">Commentaires</h2>
 
-<table class="table-responsive">
-        <thead>
-            <tr>
-                <th>Nom</th>
-            </tr>
-        </thead>
-        <?php {
-            foreach($post as $pres) {
-                echo "<tbody>";
-                    echo "<tr>";
-                    echo "<td>" . $pres['pseudo'] . "</td>"; 
-                    echo "</tr>";
-                echo "</tbody>";   
-            }   
-        } ?>
-    </table>
+<form id="form_com" method="post" action="<?= $post['id'] ?>/createComment">
+
+    <label for="author"></label><br />
+    <input type="text" id="author" name="author" value="<?php echo $_SESSION['pseudo']; ?>"><br /><br />
+
+    <label for="content">Message</label><br />
+    <textarea id="full-test" name="content" contenteditable="true"></textarea><br />
+
+    <input type="submit" class="btn_valid" value="Commentaire" onclick="Message()" >
+</form>
+
+<?php
+
+while ($comment = $comments->fetch()) { ?>
+
+    <p class="comment_paragraphe" ><strong><?= htmlspecialchars($user['pseudo']); ?></strong> le <?= $comment['comment_date_fr'] ?></p>
+    <p class="comment_paragraphe" ><?= nl2br(htmlspecialchars($comment['content'])) ?>
+    
+<?php } ?>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 

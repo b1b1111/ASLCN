@@ -12,15 +12,17 @@ require('template.php');
     <thead>
         <tr>
             <th>Evenement</th>
-            <th>Nom</th>
+            <th>Present</th>
+            <th>Absent</th>
             <th>Valider</th>
         </tr>
     </thead>
     <?php {
         echo "<tbody>";
             echo "<tr>";
-                echo "<td>" . $p['id_event'] . "</td>"; 
-                echo "<td>" . $p['id_membre'] . "</td>"; 
+                echo "<td>" . $p['name'] . "</td>"; 
+                echo "<td>" . "  <form method='post' action=''>  " . '<input type="radio" name="present" value="oui" />' . "<label for='oui'>" . $p['name'] . "</label>" . "</td>"; 
+                echo "<td>" . '<input type="radio" name="present" value="non" />' . "<label for='non'>" . $p['name'] . "</label>" . "</td>";
                 echo "<td>" . '<input type="submit" value="valider" />' . "</form>" . "</td>";
             echo "</tr>";
         echo "</tbody>";   

@@ -64,10 +64,17 @@ class postManager extends manager {
         return $req;
     }
 
-    public function getMembre($pseudo, $teamName, $mail, $mdp) {
+    public function getTeamsId($id_team) {
         $db = $this->newManager->dbConnect();
-        $req = $db->prepare("INSERT INTO membres(pseudo, teamName, mail, mdp) VALUES(?, ?, ?, ?)");
-        $req->execute(array($pseudo, $teamName, $mail, $mdp));
+        $post = $db->prepare("SELECT * FROM membres WHERE id_team = ?");
+        $post->execute(array($id_team));
+        return $post;
+    }
+
+    public function getMembre($pseudo, $teamName, $id_team, $mail, $mdp) {
+        $db = $this->newManager->dbConnect();
+        $req = $db->prepare("INSERT INTO membres(pseudo, teamName, id_team, mail, mdp) VALUES(?, ?, ?, ?, ?)");
+        $req->execute(array($pseudo, $teamName, $id_team, $mail, $mdp));
     }
 
     public function userExist($mailconnect, $mdpconnect) {
@@ -352,20 +359,19 @@ class postManager extends manager {
         return $post;
     }
 
-    public function pres($id) {
+    public function pres() {
         $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM presences WHERE id= ?"); 
-        $req->execute(array($id));  
-        $post = $req->fetchAll(); 
-        return $post;
+        $req= $db->prepare("SELECT * FROM presences ORDER BY id_membre"); 
+        $req->execute(array()); 
+        return $req;
     }
     
     public function getTablePres($id) {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT *
-        FROM membres
-        RIGHT JOIN presences
-        ON presences.id_membre = membres.id');
+        FROM presences
+        RIGHT JOIN events
+        ON events.id = presences.id_membre');
         $request->execute(array($id)); 
         $post = $request->fetchAll();   
         return $post; 
@@ -377,6 +383,12 @@ class postManager extends manager {
         $request = $db->prepare('UPDATE presences SET id_event = ?, id_membre = ? WHERE id = ?');
         $post = $request->execute(array($idEvent, $idMembre, $id));   
         return $post; 
+    }
+
+    public function insertPres($id, $id_event, $id_membre) {
+        $db = $this->newManager->dbConnect();
+        $req = $db->prepare('INSERT INTO presences (id, id_event, id_membre) VALUES ?, ?, ?,');
+        $req->execute(array($id, $id_event, $id_membre));
     }
 
 }

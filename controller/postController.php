@@ -3,10 +3,12 @@
 namespace Controller;
 
 require_once('model/postManager.php');
+require_once('model/CommentManager.php');
 class postController {
 
     function __construct() {
-        $this->postManager = new \Model\postManager();  
+        $this->postManager = new \Model\postManager(); 
+        $this->CommentManager = new \Model\CommentManager(); 
     }
 
     //Page accueil
@@ -32,8 +34,10 @@ class postController {
     }
 
     //Affiche un event.
-    public function viewEvents($getid) {
-        $post = $this->postManager->getEventId($getid);  
+    public function viewEvents($id) {
+        $post = $this->postManager->getPost($id);
+        $comments = $this->CommentManager->getComments($id);
+        require 'view/frontend/viewEvent.php';
     }
 
     // Afficher un evenement.
@@ -91,19 +95,21 @@ class postController {
         if(isset($_POST['forminscription'])) {
             $pseudo = htmlspecialchars($_POST['pseudo']);
             $teamName = htmlspecialchars($_POST['teamName']);
+            $id_team = htmlspecialchars($_POST['id_team']);
             $mail = htmlspecialchars($_POST['mail']);
             $mdp = sha1($_POST['mdp']);
 
-            if(!empty($_POST['pseudo']) AND !empty($_POST['teamName']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
+            if(!empty($_POST['pseudo']) AND !empty($_POST['teamName']) AND !empty($_POST['id_team']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
                 $pseudolength = strlen($pseudo);
                 $req = $this->postManager->getPseudo($pseudo);
                 if($pseudolength <= 255) {
                     if($req == 0) {
                         $req = $this->postManager->getTeamsName($teamName);
+                        $post = $this->postManager->getTeamsId($id_team);
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                             $reqmail = $this->postManager->getMail($mail);
                                 if($reqmail == 0) {
-                                    $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $mail, $mdp);
+                                    $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $id_team, $mail, $mdp);
                                     $erreur = "Votre compte a bien été créé ! <a href=\"http://localhost/aslcn/profil\">Me connecter</a>";
                                 } 
                                 else {
@@ -126,7 +132,6 @@ class postController {
             $erreur = "Tous les champs doivent être complétés !";
             }
         }
-        $this->postManager->getPosts();
         require 'view/frontend/inscription.php';
     }
 
@@ -145,6 +150,7 @@ class postController {
                     $_SESSION['id'] = $user['id'];
                     $_SESSION['pseudo'] = $user['pseudo'];
                     $_SESSION['teamName'] = $user['teamName'];
+                    $_SESSION['id_team'] = $user['id_team'];
                     $_SESSION['mail'] = $user['mail'];
                     $_SESSION['admin'] = !!$user['admin'];
                     header('Location: '. $_POST['URL_PATH'] . 'profil?id='.$user['id']);
@@ -313,6 +319,7 @@ class postController {
                     $_SESSION['id'] = $user['id'];
                     $_SESSION['pseudo'] = $user['pseudo'];
                     $_SESSION['teamName'] = $user['teamName'];
+                    $_SESSION['id_team'] = $user['id_team'];
                     $_SESSION['mail'] = $user['mail'];
                     $_SESSION['admin'] = !!$user['admin'];
                     header('Location: '. $_POST['URL_PATH'] . 'profil' . '/' . 'editMP'); 

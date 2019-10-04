@@ -3,12 +3,13 @@
 namespace Controller;
 
 require_once('model/postManager.php');
-require_once('model/classementManager.php');
+require_once('model/CommentManager.php');
 
 class adminController {
 
    function __construct() {
       $this->postManager = new \Model\postManager();  
+      $this->CommentManager = new \Model\CommentManager();  
    }  
 
     /***********************************TEAM******************************************** */
@@ -27,29 +28,33 @@ class adminController {
 
      /***********************************PRESENCE******************************************** */
 
-    public function editPresence($id, $present, $absent) {
-        $edit_pres = $this->postManager->updatePres($id, $present, $present);
-        if($edit_pres) {
-            $confirm = "Tu as bien noté tes présences";
-        }
-    }
-
-    public function getPres($id) {
-        $post = $this->postManager->getTablePres($id);
-    }
-
     public function getAllPres() {
-        $req = $this->postManager->getAllPres();
+        $post = $this->postManager->getAllPres();
         require 'view/frontend/viewEvent.php';
     }
 
     public function pres($id) {
+        $req = $this->postManager->getTablePres($id);
+    }
+
+    public function viewPres($id) {
+        $req = $this->postManager->pres();
+        $comments = $this->CommentManager->getComments($id);
+        require 'view/frontend/viewEvent.php';
+    }
+
+    public function getPres($id) {
         $post = $this->postManager->getTablePres($id);
+        require 'view/frontend/presence.php';
     }
 
     public function editPresPrepare($idEvent, $idMembre, $id) {
         $post = $this->postManager->updatePres($idEvent, $idMembre, $id);
         require 'view/frontend/presence.php';
+    }
+
+    public function insertPresence($id, $id_event, $id_membre) {
+        $req = $this->postManager->insertPres($id, $id_event, $id_membre);
     }
     /***********************************EVENTS******************************************** */
 

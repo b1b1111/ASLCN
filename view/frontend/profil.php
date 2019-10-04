@@ -46,7 +46,7 @@ else {
         <img src="../aslcn/public/images/icons/add.png" alt="icon_add"/>
     </a>
 
-    <a href="<?= $_POST['URL_PATH'] ?>profil/editPresence/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green">
+    <a href="<?= $_POST['URL_PATH'] ?>profil/editPres/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green">
         <img src="../aslcn/public/images/icons/update.png" alt="icon_update"/>
     </a>
 

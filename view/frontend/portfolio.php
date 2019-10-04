@@ -17,20 +17,22 @@ require('template.php');
       <h2 class="project__name">Anthony Guihéneuf</h2>
       <div class="project__description">Antho</div>
       <div class="project__body js-body">
-        <h2>Antho</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
-        <p>
-          <a href="#">En savoir plus</a>
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : ce bon vieux petit pont</p>
+        <p>Un geste antisportif : une bonne vieille olive</p>
+        <p>Un match de légende : Réal Madrid-Bayer Leverkusen finale de la ligue des champions 2002 parce que Zizou</p>
+        <p>Un trophée : la coupe de l’ASLCN, à jamais les premiers</p>
+        <p>Un jeu d’école : le jeu du foulard </p>
+        <p>Une enceinte sportive :  la cour d’école parce qu’à la récré, y’a match !</p>
+        <p>Une citation : si ton ennemi te semble colérique, cherche à l’irriter encore davantage (Sun Tzu)</p>
+        <p>Un objet sportif : un ballon bien sûr </p>
+        <p>Un journaliste sportif : Patrick Montel à Pôle emploi</p>
+        <p>Un alcool : une bonne vieille menthe pastille</p>
+        <p>Une blessure : ligament croisé bien sûr « remember »</p>
+        <p>Une chanson de supporter : Oh hisse enculé parce que franchement c’est pas homophobe, c’est juste drôle</p> 
+        <p>Une fédération non officielle : la Fédération Française de la Loose parce qu’on est français avant tout</p>
+        <p>Un combo entre sport : Water polo + lancer de nains</p>
+        <p>Une position : Patrick Balkany dans les douches de la prison de la santé</p>  
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -38,20 +40,24 @@ require('template.php');
       <h2 class="project__name">Ronan Delannée</h2>
       <div class="project__description">Roro</div>
       <div class="project__body js-body">
-        <h2>Roro</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
-        <p>
-          <a href="#">En savoir plus</a>
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : Le sombreroro ! Geste personnel tenté à tous les matchs de Futsal !!</p>
+        <p>Un geste antisportif : Service faussement raté sur le joueur placé à la volée en double au
+        tennis</p>
+        <p>Un match de légende: Milan / Liverpool Finale de la ligue des champions 25 mai 2005</p>
+        <p>Un trophée: Celui de champion de l&#39;ASLCN bien sûr !</p>
+        <p>Un jeu d’école : Chat bite !!</p>
+        <p>Une enceinte sportive : Salle Pierre David à la Chapelle sur Erdre , 10 ans à jouer dans la
+        poussière d&#39;amiante , un régal !</p>
+        <p>Une citation ou un proverbe: A vaincre sans péril on triomphe quand même !</p>
+        <p>Un objet sportif : Un durex tout neuf</p>
+        <p>Un commentateur/ journaliste sportif ? Jean Rochefort , équitation aux JO</p>
+        <p>Un Alcool : Pourquoi choisir ??</p>
+        <p>Une blessure : Entorse de la cheville en faisant du sumo gonflable</p>
+        <p>Une chanson de supporter : Il nous rend fier d’être Nantais , le muscadet ! Le muscadet !!</p>
+        <p>Une fédération non officielle : Belote</p>
+        <p>Un combo entre sports : Patin à glace / Basket au petit port , un rêve pour l&#39;ASLCN</p>
+        <p>Une position : 9 pour jouer devant et 6 s&#39;il est associé au 9 pour jouer à différents postes...</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
@@ -59,7 +65,7 @@ require('template.php');
       <h2 class="project__name">Loriane Gautier</h2>
       <div class="project__description">Lolo</div>
       <div class="project__body js-body">
-        <h2>Lolo</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -69,9 +75,6 @@ require('template.php');
           Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
           repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
           repellendus.
-        </p>
-        <p>
-          <a href="#">En savoir plus</a>
         </p>
       </div>
     </div>
@@ -80,7 +83,7 @@ require('template.php');
       <h2 class="project__name">Maxime Lopez</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Max</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -90,31 +93,34 @@ require('template.php');
           Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
           repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
           repellendus.
-        </p>
-        <p>
-          <a href="#">En savoir plus</a>
         </p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="public/images/4g1f/logo_mini.jpg" alt="yvan" class="project__image">
+      <img src="public/images/4g1f/yvan.jpg" alt="yvan" class="project__image">
       <h2 class="project__name">Yvan Coutellec</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <div class="project__description">Yvan</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
-        <p>
-          <a href="#">En savoir plus</a>
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : Laurent Sciarra qui intercepte un ballon en contre attaque... alors qu’il
+        est Coach!</p>
+        <p>Un geste antisportif : Le football professionnel</p>
+        <p>Un match de légende: le Flu Game de Mickael Jordan lors du match 5 des finales NBA de
+        1997 contre Utah Jazz où il fait gagner l’équipe et met 38 pts alors qu’il subissait une
+        intoxication alimentaire ou comme le veut la légende une grosse cuite avec Robert Redfort</p>
+        <p>Un trophée: Iroshima</p>
+        <p>Un jeu d’école : la marelle sans culotte</p>
+        <p>Une enceinte sportive : le placenta de la beaujoire</p>
+        <p>Une citation ou un proverbe: des dauphins t’en fait pas des requins</p>
+        <p>Un objet sportif : le vibromasseur</p>
+        <p>Un commentateur/ journaliste sportif ? Philippe Vandel</p>
+        <p>Un Alcool : la politique</p>
+        <p>Une blessure : Une double entorse à l’échauffement après un 360 degrés main gauche raté
+        comme la qualification en présélection de l’équipe de france cadet</p>
+        <p>Une chanson de supporter : Oh Ursula</p>
+        <p>Une fédération non officielle : BTP ou Branle ton président</p>
+        <p>Un combo entre sports : la mère et la fille avec ton meilleur pote</p>
+        <p>Une position : oh les cons, on a oublié de filmer</p>
       </div>
     </div>
   </div>
@@ -168,7 +174,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="public/images/glands/logo_mini.jpg" alt="fab" class="project__image">
+      <img src="public/images/glands/fab.jpg" alt="fab" class="project__image">
       <h2 class="project__name">Fabien Le Guennec</h2>
       <div class="project__description">Fab</div>
       <div class="project__body js-body">
@@ -186,7 +192,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="public/images/glands/logo_mini.jpg" alt="pierrot" class="project__image">
+      <img src="public/images/glands/pierrot.jpg" alt="pierrot" class="project__image">
       <h2 class="project__name">Pierre Le Cagnec</h2>
       <div class="project__description">Pierrot</div>
       <div class="project__body js-body">
@@ -210,20 +216,28 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="public/images/glands/julien.jpg" alt="julien" class="project__image">
-      <h2 class="project__name">Julien Moulin</h2>
-      <div class="project__description">En avant les glands</div>
+      <h2 class="project__name">Julien Pierre Moulin</h2>
+      <div class="project__description">Julien</div>
       <div class="project__body js-body">
-        <h2>Juju</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portait chinois !</h2>
+        <p>Un geste technique : Le coup de boule de Zizou sur Materazzi.</p>
+        <p>Un geste antisportif : Le marquage à la culotte.</p>
+        <p>Un match de légende: Lorient-Wasquehal, 1-0 ( 18 avril 1998 ). Magnifique !!!</p>
+        <p>Un trophée: La Coupe du Couillon. Chaque joueur tire un coup franc, chacun leur tour.
+        Chaque joueur ayant marqué est qualifié. Le dernier qui reste ( sans marquer le moindre
+        coup franc ) remporte la coupe.</p>
+        <p>Un jeu d’école : Les Jojo’s !!! Génial !!!</p>
+        <p>Une enceinte sportive : Le célèbre Stade du Moustoir. Des frissons…</p>
+        <p>Une citation ou un proverbe: «  Qui pisse contre le vent, se rince les dents. »</p>
+        <p>Un objet sportif : La raquette de Roger Federer…</p>
+        <p>Un commentateur/ journaliste sportif ? Dugarry. Un sketch…</p>
+        <p>Un Alcool : TI-PUNCH</p>
+        <p>Une blessure : La petite pizza qui te brûle sous la douche après avoir taclé sur le
+        synthétique…</p>
+        <p>Une chanson de supporter : BENJAMIN PAVARD, je n’crois pas que vous connaissez,……</p>
+        <p>Une fédération non officielle : Fédération Bretonne du levé de coude.</p>
+        <p>Un combo entre sports : Le Tennis-Ballon !!! Le top !!!</p>
+        <p>Une position : Gainage. AIE !!!</p>
         <p>
         </p>
       </div>
@@ -238,7 +252,7 @@ require('template.php');
   </div>
   <div class="portfolio-flex" id="js-portfolio-skip">
     <div class="project js-item" tabindex="0">
-      <img src="public/images/skip/logo_mini.jpg" alt="fanch" class="project__image">
+      <img src="public/images/skip/fanch.jpg" alt="fanch" class="project__image">
       <h2 class="project__name">Francois Loarer</h2>
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
@@ -302,7 +316,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="public/images/skip/logo_mini.jpg" alt="mel" class="project__image">
+      <img src="public/images/skip/melaine.jpg" alt="mel" class="project__image">
       <h2 class="project__name">Mélaine Legland</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
@@ -351,17 +365,24 @@ require('template.php');
       <h2 class="project__name">Anthony Kérébel</h2>
       <div class="project__description">Toon</div>
       <div class="project__body js-body">
-        <h2>Capitoon des Capillo</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : Le « soleil » de mon enfance gymnaste : Tourner autour de la barre fixe
+        bras tendus. C’est devenu la tournée des bars bras fléchis.</p>
+        <p>Un geste antisportif : Le chat-bite sur un corner.</p>
+        <p>Un match de légende: Federer-Nadal à l’Open d’Australie 2017 !!</p>
+        <p>Un trophée: Le George Best bien sûr.</p>
+        <p>Un jeu d’école : Les diaboliques Capsules</p>
+        <p>Une enceinte sportive : Pour moi ce serait une enceinte Non-sportive. Plus sérieusement je
+        dirais Anfield (Stade de Liverpool)</p>
+        <p>Une citation ou un proverbe: Ludo Ergo Sum.</p>
+        <p>Un objet sportif : Un ballon, toujours envie de taper dedans !!</p>
+        <p>Un commentateur/ journaliste sportif ? Hervé Mathoux, un CHArisme naturel</p>
+        <p>Un Alcool : Tous les chemins mènent au Rhum</p>
+        <p>Une blessure : L’amputation d’un membre pour participer au JO Paralympiques de Curling.</p>
+        <p>Une chanson de supporter : ICI C’est Brest, ICI c’est Brest</p>
+        <p>Une fédération non officielle : La FLAM (Fédération Ludique d’Artistes Méconnus)</p>
+        <p>Un combo entre sports : Le Tennis trampoline avec que des faux-rebonds </p>
+        <p>Une position : Au pied du Podium</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -464,7 +485,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/wall/kristen.jpg" alt="" class="project__image">
       <h2 class="project__name">Kristen Le Nestic</h2>
       <div class="project__description">Kristen</div>
       <div class="project__body js-body">
@@ -486,17 +507,22 @@ require('template.php');
       <h2 class="project__name">Thomas Bonnaudet</h2>
       <div class="project__description">Toto</div>
       <div class="project__body js-body">
-        <h2>Kev</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : coup du sombrero</p>
+        <p>Un geste antisportif : tacle bien bien méchant</p>
+        <p>Un match de légende : final coupe du monde 98</p>
+        <p>Un trophée : Trophée Jules Verne</p>
+        <p>Un jeu d’école : Déli Délo</p>
+        <p>Une enceinte sportive : Beaujoire</p>
+        <p>Une citation ou un proverbe : Ne lâche rien ou Rien ne sert de courir, il faut partir à point</p>
+        <p>Un objet sportif : Crosse de hockey</p>
+        <p>Un commentateur/ journaliste sportif ? Nelson</p>
+        <p>Un Alcool : Quincy</p>
+        <p>Une blessure : triple fracture du pouce</p>
+        <p>Une chanson de supporter : Allez Nantais</p>
+        <p>Une fédération non officielle : bière pong</p>
+        <p>Un combo entre sports : rugby / 3 ème mi-temps</p>
+        <p>Une position : Attaquant</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -559,16 +585,25 @@ require('template.php');
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
         <h2>Sam</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : Une série de Flat effectuée par Rodney Mullen –le père du skate</p>
+        <p>Un geste antisportif : Feindre une blessure pour créer la faute – y’a rien de plus beau que de
+        culpabiliser l’ennemi</p>
+        <p>Un match de légende: France Brésil 98 – arrogant de facilité</p>
+        <p>Un trophée: Le john mcenroe de l’ASLCN, je me suis complétement identifié à ce trophée et
+        je compte bien le garder</p>
+        <p>Un jeu d’école : Observer les vestiaires des meufs qui se changent en étant à 4 gars
+        suspendus à la tuyauterie de flotte qui reliait nos 2 vestiaires ? C’est un bon jeu ça non ?</p>
+        <p>Une enceinte sportive : Le Vélodrome en fusion, on ne fait rien de mieux en France</p>
+        <p>Une citation ou un proverbe: Buvez ELAPHE !</p>
+        <p>Un objet sportif : Un ballon de rugby, pour le côté relou à attraper lors des rebonds</p>
+        <p>Un commentateur/ journaliste sportif ? eugène saccomano</p>
+        <p>Un Alcool : de la bière tient, Buvez ELAPHE !</p>
+        <p>Une blessure : Un truc sournois qui se guérit pas genre une tendinite</p>
+        <p>Une chanson de supporter : Benjamin PAVAREUUU je ne crois pas que vous connaissiez …
+        un petit remember de 2018 quand même</p>
+        <p>Une fédération non officielle : Fédération Française de CAPS</p>
+        <p>Un combo entre sports : CAPS et CROSS FIT – ça m’a toujours fait rêver</p>
+        <p>Une position : Accoudé au comptoir</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -680,35 +715,51 @@ require('template.php');
       <h2 class="project__name">Anne-Laure Demullenheim</h2>
       <div class="project__description">Anne</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : le dunk de Vince Carter sur F. Weis aux J0 2000.</p>
+        <p>Un geste antisportif : « l’Olive ».</p>
+        <p>Un match de légende: Moi contre mon frère quand on avait 12 ans : on était à la fois joueur
+        de champ et gardien, arbitre aussi… bref match de foot à 11 d’anthologie joué seulement par
+        2 gamins dans le garden… légendary for me !</p>
+        <p>Un trophée : impatiente de découvrir ceux de l’ASLCN</p>
+        <p>Un jeu d’école : les pog</p>
+        <p>Une enceinte sportive : JBL (^^)</p>
+        <p>Une citation ou un proverbe : Pas de pression sur un terrain, elle est déjà au bar.</p>
+        <p>Un objet sportif : ma culotte trouée de match. Si je ne la porte pas les jours de match, je ne
+        peux pas jouer, c’est psychologique, ça relève du grigri.
+        Un commentateur/ journaliste sportif ? : E. Saccomano : pas besoin d’images, juste de
+        son.</p>
+        <p>Un Alcool : Rhum</p>
+        <p>Une blessure : fracture du gros orteil pied droit</p>
+        <p>Une chanson de supporter : pas d’idée mais je vais demander aux ultras de la Brigade
+        Loire</p>
+        <p>Une fédération non officielle : x</p>
+        <p>Un combo entre sports : le MolkiRun</p>
+        <p>Une position : la pôle, sinon la position 110 degrés sur un transat face mer.</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/reds/stephan.jpg" alt="" class="project__image">
       <h2 class="project__name">Stephane Page</h2>
       <div class="project__description">Steph</div>
       <div class="project__body js-body">
         <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : la roulette à Zizou</p>
+        <p>Un geste antisportif : le high kick du King (référence footballistique au cas où)</p>
+        <p>Un match de légende: France / Brésil 98 (ou 2006)</p>
+        <p>Un trophée: Ligue des champions (de l’om)</p>
+        <p>Un jeu d’école : au docteur</p>
+        <p>Une enceinte sportive : la Bombonera</p>
+        <p>Une citation ou un proverbe: Ce n’est pas parce que les choses sont difficiles que nous
+        n’osons pas, c’est parce que nous n’osons pas que c’est difficile (Sénèque)</p>
+        <p>Un objet sportif : la chaussure de foot dernier cri (celle qui vole comme Tsubasa !)</p>
+        <p>Un commentateur/ journaliste sportif : Thierry Gilardi</p>
+        <p>Un Alcool : Gin Hendrick’s tranche de Concombre</p>
+        <p>Une blessure : Entorse du genou</p>
+        <p>Une chanson de supporter : Pavard et sa frappe de bâtard</p>
+        <p>Une fédération non officielle : Tous contre la VAR</p>
+        <p>Un combo entre sports : Tennis / Ballon</p>
+        <p>Une position : allongé</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
@@ -781,16 +832,24 @@ require('template.php');
       <div class="project__description">Juju</div>
       <div class="project__body js-body">
         <h2>Juju</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : Une souplesse arrière (on sait jamais, mieux vaut mettre un geste que
+        je sais réaliser au cas où on nous demanderait de l’effectuer à l’improviste)</p>
+        <p>Un geste antisportif : le petit coup de coude discret</p>
+        <p>Un match de légende: France/Argentine en 8 ème de finale de la Coupe du Monde 2018</p>
+        <p>Un trophée: La Coupe Davis (pour le saladier…)</p>
+        <p>Un jeu d’école : Gendarmes &amp; voleurs</p>
+        <p>Une enceinte sportive : Stade Francis Le Blé (pour mes origines)</p>
+        <p>Une citation ou un proverbe: « Donner, recevoir, partager : ces vertus fondamentales du
+        sportif sont de toutes les modes, de toutes les époques. Elles sont le sport. » (Aimé Jacquet)</p>
+        <p>Un objet sportif : Un vélo</p>
+        <p>Un commentateur/ journaliste sportif ? : Thierry Roland « Et buuuuuut ! Oh oui mon petit
+        bonhomme bravoooooo ! »</p>
+        <p>Un Alcool : La Bière</p>
+        <p>Une blessure : hernie discale</p>
+        <p>Une chanson de supporter : https://www.youtube.com/watch?v=-v472PtdkdE</p>
+        <p>Une fédération non officielle : la fédération des troisièmes mi-temps</p>
+        <p>Un combo entre sports : roller/ping pong</p>
+        <p>Une position : la posture de l’enfant (l’explication sera peut-être donnée en fin de saison)</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -799,16 +858,21 @@ require('template.php');
       <div class="project__description">Joachim</div>
       <div class="project__body js-body">
         <h2>Joachim</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : Burpees si tout sport sinon crochet au football</p>
+        <p>Un geste antisportif : faute tactique</p>
+        <p>Un match de légende: Stade Rennais/PSG final coupe de France 2019</p>
+        <p>Un trophée: Fittest man on earth (crossfit)</p>
+        <p>Un jeu d’école :Balle au prisonnier</p>
+        <p>Une enceinte sportive : Wembley</p>
+        <p>Une citation ou un proverbe: Si tu parles c’est que tu n’es pas fatigué</p>
+        <p>Un objet sportif : TRX</p>
+        <p>Un commentateur/ journaliste sportif ? Thierry Roland</p>
+        <p>Un Alcool :Whisky </p>
+        <p>Une blessure : Entorse cheville</p>
+        <p>Une chanson de supporter : “Galette si je t’aime” (stade Rennais)</p>
+        <p>Une fédération non officielle : Fédération des moustachus Imberbe</p>
+        <p>Un combo entre sports : slackline et dodgeball</p>
+        <p>Une position : Verticale?</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -834,17 +898,22 @@ require('template.php');
       <h2 class="project__name">Maxime Coache</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Max</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : une accélération</p>
+        <p>Un geste antisportif : la manchette-balayette</p>
+        <p>Un match de légende: la finale de foot 98</p>
+        <p>Un trophée: le 4Ltrophee</p>
+        <p>Un jeu d’école : le Béret</p>
+        <p>Une enceinte sportive : un ring</p>
+        <p>Une citation ou un proverbe: Qui fait le malin tombe dans le ravin</p>
+        <p>Un objet sportif : un vélo de course vintage</p>
+        <p>Un commentateur/ journaliste sportif ? Thierry Roland</p>
+        <p>Un Alcool : une pils</p>
+        <p>Une blessure : une crampe</p>
+        <p>Une chanson de supporter : « Qui ne saute pas n’est pas Lensois»</p>
+        <p>Une fédération non officielle : Le club des vieux gourmands</p>
+        <p>Un combo entre sports : Le VTT-Tir à la carabine</p>
+        <p>Une position : Remplaçant à tous les postes</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -853,16 +922,21 @@ require('template.php');
       <div class="project__description">Sarah</div>
       <div class="project__body js-body">
         <h2>Sarah</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : un pas de dance/de gym</p>
+        <p>Un geste antisportif : le levé de coude</p>
+        <p>Un match de légende : David contre Goliath même si je suis plus sport Co</p>
+        <p>Un trophée: une médaille en or, les trophée c’est pas très beau.</p>
+        <p>Un jeu d’école : Un Pogs</p>
+        <p>Une enceinte sportive : une salle de basket</p>
+        <p>Une citation ou un proverbe: qui vivra verra</p>
+        <p>Un objet sportif : une flèche</p>
+        <p>Un commentateur/ journaliste sportif ? : Thierry Rolland juste pour son rire …</p>
+        <p>Un Alcool : une bonne bière fraiche ou un bon Gin</p>
+        <p>Une blessure : un bras cassé (petite, toujours voulu avoir un plâtre …)</p>
+        <p>Une chanson de supporter : Au nord c’était les corons</p>
+        <p>Une fédération non officielle : la fédération française des buveurs de pastis</p>
+        <p>Un combo entre sports : un birBasket</p>
+        <p>Une position : Squat</p>
       </div>
     </div>
   </div>

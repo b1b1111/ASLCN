@@ -6,9 +6,11 @@ use Controller\adminController;
 $_POST['URL_PATH'] = 'http://localhost/aslcn/';
 
 require_once('controller/postController.php');
+require_once('controller/commentController.php');
 require_once('controller/adminController.php');
 
     $postController = new \Controller\postController();
+    $commentController = new \Controller\commentController();
     $adminController = new \Controller\adminController(); 
     
 $url = '';
@@ -31,6 +33,18 @@ else if($url[0] == 'calendrier') {
         $postController->printCalendar();
     }
 
+    else if($url[1] == 'viewEvent') {
+         
+        if (!empty($url[2]) && $url[2] == 'createComment') {
+            
+            $user_id = $_SESSION['id'];
+            $content = $_POST['content'];
+            $commentController->addComment($url[1], $user_id, $content);
+            header('Location: '. $_POST['URL_PATH'] . $url[0] . '/' . $url[1]);
+        } 
+        $postController->viewEvents($url[1]);   
+    }
+
     else if($url[1] == 'addEvent') {
         $postController->addEvent();
     }
@@ -39,14 +53,6 @@ else if($url[0] == 'calendrier') {
         $postController->editEvent();
     } 
 
-    else if($url[1] == 'deleteEvent') {
-        $adminController->delEv($url[1]);
-    }
-
-    else if($url[1] == 'viewEvent') {
-        $adminController->getAllPres($url[1]);
-    }
- 
 } 
 
 /*--------------------------------------CONTACT----------------------------------------*/
@@ -90,6 +96,19 @@ else if($url[0] == 'profil') {
 
     else if($url[1] == 'editProfil') {
         $postController->editProfil();
+    }
+
+    else if ($url[1] == 'editPres' && is_numeric($url[2])) {
+        if ($url[3] == 'pres') {
+            $adminController->getPres($url[2]);
+        }  
+           
+        else { 
+            $idEvent = $_POST['id_event'];
+            $idMembre = $_POST['id_membre'];
+            $adminController->editPresPrepare($url[2], $idEvent, $idMembre);
+            header('Location: '. $_POST['URL_PATH'] . 'profil'); 
+        }
     }
 
     else if($url[1] == "deconnexion") {

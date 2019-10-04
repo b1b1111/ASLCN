@@ -72,6 +72,7 @@ class Events {
         $event->setEnd(\DateTime::createFromFormat('Y-m-d H:i',
             $data['date'] . ' ' . $data['end'])->format('Y-m-d H:i:s'));
         $event->setTeamName($data['teamName']);
+        $event->setIdTeam($data['id_team']);
         return $event;
     }
 
@@ -81,13 +82,14 @@ class Events {
      * @return bool
      */
     public function create (Event $event): bool {
-        $statement = $this->pdo->prepare('INSERT INTO events (name, description, start, end, teamName) VALUES (?, ?, ?, ?, ?)');
+        $statement = $this->pdo->prepare('INSERT INTO events (name, description, start, end, teamName, id_team) VALUES (?, ?, ?, ?, ?, ?)');
         return $statement->execute([
            $event->getName(),
            $event->getDescription(),
            $event->getStart()->format('Y-m-d H:i:s'),
            $event->getEnd()->format('Y-m-d H:i:s'),
            $event->getTeamsName(),
+           $event->getIdTeams(),
         ]);
     }
 
@@ -97,7 +99,7 @@ class Events {
      * @return bool
      */
     public function update (Event $event): bool {
-        $statement = $this->pdo->prepare('UPDATE events SET name = ?, description = ?, start = ?, end = ?, teamName = ? WHERE id = ?');
+        $statement = $this->pdo->prepare('UPDATE events SET name = ?, description = ?, start = ?, end = ?, teamName = ?, id_team = ? WHERE id = ?');
         return $statement->execute([
             $event->getName(),
             $event->getDescription(),
