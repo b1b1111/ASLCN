@@ -1,0 +1,47 @@
+$('#envoi').click(function(e){
+    e.preventDefault(); // on empêche le bouton d'envoyer le formulaire
+
+    var pseudo = encodeURIComponent( $('#pseudo').val() ); // on sécurise les données
+
+    if(pseudo != ""){ // on vérifie que les variables ne sont pas vides
+        $.ajax({
+            url : "view/frontend/viewEvent.php", // on donne l'URL du fichier de traitement
+            type : "POST", // la requête est de type POST
+            data : "pseudo=" + pseudo// et on envoie nos données
+        });
+
+        $('#messages').append("<p>" + pseudo + "</p>"); // on ajoute le message dans la zone prévue
+    }
+});
+
+  function charger(){
+
+    setTimeout( function(){
+
+        var premierID = $('#messages p:first').attr('id'); // on récupère l'id le plus récent
+
+        $.ajax({
+            url : "/aslcn/public/js/presence.php?id=" + premierID, // on passe l'id le plus récent au fichier de chargement
+            type : GET,
+            success : function(html){
+                $('#messages').prepend(html);
+            }
+        });
+
+        charger();
+
+    }, 5000);
+
+}
+
+charger();
+
+$(document).ready(function(){
+    //On enregistre plusieurs gestionnaires pour plusieurs événements pour un élément
+    $(".presence").on({
+        click: function(){$(this).text("Yes");}, 
+    });
+    $(".absence").on({
+        click: function(){$(this).text("Nop");}, 
+    });
+});

@@ -338,17 +338,27 @@ require('template.php');
       <h2 class="project__name">Jonathan Attard</h2>
       <div class="project__description">Ti john</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : La passe, quel plaisir de délivrer une bonne passe</p>
+        <p>Un geste antisportif : Le chat-bite sur corner. C’est agréable mais ça me déstabilise</p>
+        <p>Un match de légende : La finale de la LDC 2004-2005, Liverpool-Milan</p>
+        <p>Un trophée : Le Marcel d’or</p>
+        <p>Un jeu d’école : Le touche-touche mixte</p>
+        <p>Une enceinte sportive : Anfield !! Quelle jouissance auditive d’entendre le fameux « You’ll
+        never walk alone » </p>
+        <p>Une citation ou un proverbe : A vaincre sans péril, on triomphe sans gloire</p>
+        <p>Un objet sportif : La boule de pétanque (et plus particulièrement celle qui tire la tienne)</p>
+        <p>Un commentateur / journaliste sportif ? Thomas Thouroude</p>
+        <p>Un Alcool : Le Pink Lady Cocktail !! La touche de grenadine me fait toujours frétiller les
+        papilles lorsque ce nectar si suave pénètre l’intérieur de mon orifice buccal… Non je
+        déconne, une bonne bière !!!</p>
+        <p>Une blessure : La conjonctivite aigue quand je vois les écrits de certains jeunes</p>
+        <p>Une chanson de supporter : « You’ll never walk alone »</p>
+        <p>Une fédération non officielle : La FFPSKACC (Fédération Française des Porteurs de Slip
+        Kangourou et Adeptes des Claquettes Chaussettes)</p>
+        <p>Un combo entre sports : Le tennis-pétanque. Remplacer la balle de tennis par une Obut ATX
+        parait peut évident à première vue mais est tout aussi compliqué à la deuxième.</p>
+        <p>Une position : Allongée, j’aime bien être allongé</p>
       </div>
     </div>
   </div>

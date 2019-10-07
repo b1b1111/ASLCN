@@ -259,6 +259,17 @@ class postManager extends manager {
         return $membre;
     }
 
+    /*******************************************MESSAGE***************************************** */
+
+    public function ajaxSysPres($pseudo) {
+        $db = $this->newManager->dbConnect(); 
+        $insertion = $db->prepare('INSERT INTO messages VALUES("", :pseudo)');
+        $insertion->execute(array(
+            'pseudo' => $pseudo,
+        ));
+        return $insertion;
+    }
+
     /*****************************************EVENT************************************************ */
     /********************************************************************************************** */
 
@@ -344,10 +355,10 @@ class postManager extends manager {
         return $req;
     }
 
-    public function getPresence($getid,$sessionid) {
+    public function getPresence($id_event,$user_id) {
         $db = $this->newManager->dbConnect(); 
         $check_pres = $db->prepare('SELECT id FROM presences WHERE id_event = ? AND id_membre = ?');
-        $check_pres->execute(array($getid,$sessionid));
+        $check_pres->execute(array($id_event,$user_id));
         return $check_pres;
     }
 
@@ -369,27 +380,12 @@ class postManager extends manager {
     public function getTablePres($id) {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT *
-        FROM presences
+        FROM membres
         RIGHT JOIN events
         ON events.id = presences.id_membre');
         $request->execute(array($id)); 
         $post = $request->fetchAll();   
         return $post; 
     }
-
-    public function updatePres($idEvent, $idMembre, $id) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE presences SET id_event = ?, id_membre = ? WHERE id = ?');
-        $post = $request->execute(array($idEvent, $idMembre, $id));   
-        return $post; 
-    }
-
-    public function insertPres($id, $id_event, $id_membre) {
-        $db = $this->newManager->dbConnect();
-        $req = $db->prepare('INSERT INTO presences (id, id_event, id_membre) VALUES ?, ?, ?,');
-        $req->execute(array($id, $id_event, $id_membre));
-    }
-
 }
 

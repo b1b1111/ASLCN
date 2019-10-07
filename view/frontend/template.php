@@ -11,6 +11,7 @@
             <ul>
                 <li><a id='home' href='http://localhost/aslcn/index'>Accueil</a></li>
                 <li><a id='calendar' href='http://localhost/aslcn/calendrier'>Calendrier</a></li>
+                <li><a id='pres' href='http://localhost/aslcn/present'>Presence</a></li>
                 <li><a id='contact' href='http://localhost/aslcn/contact'>Contact</a></li>
                 <li><a id='class' href='http://localhost/aslcn/classement'>Classement</a></li>
                 <li><a id='team' href='http://localhost/aslcn/galerie'>Team</a></li>

@@ -95,21 +95,19 @@ class postController {
         if(isset($_POST['forminscription'])) {
             $pseudo = htmlspecialchars($_POST['pseudo']);
             $teamName = htmlspecialchars($_POST['teamName']);
-            $id_team = htmlspecialchars($_POST['id_team']);
             $mail = htmlspecialchars($_POST['mail']);
             $mdp = sha1($_POST['mdp']);
 
-            if(!empty($_POST['pseudo']) AND !empty($_POST['teamName']) AND !empty($_POST['id_team']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
+            if(!empty($_POST['pseudo']) AND !empty($_POST['teamName']) AND !empty($_POST['mail']) AND !empty($_POST['mdp'])) {
                 $pseudolength = strlen($pseudo);
                 $req = $this->postManager->getPseudo($pseudo);
                 if($pseudolength <= 255) {
                     if($req == 0) {
                         $req = $this->postManager->getTeamsName($teamName);
-                        $post = $this->postManager->getTeamsId($id_team);
                         if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                             $reqmail = $this->postManager->getMail($mail);
                                 if($reqmail == 0) {
-                                    $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $id_team, $mail, $mdp);
+                                    $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $mail, $mdp);
                                     $erreur = "Votre compte a bien été créé ! <a href=\"http://localhost/aslcn/profil\">Me connecter</a>";
                                 } 
                                 else {

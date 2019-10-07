@@ -4,6 +4,7 @@ require('html.php');
 require('template.php');
 require('controller/edit.php');
 ?>
+<link href="<?= $_POST['URL_PATH'] ?>public/css/presence.css" type="text/css" rel="stylesheet"/>
 
 <a class="back_link" href="<?= $_POST['URL_PATH'] ?>calendrier">Retour au calendrier</a>
 
@@ -68,29 +69,95 @@ require('controller/edit.php');
     <textarea name="description" disabled id="description" class="form-control"><?= isset($data['description']) ? h($data['description']) : ''; ?></textarea>
 </div>
 
-<h2 id="title_comment">Commentaires</h2>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<form id="form_com" method="post" action="<?= $post['id'] ?>/createComment">
-
-    <label for="author"></label><br />
-    <input type="text" id="author" name="author" value="<?php echo $_SESSION['pseudo']; ?>"><br /><br />
-
-    <label for="content">Message</label><br />
-    <textarea id="full-test" name="content" contenteditable="true"></textarea><br />
-
-    <input type="submit" class="btn_valid" value="Commentaire" onclick="Message()" >
 </form>
+
+<article class="event"> 
+  <header>
+    <a href=""><img src="https://via.placeholder.com/150"/></a>
+    <h1>Rencontre des bests</h1>
+  </header>
+ 
+  <div class="content">
+    <div class="data">
+      <span class="time">19h72</span>
+      <span class="registered"><span class="number">12</span> personnes participent</span>
+    </div>
+    <div class="date">
+      <div class="day">06</div>
+      <div class="month">juillet</div>
+    </div>
+  </div>
+  
+  <footer>
+    <button class="decline">Décliner</button>
+    <button class="join">Rejoindre</button>
+  </footer>
+</article>
+
+</div>
+
+        <p id="p3">blabla</p>
+
+<div id="messages">
 
 <?php
 
-while ($comment = $comments->fetch()) { ?>
+// on se connecte à notre base de données
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=aslcn', 'root', '');
+}
+catch (Exception $e)
+{
+    die('Erreur : ' . $e->getMessage());
+}
 
-    <p class="comment_paragraphe" ><strong><?= htmlspecialchars($user['pseudo']); ?></strong> le <?= $comment['comment_date_fr'] ?></p>
-    <p class="comment_paragraphe" ><?= nl2br(htmlspecialchars($comment['content'])) ?>
+if(isset($_POST['submit'])){ // si on a envoyé des données avec le formulaire
+
+    if(!empty($_POST['pseudo'])){ // si les variables ne sont pas vides
     
-<?php } ?>
+        $pseudo = mysql_real_escape_string($_POST['pseudo']); // on sécurise nos données
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        // puis on entre les données en base de données :
+        $insertion = $bdd->prepare('INSERT INTO messages VALUES("", :pseudo)');
+        $insertion->execute(array(
+            'pseudo' => $pseudo,
+        ));
 
-  </form>
+    }
+    else{
+        echo "Vous avez oublié de remplir un des champs !";
+    }
+
+
+    if(!empty($_GET['id'])){ // on vérifie que l'id est bien présent et pas vide
+
+        $id = (int) $_GET['id']; // on s'assure que c'est un nombre entier
+    
+        // on récupère les messages ayant un id plus grand que celui donné
+        $requete = $db->prepare('SELECT * FROM messages WHERE id > :id ORDER BY id DESC');
+        $requete->execute(array("id" => $id));
+    
+        $messages = null;
+    
+        // on inscrit tous les nouveaux messages dans une variable
+        while($donnees = $requete->fetch()){
+            $messages .= "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . "</p>";
+        }
+    
+        echo $messages; // enfin, on retourne les messages à notre script JS
+    
+    }
+} ?>
 </div>
+
+	<form method="POST" action="">
+        Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
+	    <input type="submit" name="submit" value="Prejent ?" id="envoi" />
+	</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="/aslcn/public/js/presence.js"></script>
+<script src="/aslcn/public/js/pres.js"></script>

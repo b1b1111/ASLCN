@@ -472,6 +472,49 @@ table, th, td {
     color: white;
 }
 
+#p3 {
+    color: white;
+}
+
+/************************************PRES******************************************/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .article {
+    margin: 12px 0px 0px 75px;
+    padding: 12px;
+    width: 67%;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+  }
+  
+  .first_line_header {
+    padding: 5px;
+  }
+  
+  .first_line_header .header_title_1 {
+    float: left;
+  }
+  
+  .first_line_header .header_title_text {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  .first_line_header .header_title_2 {
+    float: right;
+  }
+  
+  .second_line_header {
+    padding: 5px;
+  }
+
 /*--------------------------------------------CONTACT------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
 #contact_form {

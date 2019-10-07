@@ -39,17 +39,11 @@ class adminController {
 
     public function viewPres($id) {
         $req = $this->postManager->pres();
-        $comments = $this->CommentManager->getComments($id);
         require 'view/frontend/viewEvent.php';
     }
 
     public function getPres($id) {
         $post = $this->postManager->getTablePres($id);
-        require 'view/frontend/presence.php';
-    }
-
-    public function editPresPrepare($idEvent, $idMembre, $id) {
-        $post = $this->postManager->updatePres($idEvent, $idMembre, $id);
         require 'view/frontend/presence.php';
     }
 
@@ -65,6 +59,11 @@ class adminController {
         }
     }
 
+    public function getMembre() {
+        $membre = $this->postManager->getMembres();
+        require 'view/frontend/presence.php';
+    }
+
     public function getEv($id) {
         $event = $this->postManager->getEv($id);
         require 'view/frontend/presence.php';
@@ -72,11 +71,31 @@ class adminController {
 
     public function getAllEv() {
         $event = $this->postManager->getEvents();
-        require 'view/frontend/viewEvent.php';
+        require 'view/frontend/pres.php';
     }
 
     public function delEv($id) {
         $post = $this->postManager->deleteEv($id);
         require 'view/frontend/editEvent.php';
+    }
+
+
+    public function ajaxPres($pseudo) {
+        if(isset($_POST['submit'])){ // si on a envoyé des données avec le formulaire
+
+            if(!empty($_POST['pseudo'])){ // si les variables ne sont pas vides
+            
+                $pseudo = mysql_real_escape_string($_POST['pseudo']); // on sécurise nos données
+        
+                // puis on entre les données en base de données :
+                $insertion = $this->postManager->ajaxSysPres($pseudo);
+        
+            }
+
+            else{
+                echo "Tu as oublié de noter ton pseudo !";
+            }
+        
+        }    
     }
 }
