@@ -2,26 +2,26 @@ $('#envoi').click(function(e){
     e.preventDefault(); // on empêche le bouton d'envoyer le formulaire
 
     var pseudo = encodeURIComponent( $('#pseudo').val() ); // on sécurise les données
+    var message = encodeURIComponent( $('#message').val() );
 
-    if(pseudo != ""){ // on vérifie que les variables ne sont pas vides
+    if(pseudo != "" && message != ""){ // on vérifie que les variables ne sont pas vides
         $.ajax({
-            url : "view/frontend/viewEvent.php", // on donne l'URL du fichier de traitement
+            url : "traitement.php", // on donne l'URL du fichier de traitement
             type : "POST", // la requête est de type POST
-            data : "pseudo=" + pseudo// et on envoie nos données
+            data : "pseudo=" + pseudo + "&message=" + message // et on envoie nos données
         });
 
-        $('#messages').append("<p>" + pseudo + "</p>"); // on ajoute le message dans la zone prévue
+       $('#messages').append("<p>" + pseudo + " dit : " + message + "</p>"); // on ajoute le message dans la zone prévue
     }
 });
-
-  function charger(){
+function charger(){
 
     setTimeout( function(){
 
         var premierID = $('#messages p:first').attr('id'); // on récupère l'id le plus récent
 
         $.ajax({
-            url : "/aslcn/public/js/presence.php?id=" + premierID, // on passe l'id le plus récent au fichier de chargement
+            url : "charger.php?id=" + premierID, // on passe l'id le plus récent au fichier de chargement
             type : GET,
             success : function(html){
                 $('#messages').prepend(html);
@@ -35,6 +35,7 @@ $('#envoi').click(function(e){
 }
 
 charger();
+
 
 $(document).ready(function(){
     //On enregistre plusieurs gestionnaires pour plusieurs événements pour un élément

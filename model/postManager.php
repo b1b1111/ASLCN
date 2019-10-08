@@ -71,10 +71,10 @@ class postManager extends manager {
         return $post;
     }
 
-    public function getMembre($pseudo, $teamName, $id_team, $mail, $mdp) {
+    public function getMembre($pseudo, $teamName, $mail, $mdp) {
         $db = $this->newManager->dbConnect();
-        $req = $db->prepare("INSERT INTO membres(pseudo, teamName, id_team, mail, mdp) VALUES(?, ?, ?, ?, ?)");
-        $req->execute(array($pseudo, $teamName, $id_team, $mail, $mdp));
+        $req = $db->prepare("INSERT INTO membres(pseudo, teamName, mail, mdp) VALUES(?, ?, ?, ?)");
+        $req->execute(array($pseudo, $teamName, $mail, $mdp));
     }
 
     public function userExist($mailconnect, $mdpconnect) {
@@ -261,14 +261,22 @@ class postManager extends manager {
 
     /*******************************************MESSAGE***************************************** */
 
-    public function ajaxSysPres($pseudo) {
+    public function ajaxSysPres($pseudo, $message) {
         $db = $this->newManager->dbConnect(); 
-        $insertion = $db->prepare('INSERT INTO messages VALUES("", :pseudo)');
+        $insertion = $db->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
         $insertion->execute(array(
             'pseudo' => $pseudo,
+            'message' => $message
         ));
-        return $insertion;
     }
+
+    public function ajaxMessage($id) {
+        $db = $this->newManager->dbConnect(); 
+        $requete = $db->prepare('SELECT * FROM messages WHERE id > :id ORDER BY id DESC');
+        $requete->execute(array("id" => $id));
+        return $requete;
+    }
+  
 
     /*****************************************EVENT************************************************ */
     /********************************************************************************************** */
@@ -302,6 +310,15 @@ class postManager extends manager {
         $req->execute(array($id));  
         $event = $req->fetchAll(); 
         return $event;
+    }
+        
+    public function vote($id_event) {
+        $id_event = (int)$id_event;
+        $db = $this->newManager->dbConnect();
+        $query = $db->mysql_query("SELECT vote FROM events WHERE id='$id_event'");
+        while($rows=mysql_fetch_assoc($query)) {
+            echo $rows['vote'];
+        }
     }
 
     public function updateEv($id, $presents, $absents) {

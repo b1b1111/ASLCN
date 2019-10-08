@@ -17,4 +17,3 @@
 				?></textarea><br /><br />
 		<input id="btn_contact"  type="submit" value="Envoyer" name="mailform" onclick="SendMail()" />
 	</form>
-

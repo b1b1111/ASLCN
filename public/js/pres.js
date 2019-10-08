@@ -12,14 +12,14 @@
     // Détection quand on clique sur le bouton dislike (bouton dont la classe est "vote_dislike" et on ne le cherche que dans notre élément "$vote".
     $('.vote_dislike').click(function(e) {
         let $span = $(this).find("span");
-        let $val = parseInt($span.text()) + 1;
+        let $val = parseInt($span.text()) - 1;
          $span.val($val);
          $span.html($val);
     });
 
   getRegistered = (elem)=>{
   //do ajax to set var nbr
-  let nbr = + 1;
+  let nbr = +1;
   let numberContainer = $(elem).parents().find("article.event").find(".number")
   $(numberContainer).css({opacity: 0});
   setTimeout(()=>{

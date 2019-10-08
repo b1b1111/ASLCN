@@ -3,6 +3,7 @@ $title = 'ASLCN';
 require('html.php');
 require('template.php');
 require('controller/edit.php');
+require_once('controller/adminController.php');
 ?>
 <link href="<?= $_POST['URL_PATH'] ?>public/css/presence.css" type="text/css" rel="stylesheet"/>
 
@@ -82,7 +83,7 @@ require('controller/edit.php');
   <div class="content">
     <div class="data">
       <span class="time">19h72</span>
-      <span class="registered"><span class="number">12</span> personnes participent</span>
+      <span class="registered"><span class="number"></span> personnes participent</span>
     </div>
     <div class="date">
       <div class="day">06</div>
@@ -98,66 +99,6 @@ require('controller/edit.php');
 
 </div>
 
-        <p id="p3">blabla</p>
-
-<div id="messages">
-
-<?php
-
-// on se connecte à notre base de données
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=aslcn', 'root', '');
-}
-catch (Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
-
-if(isset($_POST['submit'])){ // si on a envoyé des données avec le formulaire
-
-    if(!empty($_POST['pseudo'])){ // si les variables ne sont pas vides
-    
-        $pseudo = mysql_real_escape_string($_POST['pseudo']); // on sécurise nos données
-
-        // puis on entre les données en base de données :
-        $insertion = $bdd->prepare('INSERT INTO messages VALUES("", :pseudo)');
-        $insertion->execute(array(
-            'pseudo' => $pseudo,
-        ));
-
-    }
-    else{
-        echo "Vous avez oublié de remplir un des champs !";
-    }
-
-
-    if(!empty($_GET['id'])){ // on vérifie que l'id est bien présent et pas vide
-
-        $id = (int) $_GET['id']; // on s'assure que c'est un nombre entier
-    
-        // on récupère les messages ayant un id plus grand que celui donné
-        $requete = $db->prepare('SELECT * FROM messages WHERE id > :id ORDER BY id DESC');
-        $requete->execute(array("id" => $id));
-    
-        $messages = null;
-    
-        // on inscrit tous les nouveaux messages dans une variable
-        while($donnees = $requete->fetch()){
-            $messages .= "<p id=\"" . $donnees['id'] . "\">" . $donnees['pseudo'] . "</p>";
-        }
-    
-        echo $messages; // enfin, on retourne les messages à notre script JS
-    
-    }
-} ?>
-</div>
-
-	<form method="POST" action="">
-        Pseudo : <input type="text" name="pseudo" id="pseudo" /><br />
-	    <input type="submit" name="submit" value="Prejent ?" id="envoi" />
-	</form>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-<script src="/aslcn/public/js/presence.js"></script>
 <script src="/aslcn/public/js/pres.js"></script>
+
+

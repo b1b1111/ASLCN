@@ -38,7 +38,8 @@ else if($url[0] == 'calendrier') {
         if (!empty($url[2]) && $url[2] == 'createComment') {
 
             $pseudo = $_POST['pseudo'];
-            $adminController->ajaxPres($pseudo);
+            $message = $_POST['message'];
+            $adminController->ajaxPres($url[2], $pseudo, $message);
             header('Location: '. $_POST['URL_PATH'] . $url[0] . '/' . $url[1]);
         } 
         $adminController->viewPres($url[1]);   
@@ -57,11 +58,6 @@ else if($url[0] == 'calendrier') {
 /*--------------------------------------CONTACT----------------------------------------*/
 else if($url[0] == 'contact') {
     $postController->contact();
-} 
-
-/*--------------------------------------CONTACT----------------------------------------*/
-else if($url[0] == 'present') {
-    $adminController->getAllEv();
 } 
 
 /*--------------------------------------PORTFOLIO----------------------------------------*/
@@ -104,14 +100,8 @@ else if($url[0] == 'profil') {
 
     else if ($url[1] == 'editPres' && is_numeric($url[2])) {
         if ($url[3] == 'pres') {
-            $adminController->getEv($url[2]);
+            $adminController->getAllEv();
         }  
-           
-        else { 
-            $presents = $_POST['presents'];
-            $absents = $_POST['absents'];
-            $adminController->editEv($url[2], $presents, $absents);
-        }
     }
 
     else if($url[1] == "deconnexion") {
