@@ -3,13 +3,11 @@
 namespace Controller;
 
 require_once('model/postManager.php');
-require_once('model/CommentManager.php');
 
 class adminController {
 
    function __construct() {
-      $this->postManager = new \Model\postManager();  
-      $this->CommentManager = new \Model\CommentManager();  
+      $this->postManager = new \Model\postManager();    
    }  
 
     /***********************************TEAM******************************************** */
@@ -42,25 +40,15 @@ class adminController {
         require 'view/frontend/viewEvent.php';
     }
 
-    public function getPres($id) {
-        $post = $this->postManager->getTablePres($id);
-        require 'view/frontend/presence.php';
-    }
-
-    public function insertPresence($id, $id_event, $id_membre) {
-        $req = $this->postManager->insertPres($id, $id_event, $id_membre);
-    }
     /***********************************EVENTS******************************************** */
-
-    public function getEv($id) {
-        $event = $this->postManager->getEv($id);
-        require 'view/frontend/pres.php';
-    }
-
 
     public function getAllEv() {
         $evenement = $this->postManager->getEvents();
         require 'view/frontend/pres.php';
     }
 
+    public function getAllVote($id_event) {
+        $evenement = $this->postManager->getVote($id_event);
+        require 'view/frontend/pres.php';
+    }
 }

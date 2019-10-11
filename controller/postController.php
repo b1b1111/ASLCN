@@ -3,48 +3,24 @@
 namespace Controller;
 
 require_once('model/postManager.php');
-require_once('model/CommentManager.php');
 class postController {
 
     function __construct() {
         $this->postManager = new \Model\postManager(); 
-        $this->CommentManager = new \Model\CommentManager(); 
     }
 
     //Page accueil
-    public function getPosts($id) {
-        $posts = $this->postManager->getEvOrder($id);
+    public function getAccueil($id) {
         require 'view/frontend/accueil.php';
     }
 
+    public function mentions() {
+        require 'view/frontend/mentions.php';
+    }
+
     //Affiche le calendrier.
-    public function printCalendar() {
-        $post = $this->postManager->getMembers();
+    public function printCalendar($id) {
         require('view/frontend/viewCalendar.php');
-    }
-
-    //Affiche la creation d'un event.
-    public function addEvent() {
-        require('view/frontend/addEvent.php');
-    }
-
-    //Affiche la modification d'un event.
-    public function editEvent() {
-        require('view/frontend/editEvent.php');
-    }
-
-    //Affiche un event.
-    public function viewEvents($id) {
-        $post = $this->postManager->getPost($id);
-        $comments = $this->CommentManager->getComments($id);
-        require 'view/frontend/viewEvent.php';
-    }
-
-    // Afficher un evenement.
-    public function showCalendar($id) {
-        $post = $this->postManager->getPost($id);
-        $posts = $this->postManager->getAllUser();
-        require 'view/frontend/event.php'; 
     }
 
    //Envoie de mail
@@ -84,7 +60,6 @@ class postController {
         exit;
     }
     
-    $this->postManager->getPosts();
     require 'view/frontend/contact.php'; 
     }
 
@@ -161,8 +136,6 @@ class postController {
             $erreur = "Tous les champs doivent être complétés !";
             }
         }
-        
-        $this->postManager->getPosts();
         require 'view/frontend/connexion.php'; 
     }
 
@@ -298,8 +271,7 @@ class postController {
                 $error = "Veuillez entrer votre adresse mail";
             }
         }
-        
-        $this->postManager->getPosts();
+
         require 'view/frontend/recuperation.php'; 
     }
 
@@ -330,8 +302,6 @@ class postController {
             $erreur = "Tous les champs doivent être complétés !";
             }
         }
-        
-        $this->postManager->getPosts();
         require 'view/frontend/reboot.php';
     }
 
@@ -361,7 +331,6 @@ class postController {
      * Deconnexion du profil
      */
     public function deconnexion() {
-        $req = $this->postManager->getPosts();
         header('Location: '. $_POST['URL_PATH'] . 'profil');
         require 'view/frontend/deconnexion.php';
     }
@@ -382,21 +351,10 @@ class postController {
         require 'view/frontend/portfolio.php';
     }
 
-    public function error() {
-        $posts = $this->postManager->getPosts();
-        require 'view/frontend/404.php';
-    }
-
     public function classement() {
         $post = $this->postManager->getTeams();
         require 'view/frontend/classement.php';
     }
-
-    public function presence($id) {
-        $post = $this->postManager->getEvents();
-        $membre = $this->postManager->getMember($id);
-        require 'view/frontend/presence.php';
-    } 
 
     public function postPresence($present, $absent) {    
         $post = $this->postManager->addPresence($present, $absent);
@@ -407,8 +365,14 @@ class postController {
         $post = $this->postManager->updatePres($id, $idmembres);
     }
 
-    public function mentions() {
-        require 'view/frontend/mentions.php';
+    public function presence($id_event, $id_membre) {
+        $insert = $this->postManager->insertPresence($id_event, $id_membre);
+        require 'view/frontend/pres.php';
+    }
+
+    public function error() {
+        $posts = $this->postManager->getPosts();
+        require 'view/frontend/404.php';
     }
     
 }

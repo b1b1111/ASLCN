@@ -24,6 +24,9 @@
         <link rel="alternate" hreflang="fr" href="" /> 
         <link href="<?= $_POST['URL_PATH'] ?>public/css/style.css" type="text/css" rel="stylesheet"/>
         <link href="<?= $_POST['URL_PATH'] ?>public/css/app.css" type="text/css" rel="stylesheet"/>
+        <link href='<?= $_POST['URL_PATH'] ?>fullcalendar/packages/core/main.css' rel='stylesheet' />
+        <link href='<?= $_POST['URL_PATH'] ?>fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+        <link href='<?= $_POST['URL_PATH'] ?>fullcalendar/packages/list/main.css' rel='stylesheet' />
     
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />

@@ -2,64 +2,10 @@
 $title = 'ASLCN';
 require('html.php');
 require('template.php');
-require_once('controller/calendrier.php');
 ?>
 
+<h1 id="title_calendar">Calendrier des rencontres</h1>
 
-<div class="calendar">
+<p id="p_calendar" >Perdu dans les dates ? N'hésite pas à jeter un oeil au calendrier, tu peux même enregistrer dans ton agenda les prochaines rencontres.</p>
 
-  <div class="top_calendar">
-    <h1><?= $month->toString(); ?></h1>
-      <div>
-        <?php if (isset($_GET['success'])): ?>
-          <div class="container">
-            <div class="alert-success">
-              L'évènement a bien été enregistré
-            </div>
-          </div> 
-        <?php endif; ?>
-
-        <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->previousMonth()->month; ?>&year=<?= $month->previousMonth()->year; ?>" class="btn-select-calendar">&lt;</a>
-        <a href="<?= $_POST['URL_PATH'] ?>calendrier?month=<?= $month->nextMonth()->month; ?>&year=<?= $month->nextMonth()->year; ?>" class="btn-select-calendar">&gt;</a>
-    </div>
-  </div>
-
-  <table class="calendar__table calendar__table--<?= $weeks; ?>weeks">
-      <?php for ($i = 0; $i < $weeks; $i++): ?>
-        <tr>
-            <?php
-            foreach($month->days as $k => $day):
-                $date = (clone $start)->modify("+" . ($k + $i * 7) . " days");
-                $eventsForDay = $events[$date->format('Y-m-d')] ?? [];
-                $isToday = date('Y-m-d') === $date->format('Y-m-d');
-                ?>
-                <td class="<?= $month->withinMonth($date) ? '' : 'calendar__othermonth'; ?> <?= $isToday ? 'is-today' : ''; ?>">
-                  <?php if ($i === 0): ?>
-                    <div class="calendar__weekday"><?= $day; ?></div>
-                  <?php endif; ?>
-                  <a class="calendar__day"><?= $date->format('d'); ?></a>
-
-                  <?php foreach($eventsForDay as $event){ ?>
-                    
-                    <div class="calendar__event">
-                     
-                      <?php
-                        if(isset($_SESSION['id']) && $event['id'] !== $_SESSION['id']) { ?>                     
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
-                        <a href="<?= $_POST['URL_PATH'] ?>calendrier/editEvent?id=<?= $event['id']; ?>" class="button_modif">M</a>
-                      <?php } 
-
-                      else { ?>                     
-                        <?= (new DateTime($event['start']))->format('H:i') ?> - <a href="<?= $_POST['URL_PATH'] ?>calendrier/viewEvent?id=<?= $event['id']; ?>"><?= h($event['name']); ?></a>
-                      <?php } ?>   
-                      
-                    </div>
-                        
-                    <?php } ?>
-              </td>
-            <?php endforeach; ?>
-        </tr>
-      <?php endfor; ?>
-  </table>
-
-</div>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%231e2a36&amp;ctz=Europe%2FParis&amp;src=Njhjc2kzajE3MmE2cWZxNDRqNXAxbjFnbHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23795548&amp;showCalendars=0&amp;showPrint=0&amp;showTz=0&amp;title=Calendrier%20de%20l&#39;ASLCN&amp;showTabs=0&amp;showTitle=0&amp;showDate=0&amp;showNav=1" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" font-size="1.1em"></iframe>

@@ -42,12 +42,8 @@ else {
         <span class="lines line-3"></span>
     </label>
 
-    <a href="<?= $_POST['URL_PATH'] ?>calendrier/addEvent" class="profil_menu-item blue">
+    <a href="https://calendar.google.com/calendar/r/month?cid=68csi3j172a6qfq44j5p1n1gls%40group.calendar.google.com" class="profil_menu-item blue">
         <img src="../aslcn/public/images/icons/add.png" alt="icon_add"/>
-    </a>
-
-    <a href="<?= $_POST['URL_PATH'] ?>profil/editPres/<?= $_SESSION['id'] ?>/pres" class="profil_menu-item green">
-        <img src="../aslcn/public/images/icons/update.png" alt="icon_update"/>
     </a>
 
     <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red">

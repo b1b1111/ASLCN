@@ -9,22 +9,11 @@ class postManager extends manager {
         $this->newManager = new \Model\Manager();  
     }
 
-    public function getPosts() {
-
-        $db = $this->newManager->dbConnect();
-        
-        $request = $db->query('SELECT id, title, content, DATE_FORMAT(creation_date, \'le %d/%m/%Y à %Hh%i\') AS creation_date_fr FROM posts ORDER BY id DESC');    
-        return $request;
-    }
-
-    public function getPost($id) {
-
+    public function getEvent($id) {
         $db = $this->newManager->dbConnect();
         $request = $db->prepare('SELECT * FROM events WHERE id = ?');
-
         $request->execute(array($id));
-        $post = $request->fetch();
-        return $post;
+        return $request;
     }
 
     public function getAllUser() {
@@ -289,50 +278,12 @@ class postManager extends manager {
         return $post;
     }
 
-    public function getEventPres($getid) {
-        $db = $this->newManager->dbConnect(); 
-        $check = $db->prepare('SELECT id FROM events WHERE id = ?');
-        $check->execute(array($getid));
-        return $check;
-    }
-
-    public function getEvOrder($id) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM events WHERE id= ? ORDER BY start"); 
-        $req->execute(array($id));  
-        $event = $req->fetchAll(); 
-        return $event;
-    }
-
     public function getEv($id) {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM events WHERE id= ?"); 
         $req->execute(array($id));  
         $event = $req->fetchAll(); 
         return $event;
-    }
-        
-    public function vote($id_event) {
-        $id_event = (int)$id_event;
-        $db = $this->newManager->dbConnect();
-        $query = $db->mysql_query("SELECT vote FROM events WHERE id='$id_event'");
-        while($rows=mysql_fetch_assoc($query)) {
-            echo $rows['vote'];
-        }
-    }
-
-    public function updateEv($id, $presents, $absents) {
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE events SET presents = ?, absents = ? WHERE id = ?');
-        $post = $request->execute(array($presents, $absents, $id));   
-        return $post; 
-    }
-
-    public function deletEv($id) {
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('DELETE FROM events WHERE events.id = ?');
-        $post = $request->execute(array($id));   
-        return $post; 
     }
 
     /*****************************************TEAM************************************************* */
@@ -365,6 +316,15 @@ class postManager extends manager {
     /*****************************************PRESENCE********************************************* */
     /********************************************************************************************** */
 
+    public function insertPresence($id_event, $id_membre) {
+        $db = $this->newManager->dbConnect();
+        $insert= $db->prepare("INSERT TO presences VALUES('', :id_event, :id_membre)");
+        $insert->execute(array(
+            'id_event' => $id_event,
+            'id_membre' => $id_membre
+        ));
+    }
+    
     public function getAllPres() {
         $db = $this->newManager->dbConnect(); 
         $req= $db->prepare("SELECT * FROM membres ORDER BY pseudo"); 
@@ -393,16 +353,5 @@ class postManager extends manager {
         $req->execute(array()); 
         return $req;
     }
-    
-    public function getTablePres($id) {
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('SELECT *
-        FROM membres
-        RIGHT JOIN events
-        ON events.id = presences.id_membre');
-        $request->execute(array($id)); 
-        $post = $request->fetchAll();   
-        return $post; 
-    }
-}
 
+}

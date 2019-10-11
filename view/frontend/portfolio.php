@@ -137,17 +137,23 @@ require('template.php');
       <h2 class="project__name">Dorian Alves</h2>
       <div class="project__description">El portos</div>
       <div class="project__body js-body">
-        <h2>Dorian</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portait chinois !</h2>
+        <p>Un geste technique : Panenka (juste parce que le nom est drôle)</p>
+        <p>Un geste antisportif : non</p>
+        <p>Un match de légende: Ali vs Foreman</p>
+        <p>Un trophée: le meilleur souvenir la coupe du monde de foot</p>
+        <p>Un jeu d’école : les Pog... merde j suis vieux</p>
+        <p>Une enceinte sportive : Madison Square Garden parce que c’est mythique</p>
+        <p>Une citation ou un proverbe: que le meilleur gagne</p>
+        <p>Un objet sportif : un gants de boxe</p>
+        <p>Un commentateur/ journaliste sportif ? michael buffer (je sais c’est un speaker) mais juste
+        pour pouvoir faire Let&#39;s get ready to rumble</p>
+        <p>Un Alcool : le panaché ça compte?</p>
+        <p>Une blessure : la défaite</p>
+        <p>Une chanson de supporter : po polo po popopo!</p>
+        <p>Une fédération non officielle : federation française des poissards</p>
+        <p>Un combo entre sports : basket/rugby ( un rugsket donc!)</p>
+        <p>Une position : A teRRRRRe</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -178,7 +184,7 @@ require('template.php');
       <h2 class="project__name">Fabien Le Guennec</h2>
       <div class="project__description">Fab</div>
       <div class="project__body js-body">
-        <h2>Co - Président et glandum</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -256,7 +262,7 @@ require('template.php');
       <h2 class="project__name">Francois Loarer</h2>
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
-        <h2>President</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : le lancer du cochonnet... C’est comme dégraffer un soutien-gorge : souvent hasardeux et très technique mais à la fois excitant et prometteur d’un bon moment de partage à venir...</p>
         <p>Un geste antisportif : le tirage de maillot... le tirage de short ne me gêne pas du tout par contre !</p>
         <p>Un match de légende : Guingamp – Rennes en finale de coupe de France 2009 (2-1)... le stade de France aux couleurs de la Bretagne, l’hymne breton et Alan Stivell à la fin du match, Guingamp qui gagne alors que je supportais à l’époque le Stade Rennais, la Une de l’Equipe en breton « Ar Skipailh »,... </p>
@@ -279,7 +285,7 @@ require('template.php');
       <h2 class="project__name">Eric Marchaland</h2>
       <div class="project__description">Rico</div>
       <div class="project__body js-body">
-        <h2>Rico</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -320,7 +326,7 @@ require('template.php');
       <h2 class="project__name">Mélaine Legland</h2>
       <div class="project__description">Consectetur adipisicing elit</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -398,9 +404,9 @@ require('template.php');
     <div class="project js-item" tabindex="0">
       <img src="public/images/capillo/ben.jpg" alt="" class="project__image">
       <h2 class="project__name">Benjamin Lefebvre</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <div class="project__description">Leandre</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -418,7 +424,7 @@ require('template.php');
       <h2 class="project__name">Samuel Souffoy</h2>
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
-        <h2>Sam</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -436,7 +442,7 @@ require('template.php');
       <h2 class="project__name">Maxime Le Boursicaud</h2>
       <div class="project__description">Boubourse</div>
       <div class="project__body js-body">
-        <h2>Boubourse</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -450,11 +456,11 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/capillo/nerik.jpg" alt="" class="project__image">
       <h2 class="project__name">Eric Devillon</h2>
-      <div class="project__description">Toinou</div>
+      <div class="project__description">Nerik</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -481,17 +487,25 @@ require('template.php');
       <h2 class="project__name">Bruno Bercegeay</h2>
       <div class="project__description">Brune</div>
       <div class="project__body js-body">
-        <h2>Brune</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : Le flop-shot de Phil Mickelson</p>
+        <p>Un geste antisportif : Le tirage de maillot</p>
+        <p>Un match de légende : Roger Federer - Rafael Nadal - Finale Open d’Australie 2017</p>
+        <p>Un trophée : La Coupe du Monde de Football</p>
+        <p>Un jeu d’école : Poule Renard Vipère</p>
+        <p>Une enceinte sportive : Signal Iduna Park à Dortmund</p>
+        <p>Une citation ou un proverbe: « C’est quoi le geste le plus important et le plus
+        difficile dans le foot ? Platini dit que c’est le contrôle.
+        Alors moi je dis Non, je dis on joue sans contrôle »
+        Jean-Claude Suaudeau</p>
+        <p>Un objet sportif : Un ballon</p>
+        <p>Un commentateur / journaliste sportif ? Thierry Gilardi</p>
+        <p>Un Alcool : Vodka</p>
+        <p>Une blessure : ???</p>
+        <p>Une chanson de supporter : Roxana et Marlène vont voir rouge.... :)</p>
+        <p>Une fédération non officielle : Celle de la bifle sur un pote déchiré !... :)</p>
+        <p>Un combo entre sports : Le ski-terrasse</p>
+        <p>Une position : Peu importe, du moment qu’elle soit au fond !!!</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -499,7 +513,7 @@ require('template.php');
       <h2 class="project__name">Kristen Le Nestic</h2>
       <div class="project__description">Kristen</div>
       <div class="project__body js-body">
-        <h2>Kristen</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -536,21 +550,27 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/wall/nono.jpg" alt="" class="project__image">
       <h2 class="project__name">Arnaud Nael</h2>
       <div class="project__description">Arnaud</div>
       <div class="project__body js-body">
-        <h2>Arnaud</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : la roulette zidanesque</p>
+        <p>Un geste antisportif : un bon vieux tirage de maillot pour désamorcer une contre-attaque</p>
+        <p>Un match de légende: France-Brésil 2006 (Zizou au sommet de son art avant le coup de
+        boule)</p>
+        <p>Un trophée: la coupe du monde de football</p>
+        <p>Un jeu d’école : le « mur »</p>
+        <p>Une enceinte sportive : la Beaujoire</p>
+        <p>Une citation ou un proverbe: «Je lisais un truc de Mickey Rourke, parce que c&#39;est un gars que j&#39;adore, qui disait que le mec qui s&#39;occupe des oscars est un sac à merde. Je pense qu&#39;Henri Michel n&#39;en est pas loin», signé Canto</p>
+        <p>Un objet sportif : ballon de foot</p>
+        <p>Un commentateur/ journaliste sportif ? Thierry Gilardi</p>
+        <p>Un Alcool : tous exceptés ce qui est anisé</p>
+        <p>Une blessure : entorse cheville</p>
+        <p>Une chanson de supporter : l’hymne à la beaujoire</p>
+        <p>Une fédération non officielle : babyfoot</p>
+        <p>Un combo entre sports : fléchettes canettes</p>
+        <p>Une position : N°6</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -559,9 +579,6 @@ require('template.php');
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-        Dis-nous, si tu étais….<br />
-
         <p>Un geste technique : Un tacle glissé de récupération par derrière sur une pelouse bretonne bien grasse… ma spéciale.</p>
         <p>Un geste antisportif : Le service cuillère au tennis (quand on ne sait pas jouer c’est pourtant bien pratique).</p>
         <p>Un match de légende: QPR – Swansea au Boxing Day, 1er Janvier 2015 vécu en direct avec 100 Livres de parier à 5 potes alors que QPR menait 1-0, Swansea joue à 10 égalise et QPR pousse, dans les arrêts de jeu sauvetage sur la ligne + poteau pour un résultat match nul et 400 Livres non gagnés... (Match de rugby aussi NZ France, quart de finale Coupe du Monde 1999).</p>
@@ -594,7 +611,7 @@ require('template.php');
       <h2 class="project__name">Samuel Larchet</h2>
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
-        <h2>Sam</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : Une série de Flat effectuée par Rodney Mullen –le père du skate</p>
         <p>Un geste antisportif : Feindre une blessure pour créer la faute – y’a rien de plus beau que de
         culpabiliser l’ennemi</p>
@@ -621,17 +638,27 @@ require('template.php');
       <h2 class="project__name">Romain Plissoneau</h2>
       <div class="project__description">Romain</div>
       <div class="project__body js-body">
-        <h2>Romain</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : J’ai souvent dit à ma moitié qu’elle était belle comme une reprise de
+        volée de Zizou en finale de C1 (classe !) donc : LA reprise de volée de Zizou en finale de C1 !!</p>
+        <p>Un geste antisportif : le classique lâcher de palet au pied de l’adversaire au lieu de lui donner en main propre (fonctionne avec ballon, volant, cochonnet…)</p>
+        <p>Un match de légende: Federer - Soderling qui consacre Roger comme meilleur joueur de
+        tous les temps (pas de débat OK !), frissons !</p>
+        <p>Un trophée: la cuillère de bois ��</p>
+        <p>Un jeu d’école : le foot sans règles (classique entre frère et sœur !!)</p>
+        <p>Une enceinte sportive : Le stade du Pilori à Campbon, j’ai eu l’honneur d’y jouer quelques
+        années et de grandir en face…les derbys faisaient du bruit !!</p>
+        <p>Une citation ou un proverbe: toujours plus loin, plus fort, plus vite, jusqu’au bout de l’extrême limite !</p>
+        <p>Un objet sportif : un frisbee</p>
+        <p>Un commentateur/ journaliste sportif : les inconnus sur Antenne 2</p>
+        <p>Un Alcool : bière</p>
+        <p>Une blessure : Inflammation de la bandelette ilio tibiale, vous l’avez reconnu : le classique
+        syndrome de l’essui glace</p>
+        <p>Une chanson de supporter : Campbonnais allez allez allez… je vous l’ai dit, les derbys étaient
+        chauds !!</p>
+        <p>Une fédération non officielle : huum je passe</p>
+        <p>Un combo entre sports : baby claque</p>
+        <p>Une position : get up stand up….</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
@@ -639,7 +666,7 @@ require('template.php');
       <h2 class="project__name">Julien Delanoë</h2>
       <div class="project__description">Ju</div>
       <div class="project__body js-body">
-        <h2>Ju</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -657,7 +684,7 @@ require('template.php');
       <h2 class="project__name">Emmanuel Galpin</h2>
       <div class="project__description">Manu</div>
       <div class="project__body js-body">
-        <h2>Manu</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : un grand pont (toujours efficace sur un Five)</p>
         <p>Un geste antisportif : petite chute simulée de temps en temps (petit gabarit oblige on se fait souvent bousculer sur le terrain sans que ce soit sifflé donc ça équilibre un peu !!)</p>
         <p>Un match de légende: France-Brésil 1998 (génération 1987, ca marque une vie à cet âge…)</p>
@@ -680,7 +707,7 @@ require('template.php');
       <h2 class="project__name">Florian Pons</h2>
       <div class="project__description">Flo</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -698,7 +725,7 @@ require('template.php');
       <h2 class="project__name">Jocelyn Athimon</h2>
       <div class="project__description">Jocelyn</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -753,7 +780,7 @@ require('template.php');
       <h2 class="project__name">Stephane Page</h2>
       <div class="project__description">Steph</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : la roulette à Zizou</p>
         <p>Un geste antisportif : le high kick du King (référence footballistique au cas où)</p>
         <p>Un match de légende: France / Brésil 98 (ou 2006)</p>
@@ -777,7 +804,7 @@ require('template.php');
       <h2 class="project__name">Antoine Ghaleb</h2>
       <div class="project__description">Toinou</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -795,7 +822,7 @@ require('template.php');
       <h2 class="project__name">Phillipe Talaud</h2>
       <div class="project__description">Fifou</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -810,20 +837,25 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
-      <h2 class="project__name">François ???</h2>
-      <div class="project__description">François</div>
+      <h2 class="project__name">Maxime Plaire</h2>
+      <div class="project__description">Max</div>
       <div class="project__body js-body">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <h2>Portrait chinois !</h2>
+        <p>Un geste technique : un spin move</p>
+        <p>Un geste antisportif : un bon tacle les deux pieds dans le genou</p>
+        <p>Un match de légende : ½ finale de l’eurobasket contre l’Espagne avec le discours de TP</p>
+        <p>Un trophée : Une tireuse à biere</p>
+        <p>Un jeu d’école : le jeu qui va avec le trophée</p>
+        <p>Une enceinte sportive : ?</p>
+        <p>Une citation ou un proverbe : « Pain is temporary. Quitting lasts forever. »</p>
+        <p>Un objet sportif : un vélo</p>
+        <p>Un commentateur/ journaliste sportif ? Geroge Eddy</p>
+        <p>Un Alcool : le rhum</p>
+        <p>Une blessure : l’essuie-glace c’est la classe</p>
+        <p>Une chanson de supporter : Marseille ! Marseille ! on t’ …</p>
+        <p>Une fédération non officielle : FIBM Fédération internatinale de beer mile</p>
+        <p>Un combo entre sports : foot et vélo</p>
+        <p>Une position : petite cuillère</p>
       </div>
     </div>
   </div>
@@ -834,14 +866,13 @@ require('template.php');
     </a>
     <h1>Les kékéhuetes</h1>
   </div>
-  <div class="portfolio-flex" id="js-portfolio-flex">
-    
+  <div class="portfolio-flex" id="js-portfolio-flex"> 
     <div class="project js-item" tabindex="0">
       <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
       <h2 class="project__name">Justine Plos</h2>
       <div class="project__description">Juju</div>
       <div class="project__body js-body">
-        <h2>Juju</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : Une souplesse arrière (on sait jamais, mieux vaut mettre un geste que
         je sais réaliser au cas où on nous demanderait de l’effectuer à l’improviste)</p>
         <p>Un geste antisportif : le petit coup de coude discret</p>
@@ -867,7 +898,7 @@ require('template.php');
       <h2 class="project__name">Joachim Pestel</h2>
       <div class="project__description">Joachim</div>
       <div class="project__body js-body">
-        <h2>Joachim</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : Burpees si tout sport sinon crochet au football</p>
         <p>Un geste antisportif : faute tactique</p>
         <p>Un match de légende: Stade Rennais/PSG final coupe de France 2019</p>
@@ -890,7 +921,7 @@ require('template.php');
       <h2 class="project__name">Martine Stéphan</h2>
       <div class="project__description">Martine</div>
       <div class="project__body js-body">
-        <h2>Martine</h2>
+        <h2>Portrait chinois !</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
           facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
@@ -931,7 +962,7 @@ require('template.php');
       <h2 class="project__name">Sarah Hû</h2>
       <div class="project__description">Sarah</div>
       <div class="project__body js-body">
-        <h2>Sarah</h2>
+        <h2>Portrait chinois !</h2>
         <p>Un geste technique : un pas de dance/de gym</p>
         <p>Un geste antisportif : le levé de coude</p>
         <p>Un match de légende : David contre Goliath même si je suis plus sport Co</p>

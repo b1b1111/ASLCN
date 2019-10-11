@@ -33,6 +33,12 @@
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+        <script src='/aslcn/fullcalendar/packages/core/main.js'></script>
+        <script src='/aslcn/fullcalendar/packages/interaction/main.js'></script>
+        <script src='/aslcn/fullcalendar/packages/daygrid/main.js'></script>
+        <script src='/aslcn/fullcalendar/packages/list/main.js'></script>
+        <script src='/aslcn/fullcalendar/packages/google-calendar/main.js'></script>
+
         <script src="/aslcn/public/js/alert.js"></script>
         <script src="/aslcn/public/js/verif.js"></script> 
         <script src="/aslcn/public/js/classement.js"></script>

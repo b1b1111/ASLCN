@@ -115,7 +115,7 @@ label {
   }
   
 #head_menu:checked ~ .menu {
-    width: 900px;
+    width: 1000px;
     border-radius: 5px;
     background-color: transparent;
     border: 3px solid #1abc9c;
@@ -168,7 +168,7 @@ label {
     -ms-transition: all 0.5s ease-in-out;
     list-style-type: none;
     padding: 0;
-    width: 900px;
+    width: 1000px;
     margin-top: 10px;
     text-align: center;
     margin-bottom: 0;
@@ -189,6 +189,10 @@ label {
     -ms-transition: all 0.5s ease-in-out;
     border: 3px solid transparent;
     border-radius: 5px;
+}
+
+.menu #pres {
+    color: #1abc9c;
 }
 
 .menu ul li a:hover {
@@ -239,7 +243,6 @@ label {
 }
 
 /*-------------------------------SECTION--------------------------------*/
-
 
 /*------------SECTION TWO-----------*/
 
@@ -292,228 +295,30 @@ label {
     padding: 10px;
 }
 
+.logo_section_three img:hover {
+    transition: 0.3s all ease-in-out;
+    border: 6px #304963 solid;
+}
+
 .logo_section_three h2 {
     color: #1e2a36;
 }
 
 /*--------------------------------------------CALENDRIER----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
-.top_calendar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 98%;
-}
 
-table, th, td {
-    border-collapse: collapse;
-}
-
-.top_calendar h1 {
-    margin-left: 15px;
-}
-
-.alert-success {
+#title_calendar, #p_calendar {
     text-align: center;
-    color: white;
 }
 
-.calendar_title {
-    font-size: 2.5em;
-    margin-top: -10px;
+.view-cap, .view-container-border {
+    background-color: rgb(218, 18, 18) !important;
 }
 
-#month {
-    margin: 0 0 5px 30px;
+span.te-s {
+    color: blue !important;
 }
 
-.calendar__table {
-    justify-content: center;
-    width: 95%;
-    height: calc(100vh - 128px);
-    margin: 0 0 20px 33px;
-}
-
-.calendar__table td {
-    padding: 10px;
-    border: 2px solid rgb(143, 138, 138);
-    vertical-align: top;
-    width: 14.29%;
-    height: 20%;
-}
-
-.calendar__table td.is-today {
-    background-color: #f7e7ec5b;
-}
-
-.calendar__table--6weeks td {
-    height:  16.66%;
-}
-
-.calendar__weekday {
-    font-weight: bold;
-    color: rgb(248, 240, 240);
-    font-size: 1.2em;
-}
-
-.calendar__day {
-    font-size: 1.3em;
-}
-
-.calendar__othermonth .calendar__day {
-    opacity: 0.3;
-}
-
-#full-featured {
-    border: 1px solid gray;
-}
-
-.presence p {
-    color: white;
-}
-
-.table_score {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 15px;
-}
-
-.table_score tr {
-    background-color: #3c3c3d;
-    color: white;
-}
-
-.table_score th, td {
-    padding: 10px;
-    text-align: left;
-    border: solid 1px #ccc;
-}
-
-.table_score th {
-    background-color: #ff4309;
-    color: #FFF;
-}
-
-.table_score tr:nth-child(odd) {
-    background-color: #eee;
-    color: black;
-}
-
-/*------------------------------BUTTON CALENDAR----------------------------------*/
-
-.btn-select-calendar {
-  
-    display: inline-block;
-    position: relative;
-    left: calc(50% - 112px);
-    margin: 0 0 8px 0;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 800;
-    background-color: rgb(247, 126, 14);
-    border-radius: 50px;
-}
-
-.btn-select-calendar:hover {
-    text-decoration: none;
-    transform: scale(1.1);
-}
-/*-----------------------BUTTON CREATION EVENT-------------------*/
-.button_modif {
-    display: block;
-    width: 26px !important;
-    height: 26px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFF;
-    font-size: 0.7em;
-    background-color: #1abc9c;
-    border-radius: 50%;
-
-    box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
-
-.button_modif:hover {
-    text-decoration: none;
-    color: #FFF;
-    transform: scale(1.1);
-}
-
-/*--------------------------------------------ADD-----------------------------------*/
-#full_full {
-    border: 2px solid grey;
-    margin-top: 20px;
-}
-
-.container h1 {
-    color: rgb(247, 126, 14);
-}
-
-.back_link {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    font-size: 1.4em;
-    color: #fff;
-}
-
-.back_link:hover {
-    color: #1abc9c;
-}
-
-#pres {
-    color: white;
-}
-
-#p3 {
-    color: white;
-}
-
-/************************************PRES******************************************/
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .article {
-    margin: 12px 0px 0px 75px;
-    padding: 12px;
-    width: 67%;
-    background-color: #FFF;
-    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
-    border-radius: 5px;
-  }
-  
-  .first_line_header {
-    padding: 5px;
-  }
-  
-  .first_line_header .header_title_1 {
-    float: left;
-  }
-  
-  .first_line_header .header_title_text {
-    font-weight: bold;
-    font-size: 28px;
-  }
-  
-  .first_line_header .header_title_2 {
-    float: right;
-  }
-  
-  .second_line_header {
-    padding: 5px;
-  }
 
 /*--------------------------------------------CONTACT------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------*/
@@ -601,29 +406,29 @@ table, th, td {
     width: 5%;
 }
 .table-responsive1 th, td {
-    padding: 10px;
-    border: solid 1px #ccc;
+    padding: 12px;
 }
 
 .table-responsive1 th {
-    background-color: #e6be0b;
     color: #FFF;
+    padding: 14px;
 }
 
 .table-responsive1 tr {
     color: rgb(247, 221, 221);
-    background-color: #ffd000;
+    background-color: none;
+    text-align: center;
     font-weight: 800;
-    font-size: 1em;
+    font-size: 13px;
 }
 
 .table-responsive {
-    width: 95%;
+    width: 91%;
     border-collapse: collapse;
     margin-bottom: 15px;
 }
 
-.table-responsive th, td {
+.table-responsive td {
     padding: 10px;
     text-align: left;
     border: solid 1px #ccc;
@@ -632,6 +437,8 @@ table, th, td {
 .table-responsive th {
     background-color: #e6be0b;
     color: #FFF;
+    padding: 11px;
+    border: solid 1px #ccc;
 }
 
 .table-responsive tr:nth-child(odd) {

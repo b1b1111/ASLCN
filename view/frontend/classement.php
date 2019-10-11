@@ -4,9 +4,6 @@ require('html.php');
 require('template.php'); 
 ?>
 
-<br>  
-<div id="txt"></div>
-
 <div id="table_class">
 
     <table class="table-responsive1">

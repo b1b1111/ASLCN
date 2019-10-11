@@ -6,11 +6,9 @@ use Controller\adminController;
 $_POST['URL_PATH'] = 'http://localhost/aslcn/';
 
 require_once('controller/postController.php');
-require_once('controller/commentController.php');
 require_once('controller/adminController.php');
 
     $postController = new \Controller\postController();
-    $commentController = new \Controller\commentController();
     $adminController = new \Controller\adminController(); 
     
 $url = '';
@@ -20,7 +18,7 @@ if(isset($_GET['url'])) {
 
 /*--------------------------------------ACCUEIL----------------------------------------*/
 if (empty($url)) {
-    $postController->getPosts($url);
+    $postController->getAccueil($url);
 } 
 
 else if ($url[0] == 'mentions') {
@@ -30,34 +28,13 @@ else if ($url[0] == 'mentions') {
 /*--------------------------------------CALENDRIER----------------------------------------*/
 else if($url[0] == 'calendrier') {
     if (empty($url[1])) {
-        $postController->printCalendar();
-    }
-
-    else if($url[1] == 'viewEvent') {
-         
-        if (!empty($url[2]) && $url[2] == 'createComment') {
-
-            $pseudo = $_POST['pseudo'];
-            $message = $_POST['message'];
-            $adminController->ajaxPres($url[2], $pseudo, $message);
-            header('Location: '. $_POST['URL_PATH'] . $url[0] . '/' . $url[1]);
-        } 
-        $adminController->viewPres($url[1]);   
-    }
-
-    else if($url[1] == 'addEvent') {
-        $postController->addEvent();
-    }
-
-    else if($url[1] == 'editEvent') {
-        $postController->editEvent();
+        $postController->printCalendar($url[0]);
     } 
-
 } 
 
 /*--------------------------------------CONTACT----------------------------------------*/
 else if($url[0] == 'contact') {
-    $postController->contact();
+    $postController->contact($url[0]);
 } 
 
 /*--------------------------------------PORTFOLIO----------------------------------------*/
@@ -68,12 +45,7 @@ else if($url[0] == 'galerie') {
 /*--------------------------------------CLASSEMENT----------------------------------------*/
 
 else if($url[0] == 'classement') {
-    if(!empty($url[1])) {
-        $postController->getClassement();
-    }
-    else {
-        $postController->classement($url[0]);
-    }
+    $postController->classement();
 }
 
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
@@ -96,12 +68,6 @@ else if($url[0] == 'profil') {
 
     else if($url[1] == 'editProfil') {
         $postController->editProfil();
-    }
-
-    else if ($url[1] == 'editPres' && is_numeric($url[2])) {
-        if ($url[3] == 'pres') {
-            $adminController->getAllEv();
-        }  
     }
 
     else if($url[1] == "deconnexion") {
