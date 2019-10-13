@@ -6,7 +6,8 @@ class Manager
 {
     protected function dbConnect()
     {
-        $db = new \PDO('mysql:host=localhost;dbname=aslcn;charset=utf8', 'root', '');
+        
+        $db = new \PDO('mysql:host=webagencawben.mysql.db;dbname=webagencawben;charset=utf8;port=3306', 'webagencawben', 'Ben0ubenou');
         return $db;
     }
 }

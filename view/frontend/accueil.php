@@ -6,11 +6,11 @@ require('template.php');
 <div class="body">
     <div id="slider">
         <figure>
-            <img src="../aslcn/public/images/slider/img1.jpg" alt="banner1">
-            <img src="../aslcn//public/images/slider/img2.jpg" alt="banner2">
-            <img src="../aslcn/public/images/slider/img3.jpg" alt="banner3">
-            <img src="../aslcn/public/images/slider/img4.jpg" alt="banner4">
-            <img src="../aslcn/public/images/slider/img5.jpg" alt="banner5">   
+            <img src="public/images/slider/img1.jpg" alt="banner1">
+            <img src="public/images/slider/img2.jpg" alt="banner2">
+            <img src="public/images/slider/img3.jpg" alt="banner3">
+            <img src="public/images/slider/img4.jpg" alt="banner4">
+            <img src="public/images/slider/img5.jpg" alt="banner5">   
         </figure>
     </div>
 

@@ -438,7 +438,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/capillo/boubourse.jpg" alt="" class="project__image">
       <h2 class="project__name">Maxime Le Boursicaud</h2>
       <div class="project__description">Boubourse</div>
       <div class="project__body js-body">

@@ -3,7 +3,7 @@ session_start();
 
 use Controller\adminController;
 
-$_POST['URL_PATH'] = 'http://localhost/aslcn/';
+$_POST['URL_PATH'] = 'http://aslcn.fr/';
 
 require_once('controller/postController.php');
 require_once('controller/adminController.php');
