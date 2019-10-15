@@ -425,16 +425,24 @@ require('template.php');
       <div class="project__description">Sam</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : la frappe dans le pied d’appui</p>
+        <p>Un geste antisportif : Le redoutable « salut michel, surveille ta rondelle » (variante truculente de la petite olive)</p>
+        <p>Un match de légende: Mitterrand - Chirac en 1981</p>
+        <p>Un trophée: La coupe du monde de saut en largeur</p>
+        <p>Un jeu d’école : la bite au cirage</p>
+        <p>Une enceinte sportive : L’activité physique est déconseillée pendant la grossesse</p>
+        <p>Une citation ou un proverbe: hey l’arbitre, t’as essuyé tes lunettes avec une tranche de jambon?</p>
+        <p>Un objet sportif : Le protège-tétons</p>
+        <p>Un commentateur/ journaliste sportif ? Jean-Michel Tétrosaoul-vatcoucher, qui officie au bar
+        l’Entracte à Hennebont, le mec crie Penalty à chaque coup d’envoi et chante « allez les verres »
+        pendant 90 minutes (et s’en ressert un autre)</p>
+        <p>Un Alcool : « Qu’importe le flacon, pourvu qu’il y ait l’ivresse ». Dédé, remets moi un Whisky-cacolac steplé.</p>
+        <p>Une blessure : La triple fracture foie / équilibre / dignité</p>
+        <p>Une chanson de supporter : « Amsterdaaaaaaam, Amsterdaaaaaaam, hier soir j’ai vu ta femme dans
+        une vitrine à Amsterdam »</p>
+        <p>Une fédération non officielle : la FIBS, fédération internationale de belote subaquatique</p>
+        <p>Un combo entre sports : Le Chess-boxing (véridique https://www.youtube.com/watch?v=kK5TQSKmS3o&amp;feature=youtu.be ) et le football-trap</p>
+        <p>Une position : La brouette moldo-valaque, poignée ergonomique, avec ou sans la roue voilée</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -461,16 +469,21 @@ require('template.php');
       <div class="project__description">Nerik</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : le contrôle du tibia</p>
+        <p>Un geste antisportif : un coup de boule</p>
+        <p>Un match de légende: battle de break dance de 4h du mat’ avec Max Lethu</p>
+        <p>Un trophée : darwin awards</p>
+        <p>Un jeu d’école : quand celui qui envoi les figurines DBZ le plus près du mur rafle la mise (est-ce que ce jeu avait un nom ???)</p>
+        <p>Une enceinte sportive : Stade du Verger, Ptich’, Orvault</p>
+        <p>Une citation ou un proverbe : il dit qu’il voit pas le rapport</p>
+        <p>Un objet sportif : un canapé</p>
+        <p>Un commentateur/ journaliste sportif ? Les inconnus</p>
+        <p>Un Alcool : la bière</p>
+        <p>Une blessure : foulure du petit doigt</p>
+        <p>Une chanson de supporter : ça m’insupporte</p>
+        <p>Une fédération non officielle : la FASLCN</p>
+        <p>Un combo entre sports : le yoga-squash</p>
+        <p>Une position : horizontale</p>
       </div>
     </div>
   </div>
@@ -984,7 +997,7 @@ require('template.php');
 
 </div>
 
-<script src="/aslcn/public/js/polyfill.js"></script>
-<script src="/aslcn/public/js/app.js"></script>
+<script src="public/js/polyfill.js"></script>
+<script src="public/js/app.js"></script>
 
 

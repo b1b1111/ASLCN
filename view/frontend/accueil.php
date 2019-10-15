@@ -21,8 +21,8 @@ require('template.php');
     <div id="resum">
         <h1 id="title_resum">L'Association </h1>
         
-        <p>L'ASCN, ce n'est pas un fleuve, oh non ! c'est une compétition et tu en fais partie ...
-        Tu vas avoir l'occasion de donner de ta personne dans l'effort et l'allégresse, dans le cadre d'un championnat multisports, un soir par semaine, d'octobre à juin. 
+        <p>L'ASLCN, ce n'est pas un fleuve, oh non ! c'est une compétition et tu en fais partie ...
+        Tu vas avoir l'occasion de donner de ta personne dans l'effort et l'allégresse, dans le cadre d'un championnat multisports, un soir par semaine, de septembre à juin. 
         </p>
         <p>Mais pas toutes les semaines, faut pas déconner! On a quand même une vie, une famille, du linge à sécher, des séries à terminer, un footing à caler, un peu de boulot accessoirement et peut-être une grosse fin de soirée au Berlin à gérer ...
         </p>
@@ -40,7 +40,7 @@ require('template.php');
             <li>
                 <div class="logo_section_three">
                     <a href="<?= $_POST['URL_PATH'] ?>calendrier">
-                        <img src="../aslcn/public/images/icons/calendar.png"/>
+                        <img src="public/images/icons/calendar.png"/>
                     </a>
                     <h2>Une rencontre ?</h2>
                 </div> 
@@ -48,14 +48,16 @@ require('template.php');
             <li>
                 <div class="logo_section_three">
                     <a href="<?= $_POST['URL_PATH'] ?>classement">
-                        <img src="../aslcn/public/images/icons/podium.png"/>
+                        <img src="public/images/icons/podium.png"/>
                     </a>
                     <h2>Le classement ?</h2>
                 </div>
             </li>   
             <li>
                 <div class="logo_section_three">
-                    <a href="<?= $_POST['URL_PATH'] ?>contact"><img src="../aslcn/public/images/icons/mail.png"/></a>
+                    <a href="<?= $_POST['URL_PATH'] ?>contact">
+                        <img src="public/images/icons/mail.png"/>
+                    </a>
                     <h2>Une question ?</h2>
                 </div>
             </li>            
@@ -66,7 +68,7 @@ require('template.php');
 
 <footer>
     <div>
-        <p><a href="<?= $_POST['URL_PATH'] ?>mentions">Mentions légales</a> - site made with <img src="../aslcn/public/images/icons/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
+        <p><a href="<?= $_POST['URL_PATH'] ?>mentions">Mentions légales</a> - site made with <img src="public/images/icons/icon_love.png" alt="icon_love"> by benjamin lefebvre</p>
     </div>
 </footer>
 </div>

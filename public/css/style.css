@@ -306,17 +306,60 @@ label {
 
 /*--------------------------------------------CALENDRIER----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------CALENDRIER----------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
 
-#title_calendar, #p_calendar {
+#calendar {
+    background-color: none;
+    width: 86%;
+}
+
+#title_calendar {
     text-align: center;
 }
 
-.view-cap, .view-container-border {
-    background-color: rgb(218, 18, 18) !important;
+.fc-day-number {
+    color: white;
 }
 
-span.te-s {
-    color: blue !important;
+.fc-event {
+    font-size: 0.95em !important;
+    background: rgb(247, 126, 14) !important;
+    border: none !important;
+}
+
+.fc-unthemed td.fc-today {
+    background: #1abc9cc4 !important;
+}
+
+.button_modif {
+    display: block;
+    position: relative;
+    margin-left: 90%;
+    margin-top: -5%;
+    width: 46px !important;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFF;
+    font-size: 1.8em;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    cursor: pointer;
+
+    box-shadow: 0 6px 10px 0 #0000001a,0 1px 18px 0 #0000001a,0 3px 5px -1px #0003;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.button_modif a {
+    color: white;
+}
+
+.button_modif:hover {
+    text-decoration: none;
+    color: #FFF;
+    transform: scale(1.1);
 }
 
 
@@ -864,8 +907,7 @@ footer {
     #list_section_three ul {
         list-style-type: none;
         display: flex;
-        justify-content: space-around;
-        margin-left: -18px;
+        justify-content: space-between;
     }
 
     .logo_section_three {

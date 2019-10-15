@@ -19,7 +19,7 @@ class postController {
     }
 
     //Affiche le calendrier.
-    public function printCalendar($id) {
+    public function printCalendar() {
         require('view/frontend/viewCalendar.php');
     }
 
@@ -63,6 +63,9 @@ class postController {
     require 'view/frontend/contact.php'; 
     }
 
+    /**************************************PROFIL********************************************** */
+    /****************************************************************************************** */
+
     /**
      * Formulaire d'inscription a l'espace membre.
      */
@@ -83,7 +86,7 @@ class postController {
                             $reqmail = $this->postManager->getMail($mail);
                                 if($reqmail == 0) {
                                     $insertmbr = $this->postManager->getMembre($pseudo, $teamName, $mail, $mdp);
-                                    $erreur = "Votre compte a bien été créé ! <a href=\"http://localhost/aslcn/profil\">Me connecter</a>";
+                                    $erreur = "Votre compte a bien été créé ! <a href=\"http://aslcn.fr/profil\">Me connecter</a>";
                                 } 
                                 else {
                                 $erreur = "Adresse mail déjà utilisée !";
@@ -335,44 +338,10 @@ class postController {
         require 'view/frontend/deconnexion.php';
     }
 
-
-    /**
-     * Espace modifications des points administration.
-     */
-    public function adminPoint() {
-        $post = $this->postManager->getTeams(); 
-        require 'view/frontend/administration.php';
-    }
-
-    /**
-     * Galerie equipe.
-     */
+    /***********************************PORTFOLIO********************************************** */
+    /****************************************************************************************** */
     public function portfolio() {
         require 'view/frontend/portfolio.php';
-    }
-
-    public function classement() {
-        $post = $this->postManager->getTeams();
-        require 'view/frontend/classement.php';
-    }
-
-    public function postPresence($present, $absent) {    
-        $post = $this->postManager->addPresence($present, $absent);
-        header('Location: '. $_POST['URL_PATH'] . 'profil');
-    }
-
-    public function editPres($id, $idmembres) {
-        $post = $this->postManager->updatePres($id, $idmembres);
-    }
-
-    public function presence($id_event, $id_membre) {
-        $insert = $this->postManager->insertPresence($id_event, $id_membre);
-        require 'view/frontend/pres.php';
-    }
-
-    public function error() {
-        $posts = $this->postManager->getPosts();
-        require 'view/frontend/404.php';
     }
     
 }

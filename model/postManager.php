@@ -9,13 +9,8 @@ class postManager extends manager {
         $this->newManager = new \Model\Manager();  
     }
 
-    public function getEvent($id) {
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('SELECT * FROM events WHERE id = ?');
-        $request->execute(array($id));
-        return $request;
-    }
 
+    /*********************************GET PROFIL************************************************** */
     public function getAllUser() {
         $db = $this->newManager->dbConnect();
         $request = $db->query('SELECT * FROM membres ORDER BY id DESC');    
@@ -74,9 +69,7 @@ class postManager extends manager {
         return !!$userexist;
     }
 
-    /**
-     * Fonction recup code.
-     */
+ /*********************************RECUP CODE************************************************ */
     public function userRecup($mdpRecup) {
         $db = $this->newManager->dbConnect();
         $req = $db->prepare("SELECT * FROM membres WHERE mdp = ?");
@@ -223,14 +216,6 @@ class postManager extends manager {
         return $mailexist_count;
     }
 
-    public function editPresence($id, $present, $absent) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("UPDATE membres SET present = ?, absent = ? WHERE id= ?"); 
-        $req->execute(array($id, $present, $absent));  
-        $membre = $req->fetchAll(); 
-        return $membre;
-    }
-
     /*****************************************MEMBRE*********************************************** */
     /********************************************************************************************** */
     public function getMembers() {
@@ -247,111 +232,4 @@ class postManager extends manager {
         $membre->execute(array($id));  
         return $membre;
     }
-
-    /*******************************************MESSAGE***************************************** */
-
-    public function ajaxSysPres($pseudo, $message) {
-        $db = $this->newManager->dbConnect(); 
-        $insertion = $db->prepare('INSERT INTO messages VALUES("", :pseudo, :message)');
-        $insertion->execute(array(
-            'pseudo' => $pseudo,
-            'message' => $message
-        ));
-    }
-
-    public function ajaxMessage($id) {
-        $db = $this->newManager->dbConnect(); 
-        $requete = $db->prepare('SELECT * FROM messages WHERE id > :id ORDER BY id DESC');
-        $requete->execute(array("id" => $id));
-        return $requete;
-    }
-  
-
-    /*****************************************EVENT************************************************ */
-    /********************************************************************************************** */
-
-    public function getEvents() {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM events ORDER BY start"); 
-        $req->execute();  
-        $post = $req->fetchAll(); 
-        return $post;
-    }
-
-    public function getEv($id) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM events WHERE id= ?"); 
-        $req->execute(array($id));  
-        $event = $req->fetchAll(); 
-        return $event;
-    }
-
-    /*****************************************TEAM************************************************* */
-    /********************************************************************************************** */
-
-    public function getTeams() {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM team ORDER BY teamPoint DESC"); 
-        $req->execute();  
-        $post = $req->fetchAll(); 
-        return $post;
-    }
-
-    public function getTeam($id) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM team WHERE id= ?"); 
-        $req->execute(array($id));  
-        $post = $req->fetchAll(); 
-        return $post;
-    }
-
-    public function updateTeam($id, $teamPoint) {
-
-        $db = $this->newManager->dbConnect();
-        $request = $db->prepare('UPDATE team SET teamPoint = ? WHERE id = ?');
-        $post = $request->execute(array($teamPoint, $id));   
-        return $post; 
-    }
-
-    /*****************************************PRESENCE********************************************* */
-    /********************************************************************************************** */
-
-    public function insertPresence($id_event, $id_membre) {
-        $db = $this->newManager->dbConnect();
-        $insert= $db->prepare("INSERT TO presences VALUES('', :id_event, :id_membre)");
-        $insert->execute(array(
-            'id_event' => $id_event,
-            'id_membre' => $id_membre
-        ));
-    }
-    
-    public function getAllPres() {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM membres ORDER BY pseudo"); 
-        $req->execute(array());  
-        return $req;
-    }
-
-    public function getPresence($id_event,$user_id) {
-        $db = $this->newManager->dbConnect(); 
-        $check_pres = $db->prepare('SELECT id FROM presences WHERE id_event = ? AND id_membre = ?');
-        $check_pres->execute(array($id_event,$user_id));
-        return $check_pres;
-    }
-
-    public function getPres($id) {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM membres WHERE id= ?"); 
-        $req->execute(array($id));  
-        $post = $req->fetchAll(); 
-        return $post;
-    }
-
-    public function pres() {
-        $db = $this->newManager->dbConnect(); 
-        $req= $db->prepare("SELECT * FROM presences ORDER BY id_membre"); 
-        $req->execute(array()); 
-        return $req;
-    }
-
 }

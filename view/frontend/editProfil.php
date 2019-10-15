@@ -11,11 +11,11 @@ require('template.php');
     <div align="center">
     <form method="POST" action="" enctype="multipart/form-data">
         <label>Pseudo :</label>
-        <input type="text" name="newpseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" /><br /><br />
+        <input type="text" name="newpseudo" placeholder="Pseudo" value="<?php echo $_SESSION['pseudo']; ?>" /><br /><br />
         <label>Nom d'équipe :</label>
-        <input type="text" name="newteam" placeholder="Equipe" value="<?php echo $user['teamName']; ?>" /><br /><br />
+        <input type="text" name="newteam" placeholder="Equipe" value="<?php echo $_SESSION['teamName']; ?>" /><br /><br />
         <label>Mail :</label>
-        <input type="text" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" /><br /><br />
+        <input type="text" name="newmail" placeholder="Mail" value="<?php echo $_SESSION['mail']; ?>" /><br /><br />
         <label>Mot de passe :</label>
         <input type="password" name="newmdp1" placeholder="Mot de passe"/><br /><br />
         <label>Confirmation - mot de passe :</label>

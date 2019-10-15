@@ -35,7 +35,7 @@ else {
 
 
 <nav class="profil_menu">
-   <input type="checkbox" href="#" class="profil_menu-open" name="profil_menu-open" id="profil_menu-open" />
+<input type="checkbox" href="#" class="profil_menu-open" name="profil_menu-open" id="profil_menu-open"/>
     <label class="profil_menu-open-button" for="profil_menu-open">
         <span class="lines line-1"></span>
         <span class="lines line-2"></span>
@@ -43,15 +43,15 @@ else {
     </label>
 
     <a href="https://calendar.google.com/calendar/r/month?cid=68csi3j172a6qfq44j5p1n1gls%40group.calendar.google.com" class="profil_menu-item blue">
-        <img src="../aslcn/public/images/icons/add.png" alt="icon_add"/>
+        <img src="public/images/icons/add.png" alt="icon_add"/>
     </a>
 
     <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red">
-        <img src="../aslcn/public/images/icons/profil.png" alt="icon_profil"/>
+        <img src="public/images/icons/profil.png" alt="icon_profil"/>
     </a>
 
     <a href="<?= $_POST['URL_PATH'] ?>profil/deconnexion" class="profil_menu-item purple"> 
-        <img src="../aslcn/public/images/icons/deco.png" alt="icon_deco"/> 
+        <img src="public/images/icons/deco.png" alt="icon_deco"/> 
     </a>
 </nav>
   

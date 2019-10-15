@@ -28,7 +28,7 @@ else if ($url[0] == 'mentions') {
 /*--------------------------------------CALENDRIER----------------------------------------*/
 else if($url[0] == 'calendrier') {
     if (empty($url[1])) {
-        $postController->printCalendar($url[0]);
+        $postController->printCalendar();
     } 
 } 
 
@@ -45,7 +45,7 @@ else if($url[0] == 'galerie') {
 /*--------------------------------------CLASSEMENT----------------------------------------*/
 
 else if($url[0] == 'classement') {
-    $postController->classement();
+    $adminController->classement();
 }
 
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
@@ -92,7 +92,7 @@ else if($url[0] == 'profil') {
 /*-----------------Accueil administration---------------------*/
 else if($url[0] == 'administration') {
     if(empty($url[1])) { 
-        $postController->adminPoint();
+        $adminController->adminPoint();
     }
 
     else if ($url[1] == 'editTeam' && is_numeric($url[2]))  {
