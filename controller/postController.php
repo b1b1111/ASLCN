@@ -344,4 +344,9 @@ class postController {
         require 'view/frontend/portfolio.php';
     }
     
+    public function chat() {
+        $reponse = $this->postManager->miniChat();
+        $reponse = $this->postManager->postChat();
+        require 'view/frontend/picture.php';
+    }
 }

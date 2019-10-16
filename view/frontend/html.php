@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <title><?= $title ?></title>
+        <link rel="icon" href="public/images/favicon.ico" />
 
         <meta charset="utf-8" />
         <meta name="description" content="Site de l'ASLCN" />

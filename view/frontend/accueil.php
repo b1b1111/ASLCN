@@ -1,5 +1,5 @@
 <?php
-$title = 'ASLCN';
+$title = 'Aslcn';
 require('html.php');
 require('template.php');
 ?>

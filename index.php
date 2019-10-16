@@ -9,7 +9,7 @@ require_once('controller/postController.php');
 require_once('controller/adminController.php');
 
     $postController = new \Controller\postController();
-    $adminController = new \Controller\adminController(); 
+    $adminController = new \Controller\adminController();
     
 $url = '';
 if(isset($_GET['url'])) {
@@ -37,16 +37,21 @@ else if($url[0] == 'contact') {
     $postController->contact($url[0]);
 } 
 
-/*--------------------------------------PORTFOLIO----------------------------------------*/
-else if($url[0] == 'galerie') {
-    $postController->portfolio();
-} 
-
 /*--------------------------------------CLASSEMENT----------------------------------------*/
 
 else if($url[0] == 'classement') {
     $adminController->classement();
 }
+
+/*--------------------------------------PICTURE----------------------------------------*/
+else if($url[0] == 'picture') {
+    $postController->chat();
+}
+
+/*--------------------------------------PORTFOLIO----------------------------------------*/
+else if($url[0] == 'galerie') {
+    $postController->portfolio();
+} 
 
 /*--------------------------------------ESPACE MEMBRE----------------------------------------*/
 /**

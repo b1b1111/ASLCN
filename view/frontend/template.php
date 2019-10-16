@@ -13,7 +13,7 @@
                 <li><a id='calendrier' href='http://aslcn.fr/calendrier'>Calendrier</a></li>
                 <li><a id='contact' href='http://aslcn.fr/contact'>Contact</a></li>
                 <li><a id='class' href='http://aslcn.fr/classement'>Classement</a></li>
-                <li><a id='picture' href='http://aslcn.fr/picture'>Souvenir</a></li>
+                <li><a id='picture' href='http://aslcn.fr/picture'>Souvenirs</a></li>
                 <li><a id='team' href='http://aslcn.fr/galerie'>Team</a></li>
                 <li><a id='profil' href='http://aslcn.fr/profil'>Profil</a></li>
             </ul>
