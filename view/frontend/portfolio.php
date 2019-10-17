@@ -324,19 +324,28 @@ require('template.php');
     <div class="project js-item" tabindex="0">
       <img src="public/images/skip/melaine.jpg" alt="mel" class="project__image">
       <h2 class="project__name">Mélaine Legland</h2>
-      <div class="project__description">Consectetur adipisicing elit</div>
+      <div class="project__description">Mélaine</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : Un gros dunk ou un beau direct</p>
+        <p>Un geste antisportif : Bah un direct ! </p>
+        <p>Un match de légende: France – Brésil 98</p>
+        <p>Un trophée: trophée MVP (nba)</p>
+        <p>Un jeu d’école : les POG ! (j’ai encore la collection 1 et 2 !!)</p>
+        <p>Une enceinte sportive : Stade Marcel Saupin (mon père était gardien là bas, gardien de
+        gymnase et non gardien de but mais gardien quand même dans ce beau stade qui a vu de très
+        bons joueurs ; au fait je vous ai dit que mon père était gardien ??)</p>
+        <p>Une citation ou un proverbe: « l’impossible existe tant qu’on essaye pas de le rendre
+        possible »</p>
+        <p>Un objet sportif : des skis bien affutés</p>
+        <p>Un commentateur/ journaliste sportif ? Philippe Candeloro…</p>
+        <p>Un Alcool : Un bon rhum</p>
+        <p>Une blessure : Fracture du boxeur (5è métacarpien)</p>
+        <p>Une chanson de supporter : un bon clapping (on chante mais avé les mains)</p>
+        <p>Une fédération non officielle : la FFP (Fédération Française du Plaisir)</p>
+        <p>Un combo entre sports : l’acro-sexe</p>
+        <p>Une position : une joulie pyramide humaine à 2, 3 ou plus mais maîtrisée (montage et</p>
+        démontage sécuritaire, tenue pas trop courte, amplitude et imbrication )</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">
@@ -540,7 +549,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/wall/toto.jpg" alt="" class="project__image">
       <h2 class="project__name">Thomas Bonnaudet</h2>
       <div class="project__description">Toto</div>
       <div class="project__body js-body">
@@ -587,7 +596,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/wall/fanchgib.jpg" alt="fanch" class="project__image">
       <h2 class="project__name">François Guiban</h2>
       <div class="project__description">Fanch</div>
       <div class="project__body js-body">
@@ -734,7 +743,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/4ever/jojo.jpg" alt="" class="project__image">
       <h2 class="project__name">Jocelyn Athimon</h2>
       <div class="project__description">Jocelyn</div>
       <div class="project__body js-body">

@@ -10,6 +10,7 @@ body {
 
     #conversation {
         display: flex;
+        justify-content: space-evenly;
     }
 
     #form_picture .number {
@@ -90,9 +91,21 @@ body {
 
     .msg_picture {
         display: flex;
+        background: #f4f7f8;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 8px;
+        color:#757e85;
+        font-family: Georgia, "Times New Roman", Times, serif;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 30%;
+        max-height: 520px;
+        overflow: scroll;
+    }
+
+    .p_picture strong {
+        color:#1abc9c;
     }
 
     .container {
@@ -210,11 +223,37 @@ body {
         line-height: 1.35em;
         color: #334455;
     }
+
+    @media (max-width: 760px) {
+        #conversation {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     
     @media (max-width: 500px) {
+        
+        #conversation {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
 
         #form_picture {
-            width: 200px;
+            max-width: 150px;
+            margin: 5px auto;
+        }
+
+        .msg_picture {
+            margin: 5px auto;
+            padding: 10px;
+            width: 40%;
+            margin-right: 5%;
+            max-height: 400px;
+        }
+
+        .container {
+            width: 40%;
         }
 
         .card-top {
@@ -255,6 +294,12 @@ body {
         }
     }
     @media (max-width: 400px) {
+
+        #conversation {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
         .card-image {
         width: 38% !important;
         }
@@ -262,4 +307,5 @@ body {
         .card-text {
         width: 62% !important;
         }
+
     }

@@ -7,10 +7,8 @@ require('template.php');
 <h1 id="title_calendar">Calendrier des rencontres</h1>
 
 
-    <link href="public/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="public/css/Calendar.css" rel="stylesheet" />
+<link href="public/css/Calendar.css" rel="stylesheet" />
     <script src="public/js/jquery.js" type="text/javascript"></script>
-    <script src="public/js/bootstrap.min.js"></script>
 	
     <script type="text/javascript">
         // date variables
@@ -97,38 +95,36 @@ require('template.php');
             });
         }
         var resource = {
-            "summary": "My Event",
-			      "start": {
+            "summary": "Evenement",
+			    "start": {
                 "dateTime": today
             },
             "end": {
                 "dateTime": twoHoursLater
             },
             "description":"We are organizing events",
-            "location":"US",
+            "location":"FR",
             "attendees":[
 			{
-					"email":"benjamin.lefebvre04@gmail.com",
-					"displayName":"ben",
-					"organizer":true,
-					"self":false,
-					"resource":false,
-					"optional":false,
-					"responseStatus":"needsAction",
-					"comment":"This is event first",
-					"additionalGuests":3
+                "email":"benjamin.lefebvre04@gmail.com",
+                "displayName":"ben",
+                "organizer":true,
+                "self":false,
+                "resource":false,
+                "optional":false,
+                "responseStatus":"needsAction",
+                "comment":"Chaud pour de l'action ?",
 					
 			},
 			{	
 				"email":"abc@gmail.com",
-					"displayName":"Chatak",
-					"organizer":true,
-					"self":false,
-					"resource":false,
-					"optional":false,
-					"responseStatus":"needsAction",
-					"comment":"This is office event",
-					"additionalGuests":3
+                "displayName":"Chatak",
+                "organizer":true,
+                "self":false,
+                "resource":false,
+                "optional":false,
+                "responseStatus":"needsAction",
+                "comment":"This is office event",
 			}
 			],
 		};
@@ -137,8 +133,8 @@ require('template.php');
 	   function deleteEvent() {
 		 gapi.client.load('calendar', 'v3', function() {  
 		   var request = gapi.client.calendar.events.delete({
-			 'calendarId': '24tn4fht2tr6mdfsdfertlsedk@group.calendar.google.com',
-			 'eventId': 'Hdusrtsbs8'
+			 'calendarId': '68csi3j172a6qfq44j5p1n1gls@group.calendar.google.com',
+			 'eventId': ''
 		   });
 		 request.execute(function(resp) {
 			if (resp.status == 'confirmed') {
@@ -151,54 +147,18 @@ require('template.php');
 		 });
 	   } 
  
-
-		</script>
+	</script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad" type="text/javascript"></script>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Google Calendar API</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Simple Way to embed you calendar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-2 col-xs-12">
-                <button id="authorize-button" style="visibility: hidden" class="btn btn-primary">
-                    Authorize</button>
-            </div>
             <!-- .col -->
             <div class="col-md-10 col-sm-10 col-xs-12">
-                <div class="panel panel-danger" id="result-panel">
-                    <div class="panel-heading">
-                        <h1>
-                            My Calendar</h1>
-                        <h3 class="panel-title" id="result-title">
-                            Application Not Authorized</h3>
-                        &nbsp;
-                        <p>
-                            Insert Event into Public Calendar&hellip;</p>
-                    </div>
-                </div>
                        <!--  <input id="txtEventDetails" type="text" /> -->
-                <button id="btnCreateEvents" class="btn btn-primary" onclick="makeApiCall();">
+         <!--       <button id="btnCreateEvents" class="btn btn-primary" onclick="makeApiCall();">
                     Create Events</button>  
-				<button id="btnDeleteEvents" class="btn btn-primary" onclick="deleteEvent();">
+				        <button id="btnDeleteEvents" class="btn btn-primary" onclick="deleteEvent();">
                     Delete Events</button> 					
                 <div id="event-response">
                 </div>
@@ -207,173 +167,8 @@ require('template.php');
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <p>Google Calendar API Quickstart</p>
-
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
-
-    <pre id="content" style="white-space: pre-wrap;"></pre>
-
-    <script type="text/javascript">
-      // Client ID and API key from the Developer Console
-      var CLIENT_ID = '146099678255-ma2fiorqphfhuk4l686i2mh2djkv8psu.apps.googleusercontent.com';
-      var API_KEY = 'AIzaSyCVVVWUyooBU-M-DdwNyB93TGSdinK65jc';
-
-      // Array of API discovery doc URLs for APIs used by the quickstart
-      var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
-
-      // Authorization scopes required by the API; multiple scopes can be
-      // included, separated by spaces.
-      var SCOPES = "https://www.googleapis.com/auth/calendar";
-
-      var authorizeButton = document.getElementById('authorize_button');
-      var signoutButton = document.getElementById('signout_button');
-
-      /**
-       *  On load, called to load the auth2 library and API client library.
-       */
-      function handleClientLoad() {
-        gapi.load('client:auth2', initClient);
-      }
-
-      /**
-       *  Initializes the API client library and sets up sign-in state
-       *  listeners.
-       */
-      function initClient() {
-        gapi.client.init({
-          apiKey: API_KEY,
-          clientId: CLIENT_ID,
-          discoveryDocs: DISCOVERY_DOCS,
-          scope: SCOPES
-        }).then(function () {
-          // Listen for sign-in state changes.
-          gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-
-          // Handle the initial sign-in state.
-          updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-          authorizeButton.onclick = handleAuthClick;
-          signoutButton.onclick = handleSignoutClick;
-        }, function(error) {
-          appendPre(JSON.stringify(error, null, 2));
-        });
-      }
-
-      /**
-       *  Called when the signed in status changes, to update the UI
-       *  appropriately. After a sign-in, the API is called.
-       */
-      function updateSigninStatus(isSignedIn) {
-        if (isSignedIn) {
-          authorizeButton.style.display = 'none';
-          signoutButton.style.display = 'block';
-          listUpcomingEvents();
-        } else {
-          authorizeButton.style.display = 'block';
-          signoutButton.style.display = 'none';
-        }
-      }
-
-      /**
-       *  Sign in the user upon button click.
-       */
-      function handleAuthClick(event) {
-        gapi.auth2.getAuthInstance().signIn();
-      }
-
-      /**
-       *  Sign out the user upon button click.
-       */
-      function handleSignoutClick(event) {
-        gapi.auth2.getAuthInstance().signOut();
-      }
-
-      /**
-       * Append a pre element to the body containing the given message
-       * as its text node. Used to display the results of the API call.
-       *
-       * @param {string} message Text to be placed in pre element.
-       */
-      function appendPre(message) {
-        var pre = document.getElementById('content');
-        var textContent = document.createTextNode(message + '\n');
-        pre.appendChild(textContent);
-      }
-
-      /**
-       * Print the summary and start datetime/date of the next ten events in
-       * the authorized user's calendar. If no events are found an
-       * appropriate message is printed.
-       */
-      function listUpcomingEvents() {
-        gapi.client.calendar.events.list({
-          'calendarId': 'primary',
-          'timeMin': (new Date()).toISOString(),
-          'showDeleted': false,
-          'singleEvents': true,
-          'maxResults': 10,
-          'orderBy': 'startTime'
-        }).then(function(response) {
-          var events = response.result.items;
-          appendPre('Upcoming events:');
-
-          if (events.length > 0) {
-            for (i = 0; i < events.length; i++) {
-              var event = events[i];
-              var when = event.start.dateTime;
-              if (!when) {
-                when = event.start.date;
-              }
-              appendPre(event.summary + ' (' + when + ')')
-            }
-          } else {
-            appendPre('No upcoming events found.');
-          }
-        });
-      }
-
-    </script>
-
-    <script async defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-
-
-
-
-
-
-
+    </div> -->
+     
 
 <link href='<?= $_POST['URL_PATH'] ?>packages/core/main.css' rel='stylesheet' />
 <link href='<?= $_POST['URL_PATH'] ?>packages/daygrid/main.css' rel='stylesheet' />
@@ -381,6 +176,7 @@ require('template.php');
 <script src='<?= $_POST['URL_PATH'] ?>packages/core/main.js'></script>
 <script src='<?= $_POST['URL_PATH'] ?>packages/interaction/main.js'></script>
 <script src='<?= $_POST['URL_PATH'] ?>packages/daygrid/main.js'></script>
+<script src='<?= $_POST['URL_PATH'] ?>packages/timegrid/main.js'></script>
 <script src='<?= $_POST['URL_PATH'] ?>packages/list/main.js'></script>
 <script src='<?= $_POST['URL_PATH'] ?>packages/google-calendar/main.js'></script>
 <script>
@@ -389,21 +185,54 @@ require('template.php');
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-
-      plugins: [ 'interaction', 'dayGrid', 'list', 'googleCalendar' ],
-      
-     
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list', 'googleCalendar' ],
       header: {
         left: 'prev,next today',
         center: 'title',
         right: 'dayGridMonth,listYear'
       },
-
+      selectable: true,
+      selectMirror: true,
+      select: function(arg) {
+        var title = prompt('Event Title:');
+        if (title) {
+          calendar.addEvent({
+            title: title,
+            start: arg.start,
+            end: arg.end,
+            allDay: arg.allDay
+          })
+        }
+        calendar.unselect()
+      },
+      editable: true,
+      eventLimit: true,
       displayEventTime: false, // don't show the time column in list view
 
       googleCalendarApiKey: 'AIzaSyCVVVWUyooBU-M-DdwNyB93TGSdinK65jc',
 
-      events:'aslcn44000@gmail.com',
+      events:  'aslcn44000@gmail.com',
+
+      select: function(start, end) {
+        $.getScript('/events/new', function() {});
+
+        calendar.fullCalendar('unselect');
+      },
+
+      eventDrop: function(event, delta, revertFunc) {
+        event_data = { 
+          event: {
+            id: event.id,
+            start: event.start.format(),
+            end: event.end.format()
+          }
+        };
+        $.ajax({
+            url: event.update_url,
+            data: event_data,
+            type: 'PATCH'
+        });
+      },
 
       eventClick: function(arg) {
         // opens events in a popup window
@@ -452,7 +281,7 @@ require('template.php');
 
   <div id='calendar'></div>
 
-  <?php  if($_SESSION['admin'] == true) { ?>
+  <?php  if($_SESSION['id'] == true) { ?>
 
     <div class="button_modif">
       <a href="https://calendar.google.com/calendar/b/2/r/month/2019/10/16?eid=MjVvc2ZtaTc1c2NkOWRxa3JiNzYwNTlpajggYXNsY240NDAwMEBt&sf=true">+</a>
@@ -461,3 +290,5 @@ require('template.php');
   <?php } ?>
 
 </body>
+
+

@@ -5,6 +5,10 @@ require('template.php');
 ?>
 <link href="<?= $_POST['URL_PATH'] ?>public/css/picture.css" type="text/css" rel="stylesheet"/>
 
+
+
+<?php  if($_SESSION['id'] == true) { ?>
+
 <div id="conversation"> 
     <form action="" method="post" id="form_picture">
         <p>
@@ -21,12 +25,14 @@ require('template.php');
         <?php
         while ($donnees = $reponse->fetch()) {  
         
-            echo '<p class="p_picture" ><strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> ' . htmlspecialchars($donnees['message']) . '</p>';
+          echo '<p class="p_picture" ><strong>' . htmlspecialchars($donnees['pseudo']) . '</strong> ' . ' - ' . htmlspecialchars($donnees['message']) . '</p>';
         }
         $reponse->closeCursor();
         ?>
     </div>
 </div>
+
+<?php } ?>
 
 <div class='container'>
   <div class='card-left'>

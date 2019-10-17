@@ -1,17 +1,12 @@
-
-body {
-	margin-top: 8px;
-	margin-bottom: 50px;
-	background: none;
+#btnCreateEvents {
+  border-radius: 5px;
+  background: rgb(37, 37, 37);
+  color: white;
 }
 
-.full {
-  background: url(calendar1.jpg) no-repeat center center fixed; 
-  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+span.te-s {
+
+  color: white !important;
 }
 .panel-danger
 {
