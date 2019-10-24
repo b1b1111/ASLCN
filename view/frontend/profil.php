@@ -46,6 +46,10 @@ else {
         <img src="public/images/icons/add.png" alt="icon_add"/>
     </a>
 
+    <a href="<?= $_POST['URL_PATH'] ?>profil/presence" class="profil_menu-item green">
+        <img src="public/images/icons/update.png" alt="icon_add"/>
+    </a>
+
     <a href="<?= $_POST['URL_PATH'] ?>profil/editProfil" class="profil_menu-item red">
         <img src="public/images/icons/profil.png" alt="icon_profil"/>
     </a>

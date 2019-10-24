@@ -343,6 +343,10 @@ class postController {
     public function portfolio() {
         require 'view/frontend/portfolio.php';
     }
+
+    public function presence() {
+        require 'view/frontend/presence.php';
+    }
     
     public function chat() {
         $reponse = $this->postManager->miniChat();

@@ -75,6 +75,10 @@ else if($url[0] == 'profil') {
         $postController->editProfil();
     }
 
+    else if($url[1] == 'presence') {
+        $postController->presence();
+    }
+
     else if($url[1] == "deconnexion") {
         $postController->deconnexion();
     }

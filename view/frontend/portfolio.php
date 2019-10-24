@@ -416,16 +416,22 @@ require('template.php');
       <div class="project__description">Leandre</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : Un carreau en place à la nuit tombée sur le boulodrome de monsieur le président !</p>
+        <p>Un geste antisportif : Tu te souviens de tekken 3, de paul et de son poing qui te défonce au ¾ ? C’est pas un geste antisportif ça ?</p>
+        <p>Un match de légende: Mon premier match officiel de tennis. 3h15 de jeu ! Perdu mais les cartes panini x-files en cadeau réconfort c’était du solide ! </p>
+        <p>Un trophée: Le futur “Léandre best”.</p>
+        <p>Un jeu d’école : les pogs bien sur.</p>
+        <p>Une enceinte sportive : LD systems maui 28 G2. Avec ça mon copain tu balance du Pookie et une grosse ambiance pendant la séance de gym tonic sur l’île de nantes.</p>
+        <p>Une citation ou un proverbe: On me dit le plus grand bien des harengs pommes à l'huile ?</p>
+        <p>Un objet sportif : les bracelets pour s’essuyer le front, ça présente bien sûr un terrain. Moins bien le soir venu ...</p>
+        <p>Un commentateur/ journaliste sportif : Lee Jordan.</p>
+        <p>Un Alcool : Un bon bourbon sec et une guinness garçon !</p>
+        <p>Une blessure : PNL … </p>
+        <p>Une chanson de supporter : Jeanneeee et Sergeeee, coup de foudre en match de volley-ball
+        Jeanne et Serge, amour dès le premier regard.</p>
+        <p>Une fédération non officielle : La FNEPECN  (La Fédération Nationale d’Encadrement du Pôle Espoirs des Copains Nantais).</p>
+        <p>Un combo entre sports : Un mélange de air guitar et de ping pong. Comme ça pas besoin de chercher la balle tous les 3 échanges.</p>
+        <p>Une position : J’aurais bien aimé être talonneur mais parait que je manque de physique !</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
@@ -474,7 +480,7 @@ require('template.php');
     </div>
     <div class="project js-item" tabindex="0">
       <img src="public/images/capillo/nerik.jpg" alt="" class="project__image">
-      <h2 class="project__name">Eric Devillon</h2>
+      <h2 class="project__name">Eric Drévillon</h2>
       <div class="project__description">Nerik</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
@@ -536,16 +542,27 @@ require('template.php');
       <div class="project__description">Kristen</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : panenka de Zidane en finale de coup du monde 2006. Il y a le geste et
+        le fait de le faire à ce moment-là. Fou ! J’en ai perdu un slip ce jour-là !</p>
+        <p>Un geste antisportif : un bon vieux tirage de maillot à la Verratti suivi d’un étonnement à être sanctionné « Moi ??? Mais je ne l’ai pas touché !! »</p>
+        <p>Un match de légende : France-Brésil 2006</p>
+        <p>Un trophée : Coupe du Monde 98, plus qu’un trophée !</p>
+        <p>Un jeu d’école : foot à 40 « chacun sa peau »</p>
+        <p>Une enceinte sportive : La Beaujoire</p>
+        <p>Une citation ou un proverbe : « la gloire n’est que la conséquence ». Bosse mon gars et si tu
+        fais les choses bien, peut-être que ça tournera bien pour toi mais ne te prends pas pour qui tu
+        n’es pas !</p>
+        <p>Un objet sportif : chevillières et protège-tibias, sans je me sens nu.</p>
+        <p>Un commentateur/ journaliste sportif ? Thierry Roland, sans doute pas le meilleur, mais il
+        aura bercé ma jeunesse avec les matchs de l’équipe de France et Téléfoot</p>
+        <p>Un Alcool : puisqu’il faut vraiment choisir, whisky !</p>
+        <p>Une blessure : entorse de la cheville (et du genou !)</p>
+        <p>Une chanson de supporter : Hymne à la Beaujoire ! Il a des défauts mais il semble fédérer.</p>
+        <p>Une fédération non officielle : Les Moches, instigateurs/promoteurs de la pratique du
+        Dodgeball en Bourgogne-Franche Comté</p>
+        <p>Un combo entre sports : Chaise Garou -&gt; Mix entre les chaises musicales et le loup garou
+        avec vote sur la personne qui est éliminée, savoir si c’est un paysan ou un loup garou.</p>
+        <p>Une position : 47.2410069,-1.5573097</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0" id="project-1">
@@ -770,7 +787,7 @@ require('template.php');
   </div>
   <div class="portfolio-flex" id="js-portfolio-ema">
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/reds/logo_mini.jpg" alt="" class="project__image">
       <h2 class="project__name">Anne-Laure Demullenheim</h2>
       <div class="project__description">Anne</div>
       <div class="project__body js-body">
@@ -840,7 +857,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/reds/fifou.jpg" alt="" class="project__image">
       <h2 class="project__name">Phillipe Talaud</h2>
       <div class="project__description">Fifou</div>
       <div class="project__body js-body">
@@ -858,7 +875,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/reds/logo_mini.jpg" alt="" class="project__image">
       <h2 class="project__name">Maxime Plaire</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
@@ -890,7 +907,7 @@ require('template.php');
   </div>
   <div class="portfolio-flex" id="js-portfolio-flex"> 
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/keke/logo_mini.png" alt="" class="project__image">
       <h2 class="project__name">Justine Plos</h2>
       <div class="project__description">Juju</div>
       <div class="project__body js-body">
@@ -916,7 +933,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/keke/logo_mini.png" alt="" class="project__image">
       <h2 class="project__name">Joachim Pestel</h2>
       <div class="project__description">Joachim</div>
       <div class="project__body js-body">
@@ -939,7 +956,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/keke/logo_mini.png" alt="" class="project__image">
       <h2 class="project__name">Martine Stéphan</h2>
       <div class="project__description">Martine</div>
       <div class="project__body js-body">
@@ -957,7 +974,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/keke/logo_mini.png" alt="" class="project__image">
       <h2 class="project__name">Maxime Coache</h2>
       <div class="project__description">Max</div>
       <div class="project__body js-body">
@@ -980,7 +997,7 @@ require('template.php');
       </div>
     </div>
     <div class="project js-item" tabindex="0">
-      <img src="http://via.placeholder.com/350x350" alt="" class="project__image">
+      <img src="public/images/keke/logo_mini.png" alt="" class="project__image">
       <h2 class="project__name">Sarah Hû</h2>
       <div class="project__description">Sarah</div>
       <div class="project__body js-body">

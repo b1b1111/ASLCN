@@ -4,14 +4,12 @@ require('html.php');
 require('template.php');
 ?>
 
-<h1 id="title_calendar">Calendrier des rencontres</h1>
-
 <script>
 
 $(document).ready(function () {
-    var calendar = $('#calendar').fullCalendar({
+    var calendar = $('#pres').fullCalendar({
         editable: true,
-        events: "<?= $_POST['URL_PATH'] ?>model/calendar/fetch-event.php",
+        events: "<?= $_POST['URL_PATH'] ?>model/calendar/fetch-pres.php",
         displayEventTime: false,
         eventRender: function (event, element, view) {
             if (event.allDay === 'true') {
@@ -32,7 +30,7 @@ $(document).ready(function () {
                 
                 <?php  if($_SESSION['id'] == true) { ?>
                 $.ajax({
-                    url: '<?= $_POST['URL_PATH'] ?>model/calendar/add-event.php',
+                    url: '<?= $_POST['URL_PATH'] ?>model/calendar/add-pres.php',
                     data: 'title=' + title + '&start=' + start + '&end=' + end,
                     type: "POST",
                     success: function (data) {
@@ -59,7 +57,7 @@ $(document).ready(function () {
             var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
             var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
             $.ajax({
-                url: '<?= $_POST['URL_PATH'] ?>model/calendar/edit-event.php',
+                url: '<?= $_POST['URL_PATH'] ?>model/calendar/edit-pres.php',
                 data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                 type: "POST",
                 success: function (response) {
@@ -76,11 +74,11 @@ $(document).ready(function () {
             if (deleteMsg) {
                 $.ajax({
                     type: "POST",
-                    url: "<?= $_POST['URL_PATH'] ?>model/calendar/delete-event.php",
+                    url: "<?= $_POST['URL_PATH'] ?>model/calendar/delete-pres.php",
                     data: "&id=" + event.id,
                     success: function (response) {
                         if(parseInt(response) > 0) {
-                            $('#calendar').fullCalendar('removeEvents', event.id);
+                            $('#pres').fullCalendar('removeEvents', event.id);
                             displayMessage("Deleted Successfully");
                         }
                     }
@@ -105,7 +103,13 @@ body {
     text-align: center;  
 }
 
-#calendar {
+.fc-event {
+    font-size: 1em !important;
+    background: rgb(212, 38, 81) !important;
+    border: 1px solid rgb(243, 55, 102);
+}
+
+#pres {
     font-size: 12px;
     font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
     width: 90%;
@@ -126,7 +130,5 @@ body {
 </head>
 <body>
     <div class="response"></div>
-    <div id='calendar'></div>
+    <div id='pres'></div>
 </body>
-
-

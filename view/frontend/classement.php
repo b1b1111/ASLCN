@@ -4,6 +4,41 @@ require('html.php');
 require('template.php'); 
 ?>
 
+<h2>Tableau des points</h2>
+
+<table>
+    <thead>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>Rémi *</th>
+        <th>Forfait</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>20</td>
+            <td>16</td>
+            <td>13</td>
+            <td>11</td>
+            <td>9</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+<p>(Suivants la séance proposée les points peuvent légèrements varier)<br /><br />
+* le « Rémi sans famille » est un joueur seul de son équipe qui vient quand même s'amuser et glaner 2 points pour la bonne cause (4 points si le Rémi finit sur le podium de la rencontre)<br /><br />
+** Il faut au moins être 2 joueurs d'une équipe par rencontre pour gagner les points...</p>
+
+
 <div id="table_class">
 
     <table class="table-responsive1">

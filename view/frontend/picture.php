@@ -5,8 +5,6 @@ require('template.php');
 ?>
 <link href="<?= $_POST['URL_PATH'] ?>public/css/picture.css" type="text/css" rel="stylesheet"/>
 
-
-
 <?php  if($_SESSION['id'] == true) { ?>
 
 <div id="conversation"> 
