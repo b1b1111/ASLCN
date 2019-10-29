@@ -3,7 +3,7 @@ $title = 'Aslcn';
 require('html.php');
 require('template.php');
 ?>
-<div class="body">
+
     <div id="slider">
         <figure>
             <img src="public/images/slider/img1.jpg" alt="banner1">

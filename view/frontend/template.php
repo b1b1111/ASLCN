@@ -29,7 +29,7 @@
                 <li><a id='profil' href='http://aslcn.fr/profil'>Profil</a></li>
             <?php } ?>
             </ul>
-    </label>
+        </label>
 
     <div class="header_content">
             <h1><a href="http://aslcn.fr/">ASLCN</a></h1>
@@ -38,23 +38,18 @@
    
 </header>
 
-<body> 
-
         <script src="https://cdn.tiny.cloud/1/376mz5siri1y6bnkll7l26kltznbqkwp9mi2aorxqpadvuxj/tinymce/5/tinymce.min.js"></script>
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-
-
+            crossorigin="anonymous">
+        </script>
         <script src="<?= $_POST['URL_PATH'] ?>public/js/alert.js"></script>
         <script src="<?= $_POST['URL_PATH'] ?>public/js/verif.js"></script> 
         <script src="<?= $_POST['URL_PATH'] ?>public/js/classement.js"></script>
         <script src="<?= $_POST['URL_PATH'] ?>public/fullcalendar/lib/jquery.min.js"></script>
         <script src="<?= $_POST['URL_PATH'] ?>public/fullcalendar/lib/moment.min.js"></script>
         <script src="<?= $_POST['URL_PATH'] ?>public/fullcalendar/fullcalendar.min.js"></script>
-
-        <footer id="footer"></footer>
         
     </body>
     

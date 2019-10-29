@@ -466,16 +466,26 @@ require('template.php');
       <div class="project__description">Boubourse</div>
       <div class="project__body js-body">
         <h2>Portrait chinois !</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur, consequuntur, dicta eius
-          facilis ipsa ipsum itaque magnam molestias mollitia nemo nihil provident quod saepe sed temporibus ut veniam
-          voluptates!
-        </p>
-        <p>
-          Ab architecto, atque autem blanditiis culpa distinctio ea eius harum, hic laudantium maiores possimus, quia
-          repellat sunt voluptatum? Aperiam doloremque dolorum facilis ipsum iusto laborum maiores nisi odit officia
-          repellendus.
-        </p>
+        <p>Un geste technique : la roulette. La classe associée à l’efficacité</p>
+        <p>Un geste antisportif : la cuillère. La subtilité dans un sport pas forcément réputé pour l’être (le rugby).</p>
+        <p>Un match de légende : France / Argentine : le jour où le Monde découvre notre petit Kyllian
+        MBappé</p>
+        <p>Un trophée : La coupe des Curées. Fameuse coupe dans le 56 où même quand tu perds trois
+        fois, tu peux être repêché pour la gagner.</p>
+        <p>Un jeu d’école : l’épervier.</p>
+        <p>Une enceinte sportive : Signal Iduna Park, le fameux mur jaune de Dortmund</p>
+        <p>Une citation ou un proverbe : A vaincre sans péril, on triomphe sans gloire !
+        Un objet sportif : un arc</p>
+        <p>Un commentateur/ journaliste sportif ? Gilardi ! Son commentaire sur le but de Ribéry contre
+        l’Espagne restera à jamais !</p>
+        <p>Un Alcool : le Brastis ! Nouveau pastis (ré)inventé par des bretons (faut toujours qu’ils se
+        fassent remarquer ces bretons).</p>
+        <p>Une blessure : l’entorse (j’ai dû en connaitre plus d’une centaine ; j’avais une moyenne de 10
+        entorses par an quand je jouais au foot).</p>
+        <p>Une chanson de supporter : Hymne de la Beaujoire biensûr !</p>
+        <p>Une fédération non officielle : Les Capillos, mélange barbu de sports et d’apéros.</p>
+        <p>Un combo entre sports : biathlon – kayak</p>
+        <p>Une position : en chasse-patates</p>
       </div>
     </div>
     <div class="project js-item" tabindex="0">

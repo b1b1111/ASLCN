@@ -43,7 +43,7 @@ else if($url[0] == 'classement') {
     $adminController->classement();
 }
 
-/*--------------------------------------PICTURE----------------------------------------*/
+/*--------------------------------------PICTURE/CHAT----------------------------------------*/
 else if($url[0] == 'picture') {
     $postController->chat();
 }

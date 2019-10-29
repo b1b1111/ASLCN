@@ -22,9 +22,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <link rel="alternate" hreflang="fr" href="" /> 
+        <link rel="alternate" hreflang="fr" href="alternate"/> 
         <link href="<?= $_POST['URL_PATH'] ?>public/css/style.css" type="text/css" rel="stylesheet"/>
         <link href="<?= $_POST['URL_PATH'] ?>public/css/app.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="<?= $_POST['URL_PATH'] ?>public/fullcalendar/fullcalendar.min.css" />
     
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />

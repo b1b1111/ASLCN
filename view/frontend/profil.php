@@ -42,7 +42,7 @@ else {
         <span class="lines line-3"></span>
     </label>
 
-    <a href="https://calendar.google.com/calendar/r/month?cid=68csi3j172a6qfq44j5p1n1gls%40group.calendar.google.com" class="profil_menu-item blue">
+    <a href="<?= $_POST['URL_PATH'] ?>calendrier" class="profil_menu-item blue">
         <img src="public/images/icons/add.png" alt="icon_add"/>
     </a>
 

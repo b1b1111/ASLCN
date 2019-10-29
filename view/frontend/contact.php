@@ -16,7 +16,7 @@
 		<input type="text" name="nom" placeholder="<?= $_SESSION['pseudo'] ?>" value="<?php if(isset($_POST['nom'])) { echo $_POST['nom']; } ?>" /><br /><br />
 		<?php } ?>
 
-		<input type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" /><br /><br />
+		<input type="email" name="mail" placeholder="Votre email" value="<?php if(isset($_POST['mail'])) { echo $_POST['mail']; } ?>" onclick="verifMail(this)" /><br /><br />
 
 		<textarea name="message" placeholder="Votre message" cols="20" rows="10"><?php 
 				if(isset($_POST['message'])) { 
@@ -24,5 +24,7 @@
 				} 
 			
 				?></textarea><br /><br />
+		
 		<input id="btn_contact"  type="submit" value="Envoyer" name="mailform" onclick="SendMail()" />
+		
 	</form>

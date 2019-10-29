@@ -22,23 +22,21 @@ $(document).ready(function () {
         selectable: true,
         selectHelper: true,
         select: function (start, end, allDay) {
-            var title = prompt('Event Title:');
+            var title = prompt('Ton blaze:');
    
             if (title) {
                 var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
                 var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
                 
-                <?php  if($_SESSION['id'] == true) { ?>
                 $.ajax({
                     url: '<?= $_POST['URL_PATH'] ?>model/calendar/add-pres.php',
                     data: 'title=' + title + '&start=' + start + '&end=' + end,
                     type: "POST",
                     success: function (data) {
-                        displayMessage("Added Successfully");
+                        displayMessage("Prejent");
                     }
                 });
-
-                
+  
                 calendar.fullCalendar('renderEvent',
                         {
                             title: title,
@@ -61,16 +59,14 @@ $(document).ready(function () {
                 data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                 type: "POST",
                 success: function (response) {
-                    displayMessage("Updated Successfully");
+                    displayMessage("Modif ok");
                 }
             });
         },
 
-        <?php } ?>
 
-        <?php  if($_SESSION['admin'] == true) { ?>
         eventClick: function (event) {
-            var deleteMsg = confirm("Do you really want to delete?");
+            var deleteMsg = confirm("Souhaite tu vraiment supprimer ?");
             if (deleteMsg) {
                 $.ajax({
                     type: "POST",
@@ -79,13 +75,12 @@ $(document).ready(function () {
                     success: function (response) {
                         if(parseInt(response) > 0) {
                             $('#pres').fullCalendar('removeEvents', event.id);
-                            displayMessage("Deleted Successfully");
+                            displayMessage("Suppression ok");
                         }
                     }
                 });
             }
         }
-        <?php } ?>
 
     });
 });
@@ -105,8 +100,8 @@ body {
 
 .fc-event {
     font-size: 1em !important;
-    background: rgb(212, 38, 81) !important;
-    border: 1px solid rgb(243, 55, 102);
+    background: #e6be0b !important;
+    border: 1px solid #ffd000;
 }
 
 #pres {
@@ -127,7 +122,7 @@ body {
     display: inline-block;
 }
 </style>
-</head>
+
 <body>
     <div class="response"></div>
     <div id='pres'></div>

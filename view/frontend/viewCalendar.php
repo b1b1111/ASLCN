@@ -24,7 +24,7 @@ $(document).ready(function () {
         selectable: true,
         selectHelper: true,
         select: function (start, end, allDay) {
-            var title = prompt('Event Title:');
+            var title = prompt('Titre de la rencontre:');
    
             if (title) {
                 var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
@@ -36,7 +36,7 @@ $(document).ready(function () {
                     data: 'title=' + title + '&start=' + start + '&end=' + end,
                     type: "POST",
                     success: function (data) {
-                        displayMessage("Added Successfully");
+                        displayMessage("C'est dans la boite");
                     }
                 });
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
                 data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                 type: "POST",
                 success: function (response) {
-                    displayMessage("Updated Successfully");
+                    displayMessage("Modif ok");
                 }
             });
         },
@@ -72,7 +72,7 @@ $(document).ready(function () {
 
         <?php  if($_SESSION['admin'] == true) { ?>
         eventClick: function (event) {
-            var deleteMsg = confirm("Do you really want to delete?");
+            var deleteMsg = confirm("Souhaite tu vraiment supprimer ?");
             if (deleteMsg) {
                 $.ajax({
                     type: "POST",
@@ -81,7 +81,7 @@ $(document).ready(function () {
                     success: function (response) {
                         if(parseInt(response) > 0) {
                             $('#calendar').fullCalendar('removeEvents', event.id);
-                            displayMessage("Deleted Successfully");
+                            displayMessage("Suppression ok");
                         }
                     }
                 });

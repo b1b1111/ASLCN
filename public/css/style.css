@@ -69,8 +69,6 @@ label {
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
     color: rgb(204, 191, 191);
     text-transform: uppercase;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
 }
 
 .header_content h1 a {
@@ -101,8 +99,6 @@ label {
 
 .header_content h2 {
     text-align: center;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
     font-family: 'Open Sans', Verdana, Tahoma, sans-serif;
     color: rgb(243, 224, 224);
 }
@@ -308,7 +304,7 @@ label {
 /*----------------------------------------------------------------------------------------------------*/
 
 #calendar {
-    background-color: none;
+    background-color: transparent;
     width: 86%;
 }
 
@@ -457,7 +453,7 @@ label {
 
 .table-responsive1 tr {
     color: rgb(247, 221, 221);
-    background-color: none;
+    background-color: transparent;
     text-align: center;
     font-weight: 800;
     font-size: 13px;
@@ -484,6 +480,10 @@ label {
 
 .table-responsive tr:nth-child(odd) {
     background-color: #eee;
+}
+
+.p_classement {
+    font-size: 0.6em;
 }
 
 
